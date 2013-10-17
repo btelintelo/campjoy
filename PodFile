@@ -1,0 +1,2 @@
+pod 'JSONKit', '~> 1.4'
+pod 'MagicalRecord', '~> 2.2'
