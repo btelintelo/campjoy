@@ -2,6 +2,7 @@ android/build
 android/.gradle
 android/.idea
 android/android.iml
+android/CampJoy.iml
 android/local.properties
 ios/Camp Joy Outdoors.xcodeproj/xcuserdata
 ios/Camp Joy Outdoors.xcworkspace/xcuserdata
