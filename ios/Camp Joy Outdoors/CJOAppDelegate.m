@@ -14,7 +14,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    NSArray *boardNames = @[@"Identify", @"glossary"];
+    NSString *fmt = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? @"%@_iPhone" : @"%@_iPad";
+    NSMutableArray *controllers = [[NSMutableArray alloc]initWithCapacity:[boardNames count]];
+    for (NSString *name in boardNames) {
+        UIStoryboard *board = [UIStoryboard storyboardWithName:[NSString stringWithFormat:fmt, name] bundle:nil];
+        [controllers addObject:[board instantiateInitialViewController]];
+    }
+    
+    UITabBarController *tabc = (UITabBarController *)self.window.rootViewController;
+    [tabc setViewControllers:controllers];
+    
     return YES;
 }
 							
