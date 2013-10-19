@@ -10,4 +10,11 @@
 
 @interface CJOTree : NSObject
 
+@property (nonatomic, retain) NSNumber *treeId;
+@property (nonatomic, retain) NSString *name;
+@property (nonatomic, retain) NSString *description;
+@property (nonatomic, retain) NSString *sciname;
+@property (nonatomic, retain) NSString *family;
+@property (nonatomic, retain) NSDictionary *tableData;
+
 @end

@@ -1,5 +1,5 @@
 //
-//  CJOQuestion.h
+//  CJOChoice.h
 //  Camp Joy Outdoors
 //
 //  Created by Brian Telintelo on 10/18/13.
@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CJOQuestion : NSObject
-
-@property (nonatomic, retain) NSNumber *id;
-@property (nonatomic, retain) NSArray *choices;
+@interface CJOChoice : NSObject
 
 @end
