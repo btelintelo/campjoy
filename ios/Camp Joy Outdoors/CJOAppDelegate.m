@@ -9,6 +9,7 @@
 #import "CJOAppDelegate.h"
 #import "CJOModel.h"
 #import "CJOTreeImagesDataSource.h"
+#import "CJOConstants.h"
 
 @implementation CJOAppDelegate
 
@@ -50,6 +51,15 @@
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    // Assuming this is a url for glossary, since that's all we have right now
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    NSString * query = url.query;
+    for (NSString *param in [query componentsSeparatedByString:@"&"]) {
+        NSArray *elts = [param componentsSeparatedByString:@"="];
+        if([elts count] < 2) continue;
+        [params setObject:[elts objectAtIndex:1] forKey:[elts objectAtIndex:0]];
+    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:SHOW_GLOSSARY_NOTIFICATION object:nil userInfo:params];
     return YES;
 }
 

@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CJOQuestion.h"
+#import "CJOGlossaryTerm.h"
+#import "CJOTree.h"
 
 @interface CJOModel : NSObject
 
@@ -15,5 +18,11 @@
 +(NSArray *) terms;
 
 +(NSArray *) termStrings;
+
++(CJOQuestion *) findQuestionById:(NSString *) questionId;
+
++(CJOTree*) findTreeById:(NSString *) treeId;
+
++(CJOGlossaryTerm *) findTermByName:(NSString *) name;
 
 @end
