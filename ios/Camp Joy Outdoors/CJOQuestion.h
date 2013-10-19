@@ -10,7 +10,7 @@
 
 @interface CJOQuestion : NSObject
 
-@property (nonatomic, retain) NSNumber *id;
+@property (nonatomic, retain) NSString *id;
 @property (nonatomic, retain) NSArray *choices;
 
 @end
