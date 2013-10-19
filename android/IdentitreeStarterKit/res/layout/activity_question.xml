@@ -8,4 +8,10 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".QuestionActivity" >
 
+    <fragment
+        android:id="@+id/question_fragment"
+        android:name="org.campjoy.identitree.starter.fragments.QuestionFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
 </RelativeLayout>
