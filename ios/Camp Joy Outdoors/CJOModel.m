@@ -50,22 +50,20 @@ NSArray *termStrings;
     return termStrings;
 }
 
-+(CJOQuestion *) findQuestionById:(int) questionId {
++(CJOQuestion *) findQuestionById:(NSString *) questionId {
     NSArray * questions = [self questions];
-    NSString * questionIdString = [NSString stringWithFormat:@"%d", questionId];
     for(CJOQuestion * question in questions) {
-        if([question.id isEqualToString:questionIdString]) {
+        if([question.id isEqualToString:questionId]) {
             return question;
         }
     }
     return nil;
 }
 
-+(CJOTree*) findTreeById:(int) treeId {
++(CJOTree*) findTreeById:(NSString *) treeId {
     NSArray * trees = [self trees];
-    NSString * treeIdString = [NSString stringWithFormat:@"%d", treeId];
     for(CJOTree * tree in trees) {
-        if([tree.id isEqualToString:treeIdString]) {
+        if([tree.id isEqualToString:treeId]) {
             return tree;
         }
     }
