@@ -15,27 +15,28 @@ import android.content.Context;
 public class QuestionModel {
 
 	private ArrayList<Question> questions = new ArrayList<Question>();
+	private static QuestionModel instance; 
 	
 	public QuestionModel(final Context applicationContext) {
-		Thread loader = new Thread(){
+		Thread loader = new Thread() {
 			@Override
 			public void run() {
 				loadQuestions(applicationContext);
 			}
 		};
-		
+
 		loader.start();
 	}
-	
+
 	private void loadQuestions(Context applicationContext) {
 		String questionJson = readJsonFromFile(applicationContext);
 		parseJson(questionJson);
 	}
-	
+
 	private String readJsonFromFile(Context applicationContext) {
 		InputStream is = null;
 		String info = null;
-		
+
 		try {
 			is = applicationContext.getAssets().open("questions.json");
 			BufferedReader reader = new BufferedReader(
@@ -47,7 +48,7 @@ public class QuestionModel {
 				builder.append(line);
 				line = reader.readLine();
 			}
-			
+
 			info = builder.toString();
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -62,15 +63,13 @@ public class QuestionModel {
 		}
 		return info;
 	}
-	
-	private void parseJson(String json)
-	{
+
+	private void parseJson(String json) {
 		try {
 			JSONObject readableJson = new JSONObject(json);
 			JSONArray questions = readableJson.getJSONArray("questions");
-			
-			for(int i = 0; i < questions.length(); i++)
-			{
+
+			for (int i = 0; i < questions.length(); i++) {
 				JSONObject oneQuestion = questions.getJSONObject(i);
 				Question q = new Question(oneQuestion);
 				this.questions.add(q);
@@ -79,15 +78,23 @@ public class QuestionModel {
 			e.printStackTrace();
 		}
 	}
-	
+
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		
-		for(Question q : questions) {
+
+		for (Question q : questions) {
 			sb.append(q.toString());
 		}
-		
+
 		return sb.toString();
+	}
+
+	public ArrayList<Question> getQuestions() {
+		return questions;
+	}
+
+	public static QuestionModel getInstance() {
+		return instance;
 	}
 }

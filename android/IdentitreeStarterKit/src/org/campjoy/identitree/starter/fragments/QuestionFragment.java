@@ -1,6 +1,7 @@
 package org.campjoy.identitree.starter.fragments;
 
 import org.campjoy.identitree.starter.R;
+import org.campjoy.identitree.starter.model.QuestionModel;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -27,6 +28,13 @@ public class QuestionFragment extends Fragment {
 		
 		firstImageView = (ImageView) getView().findViewById(R.id.image_first_question);
 		secondImageView = (ImageView) getView().findViewById(R.id.image_second_question);
+		
+		QuestionModel qModel = new QuestionModel(getActivity());
+		
 		return view;
 	}
+	
+	
+	
+	
 }
