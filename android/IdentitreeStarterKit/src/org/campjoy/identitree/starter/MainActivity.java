@@ -1,5 +1,6 @@
 package org.campjoy.identitree.starter;
 
+import org.campjoy.identitree.starter.activities.GlossaryActivity;
 import org.campjoy.identitree.starter.activities.QuestionActivity;
 import org.campjoy.identitree.starter.activities.TreeInfoActivity;
 
@@ -16,6 +17,7 @@ public class MainActivity extends Activity {
 	private Button questionButton;
 	private ImageView treeBrowserImgView;
 	private ImageView aboutImgView;
+	private ImageView glossaryImgView;
 	
 	
 	@Override
@@ -48,6 +50,16 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				startActivity(treeBrowser);
+			}
+		});
+		
+		final Intent glossaryIntent = new Intent(this, GlossaryActivity.class);
+		glossaryImgView = (ImageView) findViewById(R.id.imageGlossary);
+		glossaryImgView.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				startActivity(glossaryIntent);
 			}
 		});
 		
