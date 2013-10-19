@@ -22,10 +22,6 @@
 
 -(void)layoutSubviews {
     self.answerText.text = self.choice.text;
-//    self.answerText set
-    if(self.choiceImage == nil) {
-        self.image.hidden = YES;
-    }
 }
 
 -(CGRect) measureText:(NSString *) text withFont:(UIFont *) font andWidth:(CGFloat)width{
