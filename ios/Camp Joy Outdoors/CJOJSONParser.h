@@ -10,4 +10,6 @@
 
 @interface CJOJSONParser : NSObject
 
++(NSArray *)questions;
+
 @end
