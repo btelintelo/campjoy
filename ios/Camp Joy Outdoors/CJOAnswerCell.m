@@ -8,6 +8,8 @@
 
 #import "CJOAnswerCell.h"
 #import "UIView+FrameSize.h"
+#import "CJOGlossaryTerm.h"
+#import "CJOModel.h"
 
 @implementation CJOAnswerCell
 
@@ -21,13 +23,25 @@
 }
 
 -(void)layoutSubviews {
-    self.answerText.text = self.choice.text;
+    //self.answerText.text = self.choice.text;
+    /*CGRect frame = self.answerText.frame;*/
+    
+    NSArray * glossaryTerms = [CJOModel terms];
+    self.textHeightConstraint.constant = self.answerText.contentSize.height;
+    
+    NSMutableAttributedString * val = [[NSMutableAttributedString alloc] initWithString:@"blah"];
+    [val beginEditing];
+    [val addAttribute:NSLinkAttributeName value:@"http://www.google.com" range:NSMakeRange(2, 2)];
+    [val endEditing];
+    self.answerText.attributedText = val;
+    
+    /*frame.size.height = self.answerText.contentSize.height;
+    self.answerText.frame = frame;*/
 }
 
--(CGRect) measureText:(NSString *) text withFont:(UIFont *) font andWidth:(CGFloat)width{
-    NSDictionary * attributes = @{ NSFontAttributeName: font };
-    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:text attributes:attributes];
-    return [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
+-(BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange {
+    return YES;
 }
+
 
 @end
