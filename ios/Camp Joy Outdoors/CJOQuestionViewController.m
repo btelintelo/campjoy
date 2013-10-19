@@ -46,7 +46,7 @@
 
     if(choice.nextid) {
         [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
-    } else if(choice.treeid) {
+    } else if(choice.treeid || YES) {
         [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
     }
 }
