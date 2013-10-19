@@ -31,4 +31,14 @@
     return mutable;
 }
 
++(NSArray *)terms
+{
+    return nil;
+}
+
++(NSArray *)trees
+{
+    return nil;
+}
+
 @end

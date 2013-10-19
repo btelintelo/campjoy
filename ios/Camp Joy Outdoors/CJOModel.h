@@ -1,5 +1,5 @@
 //
-//  CJOJSONParser.h
+//  CJOModel.h
 //  Camp Joy Outdoors
 //
 //  Created by Brian Telintelo on 10/18/13.
@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CJOJSONParser : NSObject
-
-+(NSArray *)questions;
-+(NSArray *)trees;
-+(NSArray *)terms;
+@interface CJOModel : NSObject
 
 @end

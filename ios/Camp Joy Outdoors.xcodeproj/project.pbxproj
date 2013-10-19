@@ -15,6 +15,7 @@
 		42405B7B18122F7200292674 /* glossary.json in Resources */ = {isa = PBXBuildFile; fileRef = 42405B7818122F7200292674 /* glossary.json */; };
 		42405B7C18122F7200292674 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 42405B7918122F7200292674 /* questions.json */; };
 		42405B7D18122F7200292674 /* trees.json in Resources */ = {isa = PBXBuildFile; fileRef = 42405B7A18122F7200292674 /* trees.json */; };
+		42405B801812301600292674 /* CJOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B7F1812301600292674 /* CJOModel.m */; };
 		4250A8FF1812141D00F2F282 /* CJOGlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */; };
 		4250A9021812143F00F2F282 /* CJOAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A9011812143E00F2F282 /* CJOAboutUsViewController.m */; };
 		4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250A9051812156700F2F282 /* Identify_iPhone.storyboard */; };
@@ -66,6 +67,8 @@
 		42405B7818122F7200292674 /* glossary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = glossary.json; path = ../../data/json/glossary.json; sourceTree = "<group>"; };
 		42405B7918122F7200292674 /* questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = questions.json; path = ../../data/json/questions.json; sourceTree = "<group>"; };
 		42405B7A18122F7200292674 /* trees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = trees.json; path = ../../data/json/trees.json; sourceTree = "<group>"; };
+		42405B7E1812301600292674 /* CJOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOModel.h; sourceTree = "<group>"; };
+		42405B7F1812301600292674 /* CJOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOModel.m; sourceTree = "<group>"; };
 		4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOGlossaryViewController.h; sourceTree = "<group>"; };
 		4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOGlossaryViewController.m; sourceTree = "<group>"; };
 		4250A9001812143E00F2F282 /* CJOAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOAboutUsViewController.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				4250A913181220A800F2F282 /* CJOUtilities.m */,
 				42405B741812298A00292674 /* CJOJSONParser.h */,
 				42405B751812298A00292674 /* CJOJSONParser.m */,
+				42405B7E1812301600292674 /* CJOModel.h */,
+				42405B7F1812301600292674 /* CJOModel.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 			files = (
 				42405B6A18121F7800292674 /* CJOQuestion.m in Sources */,
 				42405B731812219800292674 /* CJOChoice.m in Sources */,
+				42405B801812301600292674 /* CJOModel.m in Sources */,
 				42405B761812298A00292674 /* CJOJSONParser.m in Sources */,
 				4252C3A0180F8888001F86F5 /* main.m in Sources */,
 				4250A919181228F600F2F282 /* CJOIdentifyNavigationViewController.m in Sources */,
