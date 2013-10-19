@@ -44,6 +44,7 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AnswerImageCell"];
     ((CJOAnswerCell *) cell).choice = self.question.choices[indexPath.row];
     ((CJOAnswerCell *) cell).choiceImage = [self imageForIndexPath:indexPath];
+    ((CJOAnswerCell *) cell).tableView = tableView;
     return cell;
 }
 
@@ -63,6 +64,7 @@
         [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
     }
 }
+
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     CJOAnswerCell * cell = (CJOAnswerCell *) sender;

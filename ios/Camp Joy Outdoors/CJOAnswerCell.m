@@ -11,6 +11,11 @@
 #import "CJOGlossaryTerm.h"
 #import "CJOModel.h"
 
+@interface CJOAnswerCell()
+@property (nonatomic, strong) UITapGestureRecognizer * textViewGestureRecognizer;
+
+@end
+
 @implementation CJOAnswerCell
 
 - (id)initWithFrame:(CGRect)frame
@@ -22,7 +27,36 @@
     return self;
 }
 
+//Taking this out for now, just going to enable tap on disclosure indicator
+/*
+- (void)textViewTapped:(id)sender {
+    CGPoint location = [self.textViewGestureRecognizer locationInView:self.answerText];
+    NSUInteger index = [self.answerText.textContainer.layoutManager glyphIndexForPoint:location inTextContainer:self.answerText.textContainer];
+    //CGGlyph glyph = [self.answerText.textContainer.layoutManager glyphAtIndex:index];
+    NSUInteger characterIndex = [self.answerText.textContainer.layoutManager characterIndexForGlyphAtIndex:index];
+    NSLog(@"%d", characterIndex);
+    NSLog(@"%@", self.answerText.textStorage);
+    NSLog(@"%c",[self.answerText.text characterAtIndex:characterIndex]);
+    
+    [self dispatchTap];
+}
+*/
+- (IBAction)accessoryTapped:(id)sender {
+    [self dispatchTap];
+}
+
+-(void) dispatchTap {
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:self];
+    [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+    [self.tableView.delegate tableView:self.tableView didSelectRowAtIndexPath:indexPath];
+    
+}
+
+
 -(void)layoutSubviews {
+    /*self.textViewGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(textViewTapped:)];
+    self.answerText.gestureRecognizers = @[self.textViewGestureRecognizer];*/
     NSArray * glossaryTerms = [CJOModel termStrings];
     self.answerText.attributedText = [self matchTerms:glossaryTerms inString:self.choice.text];
     self.image.image = self.choiceImage;
