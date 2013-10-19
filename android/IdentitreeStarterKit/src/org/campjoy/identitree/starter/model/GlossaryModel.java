@@ -1,5 +1,6 @@
 package org.campjoy.identitree.starter.model;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 import org.json.JSONArray;
@@ -10,50 +11,62 @@ import android.content.Context;
 
 public class GlossaryModel extends BaseModel {
 
-	private HashMap<String, Term> terms = new HashMap<String, Term>();
+	private HashMap<String, Term> termMap;
+	private String[] terms;
 
-	public GlossaryModel(final Context applicationContext)
-	{
+	public GlossaryModel(final Context applicationContext) {
 		super(applicationContext, "glossary.json");
 	}
-	
-	protected void parseJson(String json)
-	{
+
+	protected void parseJson(String json) {
 		try {
 			JSONObject readableJson = new JSONObject(json);
 			JSONArray terms = readableJson.getJSONArray("terms");
-			
-			for(int i = 0; i < terms.length(); i++)
-			{
+
+			termMap = new HashMap<String, Term>();
+
+			for (int i = 0; i < terms.length(); i++) {
 				JSONObject oneTerm = terms.getJSONObject(i);
 				Term t = new Term(oneTerm);
-				this.terms.put(t.getName(), t);
+				this.termMap.put(t.getName(), t);
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
 	}
-	
-	public boolean hasTermThatStartsWith(String term)
-	{
-		term = term.toLowerCase();
-		for(String key : terms.keySet())
+
+	public int count() {
+		return termMap.size();
+	}
+
+	public String[] getTerms() {
+		if(terms == null)
 		{
-			if(key.toLowerCase().startsWith(term))
-			{
+			terms = new String[termMap.size()];
+			termMap.keySet().toArray(terms);
+			Arrays.sort(terms);
+		}
+		return terms;
+	}
+
+	public Term getTermById(String id) {
+		return termMap.get(id);
+	}
+
+	public boolean hasTermThatStartsWith(String term) {
+		term = term.toLowerCase();
+		for (String key : termMap.keySet()) {
+			if (key.toLowerCase().startsWith(term)) {
 				return true;
 			}
 		}
 		return false;
 	}
-	
-	public boolean hasTerm(String term)
-	{
+
+	public boolean hasTerm(String term) {
 		term = term.toLowerCase();
-		for(String key : terms.keySet())
-		{
-			if(key.toLowerCase().equalsIgnoreCase(term))
-			{
+		for (String key : termMap.keySet()) {
+			if (key.toLowerCase().equalsIgnoreCase(term)) {
 				return true;
 			}
 		}
