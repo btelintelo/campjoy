@@ -17,14 +17,6 @@
         android:layout_marginTop="59dp"
         android:text="@string/text_question" />
     
-    <TextView 
-        android:id="@+id/main_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_question"
-        android:layout_alignParentRight="true"
-        android:text="Buds are almond size, thick and scaly"/>
-
     <ImageButton
         android:id="@+id/imageTreeBrowser"
         android:layout_width="wrap_content"
