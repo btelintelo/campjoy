@@ -311,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				09939F4118132B300043AFCD /* glossary */,
+				4290D7EF1813293E00B8057A /* dichotomy */,
 				FA4638B418131C2A007F62DD /* maps */,
 				FA0B2BDE1812F22800FF21A7 /* trees */,
 				4252C39B180F8888001F86F5 /* Camp Joy Outdoors-Info.plist */,
