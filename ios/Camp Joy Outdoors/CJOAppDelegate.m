@@ -7,6 +7,7 @@
 //
 
 #import "CJOAppDelegate.h"
+#import "CJOModel.h"
 
 @implementation CJOAppDelegate
 
