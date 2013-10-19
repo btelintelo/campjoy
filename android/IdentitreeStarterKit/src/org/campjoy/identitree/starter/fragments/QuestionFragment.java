@@ -31,11 +31,16 @@ public class QuestionFragment extends Fragment {
 		firstTextView = (TextView) view.findViewById(R.id.text_first_question);
 		secondTextView = (TextView) view.findViewById(R.id.text_second_question);
 
-		//QuestionModel model = new QuestionModel(view.getContext());
+		firstImageView = (ImageView) view.findViewById(R.id.image_first_question);
+		secondImageView = (ImageView) view.findViewById(R.id.image_second_question);
 		
-		//String first = model.getQuestions().get(0).getChoice().get(0)[0];
+		QuestionModel model = new QuestionModel(view.getContext());
 		
-		//firstTextView.setText();
+		String first = model.getQuestions().get(0).getChoice1().getText();
+		String second = model.getQuestions().get(0).getChoice2().getText();
+		
+		firstTextView.setText(first);
+		secondTextView.setText(second);
 		
 		return view;
 	}
