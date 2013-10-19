@@ -10,11 +10,29 @@
 
     <Button
         android:id="@+id/button_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="59dp"
         android:text="@string/text_question" />
+
+    <ImageButton
+        android:id="@+id/imageTreeBrowser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginRight="36dp"
+        android:src="@android:drawable/btn_star" />
+
+    <ImageButton
+        android:id="@+id/imageAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_question"
+        android:layout_alignTop="@+id/imageTreeBrowser"
+        android:src="@android:drawable/btn_star" />
 
 </RelativeLayout>

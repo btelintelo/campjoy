@@ -9,5 +9,8 @@
     <string name="text_question">Start Question</string>
     <string name="image">Image</string>
     <string name="text_second">Insert Second Question</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 
 </resources>
