@@ -34,19 +34,19 @@ public class SplashActivity extends Activity implements AnimationListener {
 	        
 		setContentView(R.layout.activity_splash);
 		
-//		splashLayoutImg = (ImageView)findViewById(R.id.splash_activity_image);
-//		
-//		try {
-//			splashLayoutImg.setBackgroundDrawable(Drawable.createFromStream(getAssets().open("images/trees/american_basswood/img_0107.jpg"), null));
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		
-//		Animation anim = AnimationUtils.loadAnimation(this, R.anim.splash);
-//		anim.setAnimationListener(this);
-//		
-//		splashLayoutImg.startAnimation(anim);
+		splashLayoutImg = (ImageView)findViewById(R.id.splash_activity_image);
+		
+		try {
+			splashLayoutImg.setBackgroundDrawable(Drawable.createFromStream(getAssets().open("images/trees/american_basswood/img_0107.jpg"), null));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		Animation anim = AnimationUtils.loadAnimation(this, R.anim.splash);
+		anim.setAnimationListener(this);
+		
+		splashLayoutImg.startAnimation(anim);
 		
 	}
 
