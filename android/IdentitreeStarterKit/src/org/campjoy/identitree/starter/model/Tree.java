@@ -50,6 +50,26 @@ public class Tree {
 		}
 	}
 
+	public String getId() {
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public String getScientificName() {
+		return scientificName;
+	}
+
+	public String getFamily() {
+		return family;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder result = new StringBuilder();
