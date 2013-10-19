@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface CJOUtilities : NSObject
-
++(BOOL)isIPad;
 @end
