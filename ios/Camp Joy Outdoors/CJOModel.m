@@ -11,16 +11,26 @@
 
 @implementation CJOModel
 
+NSArray *questions;
+NSArray *trees;
+NSArray *terms;
+
 +(NSArray *) questions
 {
-    return [CJOJSONParser questions];
+    if(!questions)
+        questions = [CJOJSONParser questions];
+    return questions;
 }
 +(NSArray *) trees
 {
-    return [CJOJSONParser trees];
+    if(!trees)
+        trees = [CJOJSONParser trees];
+    return trees;
 }
 +(NSArray *) terms
 {
-    return [CJOJSONParser terms];
+    if(!terms)
+        terms = [CJOJSONParser terms];
+    return terms;
 }
 @end
