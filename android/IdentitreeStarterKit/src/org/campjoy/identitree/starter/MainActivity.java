@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		final Intent intent = new Intent(this, QuestionActivity.class);
-		questionButton = (Button) findViewById(R.id.questionButton);
+		questionButton = (Button) findViewById(R.id.button_question);
 		questionButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {

@@ -9,7 +9,7 @@
     tools:context=".QuestionActivity" >
 
     <fragment
-        android:id="@+id/question_fragment"
+        android:id="@+id/fragment_question"
         android:name="org.campjoy.identitree.starter.fragments.QuestionFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
