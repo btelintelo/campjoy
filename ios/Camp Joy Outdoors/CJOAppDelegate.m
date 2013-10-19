@@ -8,12 +8,17 @@
 
 #import "CJOAppDelegate.h"
 #import "CJOModel.h"
+#import "CJOTreeImagesDataSource.h"
 
 @implementation CJOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    CJOTree *tree = [CJOModel trees][0];
+    CJOTreeImagesDataSource *dataSource = [[CJOTreeImagesDataSource alloc] initWithTree:tree];
+    
+    
     return YES;
 }
 							
