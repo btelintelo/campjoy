@@ -122,7 +122,7 @@
     else if (indexPath.row == 1) {
         imageIndex = @"b";
     }
-    NSString * imageName = [NSString stringWithFormat:@"images/dichotomy/%@%@", self.question.id, imageIndex];
+    NSString * imageName = [NSString stringWithFormat:@"dichotomy/%@%@", self.question.id, imageIndex];
     return [UIImage imageNamed:imageName];
 }
 
