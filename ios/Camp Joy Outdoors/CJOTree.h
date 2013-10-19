@@ -15,6 +15,6 @@
 @property (nonatomic, retain) NSString *description;
 @property (nonatomic, retain) NSString *sciname;
 @property (nonatomic, retain) NSString *family;
-@property (nonatomic, retain) NSDictionary *tableData;
+@property (nonatomic, retain) NSArray *tableData;
 
 @end

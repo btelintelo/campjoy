@@ -44,17 +44,17 @@
     return 0;
 }
 
--(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return nil;
-}
 
--(void)tableView:(UITableView *)tableView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
     CJOAnswerCell * cell = (CJOAnswerCell *)[tableView cellForRowAtIndexPath:indexPath];
     CJOChoice * choice = cell.choice;
 
     if(choice.nextid) {
-        [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
-    } else if(choice.treeid) {
+        [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
+        
+//        [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
+    } else if(choice.treeid || YES) {
         [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
     }
 }

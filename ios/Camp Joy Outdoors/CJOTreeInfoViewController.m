@@ -7,9 +7,13 @@
 //
 
 #import "CJOTreeInfoViewController.h"
+#import "CJOModel.h"
 
 @interface CJOTreeInfoViewController ()
-
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *descriptionHeightConstraint;
+@property (weak, nonatomic) IBOutlet UILabel *scientificNameLabel;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
+@property (weak, nonatomic) IBOutlet UIView *carousel;
 @end
 
 @implementation CJOTreeInfoViewController
@@ -23,16 +27,94 @@
     return self;
 }
 
+- (void)resizeHeaderViewsForDescriptionText
+{
+
+    CGFloat descriptionHeight = [self heightForTextView:self.descriptionTextView];
+    self.descriptionHeightConstraint.constant = descriptionHeight;
+    self.tableView.tableHeaderView.bounds = CGRectMake(0, 0, self.tableView.bounds.size.width, descriptionHeight + self.carousel.bounds.size.height + 10);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    self.tree = [CJOModel trees][0];
+    self.navigationItem.title = self.tree.name;
+    self.scientificNameLabel.text = [NSString stringWithFormat:@"%@ - %@",self.tree.sciname,self.tree.family];
+    self.descriptionTextView.text = self.tree.description;
+
+    [self resizeHeaderViewsForDescriptionText];
+}
+
+#pragma mark - UITableViewDataSource;
+- (int) numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Information";
+}
+
+- (int) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.tree.tableData.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TreeDataCell"];
+    
+    NSDictionary *data = self.tree.tableData[indexPath.row];
+    NSString *name = data.allKeys[0];
+    NSString *value = data[name];
+    
+    cell.textLabel.text = name;
+    cell.detailTextLabel.text = value;
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Utilities
+- (CGFloat)heightForTextView:(UITextView *)textView {
+    CGRect frame = textView.bounds;
+    
+    // Take account of the padding added around the text.
+    
+    UIEdgeInsets textContainerInsets = textView.textContainerInset;
+    UIEdgeInsets contentInsets = textView.contentInset;
+    
+    CGFloat leftRightPadding = textContainerInsets.left + textContainerInsets.right + textView.textContainer.lineFragmentPadding * 2 + contentInsets.left + contentInsets.right;
+    CGFloat topBottomPadding = textContainerInsets.top + textContainerInsets.bottom + contentInsets.top + contentInsets.bottom;
+    
+    frame.size.width -= leftRightPadding;
+    frame.size.height -= topBottomPadding;
+    
+    NSString *textToMeasure = textView.text;
+    if ([textToMeasure hasSuffix:@"\n"])
+    {
+        textToMeasure = [NSString stringWithFormat:@"%@-", textView.text];
+    }
+    
+    // NSString class method: boundingRectWithSize:options:attributes:context is
+    // available only on ios7.0 sdk.
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineBreakMode:NSLineBreakByWordWrapping];
+    
+    NSDictionary *attributes = @{ NSFontAttributeName: textView.font, NSParagraphStyleAttributeName : paragraphStyle };
+    
+    CGRect size = [textToMeasure boundingRectWithSize:CGSizeMake(CGRectGetWidth(frame), MAXFLOAT)
+                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                           attributes:attributes
+                                              context:nil];
+    
+    CGFloat measuredHeight = ceilf(CGRectGetHeight(size) + topBottomPadding);
+    return measuredHeight+8.0f;
+    
 }
 
 @end

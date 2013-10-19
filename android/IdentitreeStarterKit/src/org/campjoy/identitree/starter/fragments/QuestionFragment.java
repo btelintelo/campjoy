@@ -1,6 +1,9 @@
 package org.campjoy.identitree.starter.fragments;
 
+import java.util.ArrayList;
+
 import org.campjoy.identitree.starter.R;
+import org.campjoy.identitree.starter.model.Question;
 import org.campjoy.identitree.starter.model.QuestionModel;
 
 import android.os.Bundle;
@@ -19,6 +22,8 @@ public class QuestionFragment extends Fragment {
 	private ImageView firstImageView;
 	private ImageView secondImageView;
 	
+	private ArrayList<Question> questions;
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -29,8 +34,11 @@ public class QuestionFragment extends Fragment {
 		firstImageView = (ImageView) getView().findViewById(R.id.image_first_question);
 		secondImageView = (ImageView) getView().findViewById(R.id.image_second_question);
 		
-		QuestionModel qModel = new QuestionModel(getActivity());
+		QuestionModel.getInstance().initInstance(getActivity());
+		questions = QuestionModel.getInstance().getQuestions();
 		
+		firstTextView.setText(questions.get(0).getText());
+		secondTextView.setText(questions.get(1).getText());
 		return view;
 	}
 	

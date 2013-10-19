@@ -97,4 +97,10 @@ public class QuestionModel {
 	public static QuestionModel getInstance() {
 		return instance;
 	}
+	
+	public void initInstance(Context context) {
+		if(instance == null) {
+			instance = new QuestionModel(context);			
+		}
+	}
 }
