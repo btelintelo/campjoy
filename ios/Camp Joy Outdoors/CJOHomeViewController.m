@@ -1,18 +1,18 @@
 //
-//  CJOSecondViewController.m
+//  CJOFirstViewController.m
 //  Camp Joy Outdoors
 //
 //  Created by Brian Telintelo on 10/16/13.
 //  Copyright (c) 2013 Camp Joy. All rights reserved.
 //
 
-#import "CJOSecondViewController.h"
+#import "CJOHomeViewController.h"
 
-@interface CJOSecondViewController ()
+@interface CJOHomeViewController ()
 
 @end
 
-@implementation CJOSecondViewController
+@implementation CJOHomeViewController
 
 - (void)viewDidLoad
 {

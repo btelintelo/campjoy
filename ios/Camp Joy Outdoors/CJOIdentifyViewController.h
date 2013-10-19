@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CJOSecondViewController : UIViewController
+@interface CJOIdentifyViewController : UIViewController
 
 @end
