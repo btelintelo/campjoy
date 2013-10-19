@@ -18,6 +18,7 @@
 		42405B7C18122F7200292674 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 42405B7918122F7200292674 /* questions.json */; };
 		42405B7D18122F7200292674 /* trees.json in Resources */ = {isa = PBXBuildFile; fileRef = 42405B7A18122F7200292674 /* trees.json */; };
 		42405B801812301600292674 /* CJOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B7F1812301600292674 /* CJOModel.m */; };
+		42405B821812F90700292674 /* campjoy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42405B811812F90700292674 /* campjoy.jpg */; };
 		4250A8FF1812141D00F2F282 /* CJOGlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */; };
 		4250A9021812143F00F2F282 /* CJOAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A9011812143E00F2F282 /* CJOAboutUsViewController.m */; };
 		4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250A9051812156700F2F282 /* Identify_iPhone.storyboard */; };
@@ -79,6 +80,7 @@
 		42405B7A18122F7200292674 /* trees.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = trees.json; path = ../../data/json/trees.json; sourceTree = "<group>"; };
 		42405B7E1812301600292674 /* CJOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOModel.h; sourceTree = "<group>"; };
 		42405B7F1812301600292674 /* CJOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOModel.m; sourceTree = "<group>"; };
+		42405B811812F90700292674 /* campjoy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = campjoy.jpg; path = ../../data/campjoy.jpg; sourceTree = "<group>"; };
 		4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOGlossaryViewController.h; sourceTree = "<group>"; };
 		4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOGlossaryViewController.m; sourceTree = "<group>"; };
 		4250A9001812143E00F2F282 /* CJOAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOAboutUsViewController.h; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				4252C3A2180F8888001F86F5 /* CJOAppDelegate.h */,
 				4252C3A3180F8888001F86F5 /* CJOAppDelegate.m */,
 				4252C3B1180F8888001F86F5 /* Images.xcassets */,
+				42405B811812F90700292674 /* campjoy.jpg */,
 				4252C39A180F8888001F86F5 /* Supporting Files */,
 			);
 			path = "Camp Joy Outdoors";
@@ -435,6 +438,7 @@
 				09939F3D1812F73D0043AFCD /* glossary_iPhone.storyboard in Resources */,
 				4252C3A7180F8888001F86F5 /* Main_iPhone.storyboard in Resources */,
 				4252C39E180F8888001F86F5 /* InfoPlist.strings in Resources */,
+				42405B821812F90700292674 /* campjoy.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

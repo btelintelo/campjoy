@@ -1,6 +1,9 @@
 package org.campjoy.identitree.starter.model;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -35,5 +38,24 @@ public class TreeModel extends BaseModel {
 		} catch (JSONException e) {
 			Log.e(LOG_TAG, "Failed to load trees from json");
 		}
+	}
+	
+	public Tree getTreeById(String treeId)
+	{
+		Tree result = null;
+		
+		Iterator<Entry<String, Tree>> it = trees.entrySet().iterator();
+	    while (it.hasNext()) {
+	    	
+	    	Map.Entry<String, Tree> treePair = (Map.Entry<String, Tree>)it.next();
+	    	if(treePair.getKey().equalsIgnoreCase(treeId))
+	    	{
+	    		return treePair.getValue();
+	    	}
+	        it.remove(); // avoids a ConcurrentModificationException
+	    }
+		
+		return result;
+		
 	}
 }
