@@ -28,6 +28,7 @@
     self.answerText.delegate = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         self.textHeightConstraint.constant = self.answerText.contentSize.height;
+        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     });
     
 }
