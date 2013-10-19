@@ -1,1 +1,2 @@
 pod 'JSONKit', '~> 1.4'
+pod 'MWPhotoBrowser', '~>1.1.3'

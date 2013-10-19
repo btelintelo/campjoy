@@ -26,21 +26,21 @@
     return self;
 }
 
--(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
--(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.question.choices.count;
 }
 
--(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AnswerImageCell" forIndexPath:indexPath];
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AnswerImageCell"];
     ((CJOAnswerCell *) cell).choice = self.question.choices[indexPath.row];
     return cell;
 }
 
--(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    CJOAnswerCell * cell = (CJOAnswerCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"AnswerImageCell" forIndexPath:indexPath];
+-(void)tableView:(UITableView *)tableView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    CJOAnswerCell * cell = (CJOAnswerCell *)[tableView cellForRowAtIndexPath:indexPath];
     CJOChoice * choice = cell.choice;
 
     if(choice.nextid) {
@@ -68,17 +68,41 @@
 -(CJOTree *) identifiedTree: (CJOChoice *) choice {
     return nil;
 }
-
-//We'll reduce the height if there's no image to display
-/*
--(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return CGSizeMake(320, 158);
+    CJOChoice * choice = self.question.choices[indexPath.row];
+    UIImage * choiceImage = [self imageForIndexPath:indexPath];
+    int height = 0;
+    if(choiceImage) {
+        height += 75;
+    }
+    
+    CGRect textSize = [self measureText:choice.text withFont:[UIFont systemFontOfSize:17] andWidth:280];
+    height += textSize.size.height;
+    
+    // Include room for spacing
+    height += 48;
+    
+    return height;
 }
 
--(NSString *) imageForIndexPath:(NSIndexPath *) indexPath {
-    return nil;
+-(CGRect) measureText:(NSString *) text withFont:(UIFont *) font andWidth:(CGFloat)width{
+    NSDictionary * attributes = @{ NSFontAttributeName: font };
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:text attributes:attributes];
+    return [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
 }
-*/
+
+-(UIImage *) imageForIndexPath:(NSIndexPath *) indexPath {
+    NSString * imageIndex = @"";
+    if(indexPath.row == 0) {
+        imageIndex = @"a";
+    }
+    else if (indexPath.row == 1) {
+        imageIndex = @"b";
+    }
+    NSString * imageName = [NSString stringWithFormat:@"Assets/%@%@", self.question.id, imageIndex];
+    return [UIImage imageNamed:imageName];
+}
+
 
 @end

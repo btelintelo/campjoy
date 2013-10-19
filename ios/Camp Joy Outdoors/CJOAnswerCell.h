@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CJOChoice.h"
 
-@interface CJOAnswerCell : UICollectionViewCell
+@interface CJOAnswerCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UILabel *answerText;
 @property (strong, nonatomic) CJOChoice * choice;
