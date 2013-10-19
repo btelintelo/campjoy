@@ -7,14 +7,14 @@
         "sciname": "Quercus imbricaria",
         "family": "Beech Family (Fagaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"70'"},
+        {"Height":"80'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Spreading"},
+        {"Soil Type":"Moist, well drained"},
+        {"Leaf Shape":"3\" to 6\" oval"},
+        {"Life Span":"100 to 250 years"}
         ]
     },
     {
@@ -24,14 +24,14 @@
         "sciname": "Fraxinus americana",
         "family": "Olive Family",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"40' - 50'"},
+        {"Height":"50' - 80'"},
+        {"Growth Rate":"1' -2'+ per year"},
+        {"Sun":"Full"},
+        {"Shape":"Oval Shape"},
+        {"Soil Type":"Well drained moist soil"},
+        {"Leaf Shape":"opposite, pinnately compound, and have 5 to 9 dark green leaflets"},
+        {"Life Span":"600+"}
         ]
     },
     {
@@ -41,14 +41,14 @@
         "sciname": "Tilia americana",
         "family": "Linden Family",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"30' to 50'"},
+        {"Height":"50' - 80'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full"},
+        {"Shape":"Rounded"},
+        {"Soil Type":"Moist - well drained soil"},
+        {"Leaf Shape":"Toothed heart-shaped ovate leaves, Alternating"},
+        {"Life Span":"100+"}
         ]
     },
     {
@@ -58,14 +58,14 @@
         "sciname": "Fagus grandifolia",
         "family": "Beech Family",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"40' - 70'"},
+        {"Height":"50' - 80'"},
+        {"Growth Rate":"Up to or less than 1' per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Rounded with Low branches"},
+        {"Soil Type":"Moist, Well-Drained Soil"},
+        {"Leaf Shape":"Alternating simple leaves with parallel veins leading to toothed edge. "},
+        {"Life Span":"300+"}
         ]
     },
     {
@@ -75,14 +75,14 @@
         "sciname": "Carpinus caroliniana",
         "family": "Birch Family (Betulaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"20'"},
+        {"Height":"20' - 30'"},
+        {"Growth Rate":"Up to or less than 1' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Round or Flat top"},
+        {"Soil Type":"Moist to Dry"},
+        {"Leaf Shape":"Toothed Simple Leaves, Oblong to Ovate, Narrow and alternating"},
+        {"Life Span":"100+"}
         ]
     },
     {
@@ -92,14 +92,14 @@
         "sciname": "Acer negundo",
         "family": "Maple Family (Acer)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"40'"},
+        {"Height":"30'"},
+        {"Growth Rate":"Over 2' per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Wide round"},
+        {"Soil Type":"Wide range of soil types"},
+        {"Leaf Shape":"Opposite pinnately  compound with 3 to 5 leaflets"},
+        {"Life Span":"100+"}
         ]
     },
     {
@@ -109,14 +109,14 @@
         "sciname": "Aesculus glabra",
         "family": "Horsechestnut Family (Hipeupockcastanaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"30'"},
+        {"Height":"60' - 80'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full to light shade"},
+        {"Shape":"Oval"},
+        {"Soil Type":"Moist, well Drained"},
+        {"Leaf Shape":"Opposite, palmately compound leaves, normally 5 leaflets"},
+        {"Life Span":"250+"}
         ]
     },
     {
@@ -126,14 +126,14 @@
         "sciname": "Prunus serotina",
         "family": "Rose Family (Cherry)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"30'"},
+        {"Height":"60' to 80'"},
+        {"Growth Rate":"2' + per year"},
+        {"Sun":"Full"},
+        {"Shape":"Oval"},
+        {"Soil Type":"Deep rich moist, well drained soil"},
+        {"Leaf Shape":"Alternating simple leaves with fine serrations"},
+        {"Life Span":"250+"}
         ]
     },
     {
@@ -143,14 +143,14 @@
         "sciname": "Cornus florida",
         "family": "Dogwood Family (Cornaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"20'"},
+        {"Height":"15' - 30'"},
+        {"Growth Rate":"Up to or less than 2' per year"},
+        {"Sun":"Full to partial shade"},
+        {"Shape":"Round, horizontal branching"},
+        {"Soil Type":"Well drained soil"},
+        {"Leaf Shape":"Opposite smooth ovate simple leaves with parallel veins. "},
+        {"Life Span":"100+"}
         ]
     },
     {
@@ -160,14 +160,14 @@
         "sciname": "Ulmus americana",
         "family": "Elm Family (Ulmaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"75' - 80'"},
+        {"Height":"60' - 80'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full to partial shade"},
+        {"Shape":"Vase-shaped"},
+        {"Soil Type":"Rich, moist soil"},
+        {"Leaf Shape":"Alternating asymmetrical leaves with defiant veins that lead to toothed edge"},
+        {"Life Span":"250+"}
         ]
     },
     {
@@ -177,14 +177,14 @@
         "sciname": "Carya cordiformis",
         "family": "Walnut Family (Juglandaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"35'"},
+        {"Height":"70' - 75'"},
+        {"Growth Rate":"Up to or less than 2'"},
+        {"Sun":"Full"},
+        {"Shape":"Slender, Cone"},
+        {"Soil Type":"Variety of soil"},
+        {"Leaf Shape":"Alternating compound pinnately, with 5 to 11 leaflets "},
+        {"Life Span":"250+"}
         ]
     },
     {
@@ -194,14 +194,14 @@
         "sciname": "Carya ovata",
         "family": "Walnut Family (Juglandaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"40'"},
+        {"Height":"60' - 100'"},
+        {"Growth Rate":"Up to or less than 2' per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Conincal"},
+        {"Soil Type":"Dry to moist well drained soil"},
+        {"Leaf Shape":"Alternating pinnately compound with 7 to 9 leaflets "},
+        {"Life Span":"250 - 300"}
         ]
     },
     {
@@ -211,14 +211,14 @@
         "sciname": "Robinia pseudoacacia",
         "family": "Bean Family (Fabaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"25'"},
+        {"Height":"40' - 60'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Conical"},
+        {"Soil Type":"Dry to moist well drained soil"},
+        {"Leaf Shape":"Alternating compound pinnate leaves with smooth margins. "},
+        {"Life Span":"Up to 100 years"}
         ]
     },
     {
@@ -228,14 +228,14 @@
         "sciname": "Gleditsia triacanthos",
         "family": "Bean Family (Fabaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"30' - 60'"},
+        {"Height":"30' - 70'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full Sun"},
+        {"Shape":"Round to Oval"},
+        {"Soil Type":"Variety of soils"},
+        {"Leaf Shape":"Compound pinnate or bipinnate with 8 to 14 small leaflets"},
+        {"Life Span":"100 - 250 years"}
         ]
     },
     {
@@ -245,14 +245,14 @@
         "sciname": "Acer rubrum",
         "family": "Maple Family (Aceraceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"40'"},
+        {"Height":"40' - 70'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Round"},
+        {"Soil Type":"Moist to wet soil"},
+        {"Leaf Shape":"Opposite petioles, with five lobes (two very small basal lobes ) or with three lobes"},
+        {"Life Span":"100 - 300 years"}
         ]
     },
     {
@@ -262,14 +262,14 @@
         "sciname": "Acer saccharum",
         "family": "Maple Family (Aceraceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"40'"},
+        {"Height":"60' - 80'"},
+        {"Growth Rate":"Up to or less than 1' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Oval"},
+        {"Soil Type":"Deep moist well drained soil"},
+        {"Leaf Shape":"Opposite, petiole,with five lobes, each with sparsely incised or toothed."},
+        {"Life Span":"250 - 400 years"}
         ]
     },
     {
@@ -279,14 +279,14 @@
         "sciname": "Morus Rubra",
         "family": "Mulberry Family (Moraceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"50'"},
+        {"Height":"50' to 70'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Partial Shade"},
+        {"Shape":"Rounded"},
+        {"Soil Type":"Varios soil types"},
+        {"Leaf Shape":"Alternate, leafs range from oval o multi lobed"},
+        {"Life Span":"100 to 250 years"}
         ]
     },
     {
@@ -296,14 +296,14 @@
         "sciname": "Quercus muehlenbergii",
         "family": "Beech Family (Fagaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"80'"},
+        {"Height":"60'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Spreading"},
+        {"Soil Type":"Moist, alkaline"},
+        {"Leaf Shape":"Rounded with small teeth"},
+        {"Life Span":"250+ year"}
         ]
     },
     {
@@ -313,14 +313,14 @@
         "sciname": "Quercus palustris",
         "family": "Beech Family (Fagaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"40'"},
+        {"Height":"70' to 100'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Pyramidal"},
+        {"Soil Type":"Acidic and moist"},
+        {"Leaf Shape":"Broad with 4 to 7 lobs"},
+        {"Life Span":"100 to 250 years"}
         ]
     },
     {
@@ -330,14 +330,14 @@
         "sciname": "Quercus rubra",
         "family": "Beech Family (Fagaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"70'"},
+        {"Height":"60'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Rounded"},
+        {"Soil Type":"Moist"},
+        {"Leaf Shape":"Alternate, 7 to 10 sharp points along the side"},
+        {"Life Span":"250+ years"}
         ]
     },
     {
@@ -347,14 +347,14 @@
         "sciname": "Quercus alba",
         "family": "Beech Family (Fagaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"70'"},
+        {"Height":"100'"},
+        {"Growth Rate":"Less than 1' per year"},
+        {"Sun":"Full"},
+        {"Shape":"Spreading"},
+        {"Soil Type":"Well-drained, Acidic"},
+        {"Leaf Shape":"Alternating. Finger like bumps on each side"},
+        {"Life Span":"250+ years"}
         ]
     },
     {
@@ -364,14 +364,14 @@
         "sciname": "Maclura pomifera",
         "family": "Mulberry Family (Moraceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"40'"},
+        {"Height":"40'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Spreading"},
+        {"Soil Type":"Various soil types"},
+        {"Leaf Shape":"Alternate elliptical leaves"},
+        {"Life Span":"250+ years"}
         ]
     },
     {
@@ -381,14 +381,14 @@
         "sciname": "Asimina triloba",
         "family": "Annona Family (Annonaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"15'"},
+        {"Height":"20'"},
+        {"Growth Rate":"Up to 2' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Pyramidal"},
+        {"Soil Type":"Moist, well drained, rich"},
+        {"Leaf Shape":"Large blade like"},
+        {"Life Span":"Less than 100 years"}
         ]
     },
     {
@@ -398,14 +398,14 @@
         "sciname": "Cercis canadensis",
         "family": "Bean Family (Fabaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"10'"},
+        {"Height":"30'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Rounded"},
+        {"Soil Type":"It is found in various types"},
+        {"Leaf Shape":"Alternate heart shape"},
+        {"Life Span":"Less than 100 years"}
         ]
     },
     {
@@ -415,14 +415,14 @@
         "sciname": "Sassafras albidum",
         "family": "Laurel Family (Lauraceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"30'"},
+        {"Height":"50' to 75'"},
+        {"Growth Rate":"1' t 2' +per year"},
+        {"Sun":"Full to partial sun"},
+        {"Shape":"rounded"},
+        {"Soil Type":"Moist, acidic and well drained"},
+        {"Leaf Shape":"Three different types. Oval, mitten and Ghost shaped."},
+        {"Life Span":"100 to 250 years"}
         ]
     },
     {
@@ -432,13 +432,13 @@
         "sciname": "Liquidambar styraciflua",
         "family": "Witchhazel Family (Hamamelidaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
+        {"Width(spread)":"30'"},
+        {"Height":"80'"},
+        {"Growth Rate":"1' to 2'+ per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Pyramidal"},
+        {"Soil Type":"Moist, slightly acidic"},
+        {"Leaf Shape":"Alternating, Star shaped"},
         {"Life Span":""}
         ]
     },
@@ -449,14 +449,14 @@
         "sciname": "Platanus occidentalis",
         "family": "Plane Tree Family (Platanaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"60'"},
+        {"Height":"100'"},
+        {"Growth Rate":"1' to 2'+ per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Open Massive Crown"},
+        {"Soil Type":"Moist, well drained"},
+        {"Leaf Shape":"Large broad alternating "},
+        {"Life Span":"250+ years"}
         ]
     },
     {
@@ -466,14 +466,14 @@
         "sciname": "Liriodendron tulipifera",
         "family": "Magnolia Family (Magnoliaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"40'"},
+        {"Height":"150'"},
+        {"Growth Rate":"2'+ a year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Symmetrical. Pyramidal"},
+        {"Soil Type":"Moist well-drained, slightly acidic, and rich"},
+        {"Leaf Shape":"Large alternating "},
+        {"Life Span":"100 to 250 years"}
         ]
     },
     {
@@ -483,14 +483,14 @@
         "sciname": "Juglans nigra",
         "family": "Walnut Family (Juglandaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"70'"},
+        {"Height":"130'"},
+        {"Growth Rate":"2'+ a year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Upright rounded"},
+        {"Soil Type":"Deep. Moist, Rich, Well drained"},
+        {"Leaf Shape":"Alternate Compound"},
+        {"Life Span":"100 to 250 years"}
         ]
     },
     {
@@ -500,14 +500,14 @@
         "sciname": "Salix nigra",
         "family": "Willow Family (Salicaceae)",
         "tableData":[
-        {"Width(spread)":""},
-        {"Height":""},
-        {"Growth Rate":""},
-        {"Sun":""},
-        {"Shape":""},
-        {"Soil Type":""},
-        {"Leaf Shape":""},
-        {"Life Span":""}
+        {"Width(spread)":"30'"},
+        {"Height":"60'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Spreading irregular crown"},
+        {"Soil Type":"Moist, poorly drained"},
+        {"Leaf Shape":"Alternate, thin light green with a small pitole"},
+        {"Life Span":"Less than 100 years"}
         ]
     }
     ]
