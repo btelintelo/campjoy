@@ -50,6 +50,10 @@
     [self configureCarousel];
 }
 
+- (IBAction)done:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 - (void) configureCarousel {
 
 }
