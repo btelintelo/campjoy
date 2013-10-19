@@ -7,7 +7,6 @@
 //
 
 #import "CJOJSONParser.h"
-#import "JSONKit.h"
 #import "CJOQuestion.h"
 #import "CJOGlossaryTerm.h"
 #import "CJOTree.h"
@@ -22,7 +21,8 @@
     NSString *path = [bundle pathForResource:@"questions" ofType:@"json"];
     
     NSData *jsonData = [NSData dataWithContentsOfFile: path];
-    NSDictionary *jsonObject = [jsonData objectFromJSONData];
+    
+    NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];
     NSArray *list = [jsonObject objectForKey:@"questions"];
     NSMutableArray *mutable = [NSMutableArray arrayWithCapacity:list.count];
     for(NSDictionary *dict in list)
@@ -48,8 +48,7 @@
     NSString *path = [bundle pathForResource:@"glossary" ofType:@"json"];
     
     NSData *jsonData = [NSData dataWithContentsOfFile: path];
-    NSDictionary *jsonObject = [jsonData objectFromJSONData];
-    NSArray *list = [jsonObject objectForKey:@"terms"];
+    NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];    NSArray *list = [jsonObject objectForKey:@"terms"];
     NSMutableArray *mutable = [NSMutableArray arrayWithCapacity:list.count];
     for(NSDictionary *dict in list)
     {
@@ -58,7 +57,7 @@
         [mutable addObject:terms];
     }
     return mutable;
-
+    
 }
 
 +(NSArray *)trees
@@ -67,8 +66,7 @@
     NSString *path = [bundle pathForResource:@"trees" ofType:@"json"];
     
     NSData *jsonData = [NSData dataWithContentsOfFile: path];
-    NSDictionary *jsonObject = [jsonData objectFromJSONData];
-    NSArray *list = [jsonObject objectForKey:@"trees"];
+    NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:nil];    NSArray *list = [jsonObject objectForKey:@"trees"];
     NSMutableArray *mutable = [NSMutableArray arrayWithCapacity:list.count];
     for(NSDictionary *dict in list)
     {
