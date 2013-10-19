@@ -1,1 +1,2 @@
 pod 'MWPhotoBrowser', '~>1.1.3'
+pod 'iCarousel'
