@@ -33,23 +33,23 @@ public class MainActivity extends Activity {
 		});
 		
 		
-//		final Intent about = new Intent(this, AboutActivity.class);
-//		aboutImgView = (ImageView) findViewById(R.id.imageAbout);
-//		aboutImgView.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				startActivity(about);
-//			}
-//		});
-//		
-//		final Intent treeBrowser = new Intent(this, TreeInfoActivity.class);
-//		treeBrowserImgView = (ImageView) findViewById(R.id.imageTreeBrowser);
-//		treeBrowserImgView.setOnClickListener(new View.OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				startActivity(treeBrowser);
-//			}
-//		});
+		final Intent about = new Intent(this, AboutActivity.class);
+		aboutImgView = (ImageView) findViewById(R.id.imageAbout);
+		aboutImgView.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(about);
+			}
+		});
+		
+		final Intent treeBrowser = new Intent(this, TreeInfoActivity.class);
+		treeBrowserImgView = (ImageView) findViewById(R.id.imageTreeBrowser);
+		treeBrowserImgView.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startActivity(treeBrowser);
+			}
+		});
 		
 	}
 

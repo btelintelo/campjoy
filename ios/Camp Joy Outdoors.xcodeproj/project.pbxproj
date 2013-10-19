@@ -114,6 +114,7 @@
 		4252C3C0180F8888001F86F5 /* Camp Joy OutdoorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Camp Joy OutdoorsTests-Info.plist"; sourceTree = "<group>"; };
 		4252C3C2180F8888001F86F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4252C3C4180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camp_Joy_OutdoorsTests.m; sourceTree = "<group>"; };
+		4290D7EA1812F5AC00B8057A /* CJOConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOConstants.h; sourceTree = "<group>"; };
 		42EA2F501812C139007BB93B /* UIView+FrameSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameSize.h"; sourceTree = "<group>"; };
 		42EA2F511812C139007BB93B /* UIView+FrameSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameSize.m"; sourceTree = "<group>"; };
 		73C95832BE124778979EB613 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -273,6 +274,7 @@
 		4252C399180F8888001F86F5 /* Camp Joy Outdoors */ = {
 			isa = PBXGroup;
 			children = (
+				4290D7E91812F58600B8057A /* Utilities */,
 				42EA2F4F1812C110007BB93B /* Categories */,
 				4250A916181220D900F2F282 /* Views */,
 				4250A915181220C900F2F282 /* Classes */,
@@ -312,6 +314,14 @@
 				4252C3C1180F8888001F86F5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4290D7E91812F58600B8057A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4290D7EA1812F5AC00B8057A /* CJOConstants.h */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		42EA2F4F1812C110007BB93B /* Categories */ = {

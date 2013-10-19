@@ -10,6 +10,7 @@
 #import "CJOAnswerCell.h"
 #import "CJOTree.h"
 #import "CJOTreeInfoViewController.h"
+#import "CJOModel.h"
 
 @interface CJOQuestionViewController ()
 
@@ -51,10 +52,8 @@
     CJOChoice * choice = cell.choice;
 
     if(choice.nextid) {
-        [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
-        
-//        [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
-    } else if(choice.treeid || YES) {
+        [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
+    } else if(choice.treeid) {
         [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
     }
 }
@@ -71,11 +70,11 @@
 }
 
 -(CJOQuestion *) nextQuestion: (CJOChoice *) choice {
-    return self.question;
+    return [CJOModel findQuestionById:choice.nextid];
 }
 
 -(CJOTree *) identifiedTree: (CJOChoice *) choice {
-    return nil;
+    return [CJOModel findTreeById:choice.treeid];
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
