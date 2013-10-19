@@ -29,12 +29,10 @@
 
 - (void)resizeHeaderViewsForDescriptionText
 {
-//    [self.descriptionTextView sizeToFit];
-    CGSize descriptionSize = [self.tree.description sizeWithAttributes:@{NSFontAttributeName: self.descriptionTextView.font}];
-                              
-//                              [self.tree.description sizeWithFont:self.descriptionTextView.font forWidth:self.descriptionTextView.bounds.size.width lineBreakMode:NSLineBreakByWordWrapping];
-    self.descriptionHeightConstraint.constant = descriptionSize.height + 20;
-    self.tableView.tableHeaderView.bounds = CGRectMake(0, 0, self.tableView.bounds.size.width, descriptionSize.height + self.carousel.bounds.size.height + 10);
+
+    CGFloat descriptionHeight = [self heightForTextView:self.descriptionTextView];
+    self.descriptionHeightConstraint.constant = descriptionHeight;
+    self.tableView.tableHeaderView.bounds = CGRectMake(0, 0, self.tableView.bounds.size.width, descriptionHeight + self.carousel.bounds.size.height + 10);
 }
 
 - (void)viewDidLoad
@@ -47,8 +45,6 @@
     self.descriptionTextView.text = self.tree.description;
 
     [self resizeHeaderViewsForDescriptionText];
-
-	// Do any additional setup after loading the view.
 }
 
 #pragma mark - UITableViewDataSource;
@@ -80,6 +76,45 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Utilities
+- (CGFloat)heightForTextView:(UITextView *)textView {
+    CGRect frame = textView.bounds;
+    
+    // Take account of the padding added around the text.
+    
+    UIEdgeInsets textContainerInsets = textView.textContainerInset;
+    UIEdgeInsets contentInsets = textView.contentInset;
+    
+    CGFloat leftRightPadding = textContainerInsets.left + textContainerInsets.right + textView.textContainer.lineFragmentPadding * 2 + contentInsets.left + contentInsets.right;
+    CGFloat topBottomPadding = textContainerInsets.top + textContainerInsets.bottom + contentInsets.top + contentInsets.bottom;
+    
+    frame.size.width -= leftRightPadding;
+    frame.size.height -= topBottomPadding;
+    
+    NSString *textToMeasure = textView.text;
+    if ([textToMeasure hasSuffix:@"\n"])
+    {
+        textToMeasure = [NSString stringWithFormat:@"%@-", textView.text];
+    }
+    
+    // NSString class method: boundingRectWithSize:options:attributes:context is
+    // available only on ios7.0 sdk.
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineBreakMode:NSLineBreakByWordWrapping];
+    
+    NSDictionary *attributes = @{ NSFontAttributeName: textView.font, NSParagraphStyleAttributeName : paragraphStyle };
+    
+    CGRect size = [textToMeasure boundingRectWithSize:CGSizeMake(CGRectGetWidth(frame), MAXFLOAT)
+                                              options:NSStringDrawingUsesLineFragmentOrigin
+                                           attributes:attributes
+                                              context:nil];
+    
+    CGFloat measuredHeight = ceilf(CGRectGetHeight(size) + topBottomPadding);
+    return measuredHeight+8.0f;
+    
 }
 
 @end

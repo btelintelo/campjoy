@@ -41,7 +41,6 @@
 		4252C3BB180F8888001F86F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4252C397180F8888001F86F5 /* UIKit.framework */; };
 		4252C3C3180F8888001F86F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4252C3C1180F8888001F86F5 /* InfoPlist.strings */; };
 		4252C3C5180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4252C3C4180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m */; };
-		42EA2F4E1812ADAF007BB93B /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 42EA2F4D1812ADAF007BB93B /* Assets */; };
 		42EA2F521812C139007BB93B /* UIView+FrameSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA2F511812C139007BB93B /* UIView+FrameSize.m */; };
 		5506317E969D4A2890B04CD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D17A9345361743DFB82FFB8A /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -110,7 +109,6 @@
 		4252C3C0180F8888001F86F5 /* Camp Joy OutdoorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Camp Joy OutdoorsTests-Info.plist"; sourceTree = "<group>"; };
 		4252C3C2180F8888001F86F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4252C3C4180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camp_Joy_OutdoorsTests.m; sourceTree = "<group>"; };
-		42EA2F4D1812ADAF007BB93B /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		42EA2F501812C139007BB93B /* UIView+FrameSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameSize.h"; sourceTree = "<group>"; };
 		42EA2F511812C139007BB93B /* UIView+FrameSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameSize.m"; sourceTree = "<group>"; };
 		73C95832BE124778979EB613 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -260,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				42EA2F4F1812C110007BB93B /* Categories */,
-				42EA2F4D1812ADAF007BB93B /* Assets */,
 				4250A916181220D900F2F282 /* Views */,
 				4250A915181220C900F2F282 /* Classes */,
 				42405B6718121F4400292674 /* Model */,
@@ -394,7 +391,6 @@
 				42405B7B18122F7200292674 /* glossary.json in Resources */,
 				42405B7D18122F7200292674 /* trees.json in Resources */,
 				4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */,
-				42EA2F4E1812ADAF007BB93B /* Assets in Resources */,
 				4252C3AA180F8888001F86F5 /* Main_iPad.storyboard in Resources */,
 				4252C3B2180F8888001F86F5 /* Images.xcassets in Resources */,
 				4252C3A7180F8888001F86F5 /* Main_iPhone.storyboard in Resources */,
