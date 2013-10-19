@@ -63,4 +63,44 @@ public class Question {
 		
 		return result.toString();
 	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+
+	public String getNextid() {
+		return nextid;
+	}
+
+	public void setNextid(String nextid) {
+		this.nextid = nextid;
+	}
+
+	public String getTreeid() {
+		return treeid;
+	}
+
+	public void setTreeid(String treeid) {
+		this.treeid = treeid;
+	}
+
+	public String[] getImageArray() {
+		return imageArray;
+	}
+
+	public void setImageArray(String[] imageArray) {
+		this.imageArray = imageArray;
+	}
 }
