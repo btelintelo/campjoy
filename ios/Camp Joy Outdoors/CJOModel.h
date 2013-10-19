@@ -10,4 +10,8 @@
 
 @interface CJOModel : NSObject
 
++(NSArray *) questions;
++(NSArray *) trees;
++(NSArray *) terms;
+
 @end
