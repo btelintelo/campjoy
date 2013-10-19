@@ -69,7 +69,12 @@ public class Tree {
 	public String getFamily() {
 		return family;
 	}
-
+	
+	public HashMap<String, String> getTable()
+	{
+		return table;
+	}
+	
 	@Override
 	public String toString() {
 		StringBuilder result = new StringBuilder();

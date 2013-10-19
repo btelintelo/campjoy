@@ -15,12 +15,22 @@ import android.util.Log;
 public class TreeModel extends BaseModel {
 	private static final String LOG_TAG = TreeModel.class.getSimpleName();
 
+	private static TreeModel instance;
 	private HashMap<String, Tree> trees = new HashMap<String, Tree>();
 
 	public TreeModel(Context applicationContext)
 	{
 		super(applicationContext, "trees.json");
 	}
+	
+	public static TreeModel getInstance(Context applicationContext) {
+		if(instance ==null)
+		{
+			instance = new TreeModel(applicationContext);
+		}
+		return instance;
+	}
+	
 	
 	@Override
 	protected void parseJson(String json)
@@ -40,7 +50,7 @@ public class TreeModel extends BaseModel {
 		}
 	}
 	
-	public Tree getTreeById(String treeId)
+	public Tree getTreeById(int i)
 	{
 		Tree result = null;
 		
@@ -48,7 +58,7 @@ public class TreeModel extends BaseModel {
 	    while (it.hasNext()) {
 	    	
 	    	Map.Entry<String, Tree> treePair = (Map.Entry<String, Tree>)it.next();
-	    	if(treePair.getKey().equalsIgnoreCase(treeId))
+	    	if(treePair.getKey().equalsIgnoreCase(String.valueOf(i)))
 	    	{
 	    		return treePair.getValue();
 	    	}
