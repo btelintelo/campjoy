@@ -29,6 +29,10 @@
     return self;
 }
 
+-(void)viewDidLoad {
+    self.tableView.contentInset = UIEdgeInsetsMake(-36, 0, 0, 0);
+}
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -109,7 +113,7 @@
     else if (indexPath.row == 1) {
         imageIndex = @"b";
     }
-    NSString * imageName = [NSString stringWithFormat:@"Assets/%@%@", self.question.id, imageIndex];
+    NSString * imageName = [NSString stringWithFormat:@"images/dichotomy/%@%@", self.question.id, imageIndex];
     return [UIImage imageNamed:imageName];
 }
 

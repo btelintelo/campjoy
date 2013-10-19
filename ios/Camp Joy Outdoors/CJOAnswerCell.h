@@ -15,5 +15,7 @@
 @property (strong, nonatomic) UIImage * choiceImage;
 @property (strong, nonatomic) CJOChoice * choice;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *textHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageWidthConstraint;
+
 
 @end
