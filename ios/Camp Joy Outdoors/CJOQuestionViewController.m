@@ -11,6 +11,8 @@
 #import "CJOTree.h"
 #import "CJOTreeInfoViewController.h"
 #import "CJOModel.h"
+#import "CJOConstants.h"
+#import "CJOGlossaryDefinitionViewController.h"
 
 @interface CJOQuestionViewController ()
 

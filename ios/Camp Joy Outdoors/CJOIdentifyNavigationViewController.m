@@ -10,6 +10,8 @@
 #import "CJOQuestion.h"
 #import "CJOQuestionViewController.h"
 #import "CJOModel.h"
+#import "CJOConstants.h"
+#import "CJOGlossaryDefinitionViewController.h"
 
 @interface CJOIdentifyNavigationViewController ()
 
@@ -36,6 +38,17 @@
     // set question on root view controller
     CJOQuestionViewController * rootViewController = (CJOQuestionViewController *)self.viewControllers[0];
     rootViewController.question = initialQuestion;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleGlossaryNotification:) name:SHOW_GLOSSARY_NOTIFICATION object:nil];
+}
+
+-(void)handleGlossaryNotification:(NSNotification *) notification {
+    NSDictionary * userInfo = notification.userInfo;
+    NSString * term = userInfo[@"term"];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        CJOGlossaryDefinitionViewController * definitionViewController = [[CJOGlossaryDefinitionViewController alloc] init];
+        definitionViewController.word = term;
+        [self pushViewController:definitionViewController animated:YES];
+    });
 }
 
 - (void)didReceiveMemoryWarning

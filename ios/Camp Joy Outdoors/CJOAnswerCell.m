@@ -24,16 +24,22 @@
 
 -(void)layoutSubviews {
     NSArray * glossaryTerms = [CJOModel termStrings];
-    self.textHeightConstraint.constant = self.answerText.contentSize.height;
-    
     self.answerText.attributedText = [self matchTerms:glossaryTerms inString:self.choice.text];
+    self.answerText.delegate = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.textHeightConstraint.constant = self.answerText.contentSize.height;
+    });
+    
 }
+
 
 -(NSAttributedString *) matchTerms:(NSArray *)terms inString:(NSString *)string {
     NSMutableAttributedString * matchedString = [[NSMutableAttributedString alloc] initWithString:string];
+    string = [string lowercaseString];
     [matchedString beginEditing];
     for(NSString *term in terms) {
-        NSArray * ranges = [self rangesOfString:term inString:string];
+        NSString *lowerTerm = [term lowercaseString];
+        NSArray * ranges = [self rangesOfString:lowerTerm inString:string];
         for(NSValue *value in ranges) {
             NSRange range = [value rangeValue];
             [matchedString addAttribute:NSLinkAttributeName value:[NSString stringWithFormat:@"identitree://glossary?term=%@", [term stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] range:range];
