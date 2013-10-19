@@ -39,6 +39,7 @@
                                             <rect key="frame" x="20" y="49" width="267" height="75"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="267" id="CLO-fl-xRl"/>
                                                 <constraint firstAttribute="height" constant="75" id="FhE-zO-I0i"/>
                                             </constraints>
                                         </imageView>
@@ -55,17 +56,16 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="Civ-QD-qK9" secondAttribute="trailing" constant="33" id="7wY-X7-g6C"/>
-                                        <constraint firstAttribute="trailing" secondItem="DeV-zj-BTb" secondAttribute="trailing" constant="33" id="H1f-Xx-bhn"/>
                                         <constraint firstItem="DeV-zj-BTb" firstAttribute="top" secondItem="Civ-QD-qK9" secondAttribute="bottom" constant="8" id="UaW-Hf-NxI"/>
                                         <constraint firstItem="Civ-QD-qK9" firstAttribute="leading" secondItem="q5r-Gf-uZY" secondAttribute="leading" constant="20" id="aqb-nS-VmL"/>
                                         <constraint firstAttribute="centerX" secondItem="DeV-zj-BTb" secondAttribute="centerX" constant="6.5" id="jYl-jj-mrD"/>
                                         <constraint firstItem="Civ-QD-qK9" firstAttribute="top" secondItem="q5r-Gf-uZY" secondAttribute="top" constant="20" id="n9P-F7-Pmw"/>
-                                        <constraint firstItem="DeV-zj-BTb" firstAttribute="leading" secondItem="q5r-Gf-uZY" secondAttribute="leading" constant="20" id="qrX-pP-n30"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="answerText" destination="Civ-QD-qK9" id="l9v-bo-kfQ"/>
                                     <outlet property="image" destination="DeV-zj-BTb" id="WzT-wt-cOE"/>
+                                    <outlet property="imageWidthConstraint" destination="CLO-fl-xRl" id="ucq-qK-S99"/>
                                     <outlet property="textHeightConstraint" destination="7dK-R4-TEL" id="tFf-4I-qIT"/>
                                 </connections>
                             </tableViewCell>
