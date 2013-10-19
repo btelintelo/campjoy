@@ -52,5 +52,13 @@ public abstract class FragmentActivityBase extends FragmentActivity {
 
 		tx.commit();
 	}
+	
+	protected void loadFragment(Fragment frag)
+	{
+		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
+
+		tx.replace(R.id.layout_fragment_container, frag);
+		tx.commit();	
+	}
 
 }
