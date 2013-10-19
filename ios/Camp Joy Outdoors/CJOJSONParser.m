@@ -11,6 +11,7 @@
 #import "CJOQuestion.h"
 #import "CJOGlossaryTerm.h"
 #import "CJOTree.h"
+#import "CJOChoice.h"
 
 
 @implementation CJOJSONParser
@@ -27,7 +28,15 @@
     for(NSDictionary *dict in list)
     {
         CJOQuestion *question = [[CJOQuestion alloc] init];
-        [question setValuesForKeysWithDictionary:dict];
+        question.id = [dict objectForKey:@"id"];
+        NSMutableArray *choices = [[NSMutableArray alloc] init];
+        for(NSDictionary *ch in [dict objectForKey:@"choices"])
+        {
+            CJOChoice *choice = [[CJOChoice alloc] init];
+            [choice setValuesForKeysWithDictionary:ch];
+            [choices addObject:choice];
+        }
+        question.choices = choices;
         [mutable addObject:question];
     }
     return mutable;
