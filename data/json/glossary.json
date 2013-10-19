@@ -38,7 +38,7 @@
 		{
 		    "name": "Fruit",
 		    "description": "The seed containing a pod, nut, samara, berry, or more traditional fleshy fruit (ie. apple or orange)",
-		    "image": "fruit.png"
+		    "image": "fruit_group.png"
 		},
 		{
 		    "name": "Furrows",
