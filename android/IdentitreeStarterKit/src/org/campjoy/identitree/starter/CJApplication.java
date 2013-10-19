@@ -1,9 +1,15 @@
 package org.campjoy.identitree.starter;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 import android.app.Application;
 import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.v4.app.FragmentActivity;
@@ -83,4 +89,17 @@ public class CJApplication extends Application{
 
 			return p.versionName;
 		}
+		
+		private Bitmap getBitmapFromAsset(String strName)
+	    {
+	        AssetManager assetManager = getAssets();
+	        InputStream istr = null;
+	        try {
+	            istr = assetManager.open(strName);
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	        Bitmap bitmap = BitmapFactory.decodeStream(istr);
+	        return bitmap;
+	    }
 }
