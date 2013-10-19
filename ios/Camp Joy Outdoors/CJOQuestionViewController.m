@@ -51,11 +51,11 @@
     CJOAnswerCell * cell = (CJOAnswerCell *)[tableView cellForRowAtIndexPath:indexPath];
     CJOChoice * choice = cell.choice;
 
-//    if(choice.nextid) {
-//        [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
-//    } else if(choice.treeid) {
+    if(choice.nextid) {
+        [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
+    } else if(choice.treeid) {
         [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
-//    }
+    }
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
