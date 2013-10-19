@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="3097" y="602"/>
         </scene>
-        <!--View Controller - Identify-->
+        <!--Identify View Controller - Identify-->
         <scene sceneID="oG9-8T-vRV">
             <objects>
-                <viewController id="NZw-aS-WO3" sceneMemberID="viewController">
+                <viewController id="NZw-aS-WO3" customClass="CJOIdentifyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sHi-GI-6jE"/>
                         <viewControllerLayoutGuide type="bottom" id="mop-7L-O51"/>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="3098" y="1736"/>
         </scene>
-        <!--View Controller - About Us-->
+        <!--About Us View Controller - About Us-->
         <scene sceneID="bpF-0e-7ty">
             <objects>
-                <viewController id="jxK-vs-Dzp" sceneMemberID="viewController">
+                <viewController id="jxK-vs-Dzp" customClass="CJOAboutUsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zao-xf-ZvE"/>
                         <viewControllerLayoutGuide type="bottom" id="T55-5I-9gr"/>
@@ -116,8 +116,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="NZw-aS-WO3" kind="relationship" relationship="viewControllers" id="vUl-6n-mcl"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="jxK-vs-Dzp" kind="relationship" relationship="viewControllers" id="24B-k7-kE2"/>
                     </connections>
                 </tabBarController>

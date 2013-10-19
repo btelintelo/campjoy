@@ -7,6 +7,7 @@
 //
 
 #import "CJOIdentifyViewController.h"
+#import "CJOUtilities.h"
 
 @interface CJOIdentifyViewController ()
 
@@ -17,7 +18,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    NSString * storyboardName = @"Identify_iPhone";
+    if([CJOUtilities isIPad]) {
+        storyboardName = @"Identify_iPad";
+    }
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
+    UIViewController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"IdentifyNavigationController"];
+    [self presentViewController:navigationController animated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

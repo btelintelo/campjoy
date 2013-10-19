@@ -1,5 +1,5 @@
 //
-//  CJOQuestionViewController.h
+//  CJOIdentifyNavigationViewController.h
 //  Camp Joy Outdoors
 //
 //  Created by Jeremy Spitzig on 10/18/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CJOQuestionViewController : UIViewController
+@interface CJOIdentifyNavigationViewController : UINavigationController
 
 @end
