@@ -40,7 +40,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tree = [CJOModel trees][0];
     self.imagesDataSource = [[CJOTreeImagesDataSource alloc] initWithTree:self.tree];
     self.carousel.dataSource = self.imagesDataSource;
     self.navigationItem.title = self.tree.name;
