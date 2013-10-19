@@ -31,6 +31,9 @@
 
 -(void)viewDidLoad {
     self.tableView.contentInset = UIEdgeInsetsMake(-36, 0, 0, 0);
+    if(self.hideRestartButton) {
+        self.navigationItem.rightBarButtonItem = nil;
+    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -44,6 +47,7 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AnswerImageCell"];
     ((CJOAnswerCell *) cell).choice = self.question.choices[indexPath.row];
     ((CJOAnswerCell *) cell).choiceImage = [self imageForIndexPath:indexPath];
+    ((CJOAnswerCell *) cell).tableView = tableView;
     return cell;
 }
 
@@ -63,6 +67,7 @@
         [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
     }
 }
+
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     CJOAnswerCell * cell = (CJOAnswerCell *) sender;
@@ -103,6 +108,10 @@
     NSDictionary * attributes = @{ NSFontAttributeName: font };
     NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:text attributes:attributes];
     return [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
+}
+
+- (IBAction)restartQuestions:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 -(UIImage *) imageForIndexPath:(NSIndexPath *) indexPath {

@@ -38,6 +38,7 @@
     // set question on root view controller
     CJOQuestionViewController * rootViewController = (CJOQuestionViewController *)self.viewControllers[0];
     rootViewController.question = initialQuestion;
+    rootViewController.hideRestartButton = YES;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleGlossaryNotification:) name:SHOW_GLOSSARY_NOTIFICATION object:nil];
 }
 
