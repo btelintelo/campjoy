@@ -9,6 +9,7 @@ import org.campjoy.identitree.starter.model.TreeModel;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -22,7 +23,14 @@ import android.widget.TextView;
 public class TreeInfoFragment extends FragmentBase{
 	LinearLayout myGallery;
 	Tree tree;
-	TextView treeDescription;
+	TextView treeDescription,imageCaption;
+	ImageView mapImage;
+	LinearLayout widthText, widthValue, heightText, heightValue;
+	LinearLayout gowthText, growthValue, sunText, sunValue;
+	LinearLayout shapeText, shapeValue,soilTypeText, soilTypeValue;
+	LinearLayout leafShapeText, leafShapeValue, lifeSpanText, lifeSpanValue;
+	
+	
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -41,13 +49,25 @@ public class TreeInfoFragment extends FragmentBase{
 		treeDescription = (TextView)v.findViewById(R.id.tree_description);
 		treeDescription.setText(tree.getDescription());
         myGallery = (LinearLayout)v.findViewById(R.id.mygallery);
-        
+        mapImage= (ImageView)v.findViewById(R.id.tree_map_image);
         //TODO remove hard code for tree name
                  
         myGallery.addView(insertPhoto("american_basswood_img_0107.jpg"));
         myGallery.addView(insertPhoto("american_basswood_imgp8744.jpg"));
         myGallery.addView(insertPhoto("american_basswood_imgp8745.jpg"));
         myGallery.addView(insertPhoto("american_basswood_imgp8867.jpg"));
+        
+        imageCaption = (TextView)v.findViewById(R.id.image_caption);
+        imageCaption.setText(tree.getName() + " - " + tree.getScientificName() + "(" + tree.getFamily() + ")");
+        
+       try {
+        	mapImage.setBackgroundDrawable(Drawable.createFromStream(getActivity().getAssets().open("american_basswood_map.jpg"), null));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
+        
 		}
         
         return v;

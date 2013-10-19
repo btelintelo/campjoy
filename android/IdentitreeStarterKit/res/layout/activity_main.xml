@@ -16,31 +16,30 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="59dp"
         android:text="@string/text_question" />
-    
-    <TextView 
-        android:id="@+id/main_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_question"
-        android:layout_alignParentRight="true"
-        android:text="Buds are almond size, thick and scaly"/>
 
-    <ImageButton
-        android:id="@+id/imageTreeBrowser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="44dp"
-        android:layout_marginRight="36dp"
-        android:src="@android:drawable/btn_star" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/imageAbout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button_question"
-        android:layout_alignTop="@+id/imageTreeBrowser"
-        android:src="@android:drawable/btn_star" />
+        <ImageButton
+            android:id="@+id/imageTreeBrowser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/imageGlossary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star" />
+
+        <ImageButton
+            android:id="@+id/imageAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star" />
+    </LinearLayout>
 
 </RelativeLayout>
