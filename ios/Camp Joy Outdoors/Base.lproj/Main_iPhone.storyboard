@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -16,20 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Wi-B1-fbz">
-                                <rect key="frame" x="12" y="256" width="280" height="177"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Wi-B1-fbz">
+                                <rect key="frame" x="12" y="313" width="280" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="JMo-AF-Li2"/>
+                                    <constraint firstAttribute="width" constant="280" id="wr0-Nb-kBp"/>
+                                </constraints>
                                 <string key="text">Since 1938, we have been focused on making a difference in people's lives. That's why even today our mission is to "Help people grow and succeed through life-long, experience-based learning." </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="campjoy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NtI-sp-N70">
-                                <rect key="frame" x="87" y="120" width="130" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campjoy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NtI-sp-N70">
+                                <rect key="frame" x="72" y="120" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZU-bb-Y3N">
-                                <rect key="frame" x="20" y="28" width="280" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZU-bb-Y3N">
+                                <rect key="frame" x="81" y="28" width="159" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Tree Identification">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -41,10 +45,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pZU-bb-Y3N" firstAttribute="top" secondItem="Cpf-5d-uRB" secondAttribute="bottom" id="Fwp-bc-Um4"/>
-                            <constraint firstItem="Ked-8b-9Xk" firstAttribute="top" secondItem="9Wi-B1-fbz" secondAttribute="bottom" constant="8" id="P1T-DK-m78"/>
-                            <constraint firstItem="pZU-bb-Y3N" firstAttribute="top" secondItem="Cpf-5d-uRB" secondAttribute="bottom" constant="8" id="dfV-Hl-86s"/>
-                            <constraint firstAttribute="trailing" secondItem="9Wi-B1-fbz" secondAttribute="trailing" constant="20" id="eJq-6Y-bVb"/>
+                            <constraint firstItem="9Wi-B1-fbz" firstAttribute="centerX" secondItem="NtI-sp-N70" secondAttribute="centerX" id="7eb-Dj-4bt"/>
+                            <constraint firstItem="pZU-bb-Y3N" firstAttribute="top" secondItem="Cpf-5d-uRB" secondAttribute="bottom" constant="8" id="Fwp-bc-Um4"/>
+                            <constraint firstItem="NtI-sp-N70" firstAttribute="top" secondItem="pZU-bb-Y3N" secondAttribute="bottom" constant="62" id="Nfv-3L-DQU"/>
+                            <constraint firstItem="9Wi-B1-fbz" firstAttribute="top" secondItem="NtI-sp-N70" secondAttribute="bottom" constant="33" id="QWf-c7-udC"/>
+                            <constraint firstAttribute="centerX" secondItem="NtI-sp-N70" secondAttribute="centerX" constant="8" id="a0w-dW-nUy"/>
                             <constraint firstAttribute="centerX" secondItem="pZU-bb-Y3N" secondAttribute="centerX" id="riL-Kv-JKx"/>
                         </constraints>
                     </view>
@@ -160,6 +165,7 @@
     </scenes>
     <resources>
         <image name="about" width="26" height="26"/>
+        <image name="campjoy.jpg" width="160" height="160"/>
         <image name="campjoy.jpg" width="160" height="160"/>
         <image name="glossary" width="24" height="22"/>
         <image name="home" width="27" height="26"/>
