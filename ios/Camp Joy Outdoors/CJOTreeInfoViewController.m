@@ -29,9 +29,11 @@
 
 - (void)resizeHeaderViewsForDescriptionText
 {
-    [self.descriptionTextView sizeToFit];
-    CGSize descriptionSize = [self.tree.description sizeWithFont:self.descriptionTextView.font forWidth:self.descriptionTextView.bounds.size.width lineBreakMode:NSLineBreakByWordWrapping];
-    self.descriptionHeightConstraint.constant = descriptionSize.height;
+//    [self.descriptionTextView sizeToFit];
+    CGSize descriptionSize = [self.tree.description sizeWithAttributes:@{NSFontAttributeName: self.descriptionTextView.font}];
+                              
+//                              [self.tree.description sizeWithFont:self.descriptionTextView.font forWidth:self.descriptionTextView.bounds.size.width lineBreakMode:NSLineBreakByWordWrapping];
+    self.descriptionHeightConstraint.constant = descriptionSize.height + 20;
     self.tableView.tableHeaderView.bounds = CGRectMake(0, 0, self.tableView.bounds.size.width, descriptionSize.height + self.carousel.bounds.size.height + 10);
 }
 

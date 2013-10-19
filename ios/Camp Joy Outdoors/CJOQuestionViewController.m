@@ -44,7 +44,9 @@
     return 0;
 }
 
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+
     CJOAnswerCell * cell = (CJOAnswerCell *)[tableView cellForRowAtIndexPath:indexPath];
     CJOChoice * choice = cell.choice;
 
@@ -79,16 +81,15 @@
     
     CJOChoice * choice = self.question.choices[indexPath.row];
     UIImage * choiceImage = [self imageForIndexPath:indexPath];
-    int height = 0;
+    
+    // Include room for spacing
+    int height = 48;
     if(choiceImage) {
         height += 75;
     }
     
     CGRect textSize = [self measureText:choice.text withFont:[UIFont systemFontOfSize:17] andWidth:280];
     height += textSize.size.height;
-    
-    // Include room for spacing
-    height += 48;
     
     return height;
 }

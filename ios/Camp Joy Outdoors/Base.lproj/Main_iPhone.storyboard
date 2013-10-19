@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="u1e-5L-l1D"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Identify" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="Identify" image="identify" id="Z7h-1E-pvt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Glossary" id="2Kh-Qb-xm3"/>
+                    <tabBarItem key="tabBarItem" title="Glossary" image="glossary" id="2Kh-Qb-xm3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yMn-qL-mm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,7 +74,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About Us" id="g7P-Er-2LT"/>
+                    <tabBarItem key="tabBarItem" title="About Us" image="about" id="g7P-Er-2LT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuR-Go-za3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,6 +102,12 @@
             <point key="canvasLocation" x="132" y="180"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="about" width="26" height="26"/>
+        <image name="glossary" width="24" height="22"/>
+        <image name="home" width="27" height="26"/>
+        <image name="identify" width="24" height="24"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
