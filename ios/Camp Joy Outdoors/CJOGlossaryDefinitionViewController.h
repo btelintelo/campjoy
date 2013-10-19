@@ -10,4 +10,5 @@
 
 @interface CJOGlossaryDefinitionViewController : UIViewController
 @property (copy, nonatomic) NSString *word;
+
 @end
