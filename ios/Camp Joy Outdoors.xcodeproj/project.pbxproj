@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09939F3D1812F73D0043AFCD /* glossary_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09939F3C1812F73D0043AFCD /* glossary_iPhone.storyboard */; };
+		09939F401812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09939F3F1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m */; };
 		42405B6A18121F7800292674 /* CJOQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B6918121F7800292674 /* CJOQuestion.m */; };
 		42405B6D18121F8500292674 /* CJOTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B6C18121F8500292674 /* CJOTree.m */; };
 		42405B7018121F9600292674 /* CJOGlossaryTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B6F18121F9600292674 /* CJOGlossaryTerm.m */; };
@@ -57,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09939F3C1812F73D0043AFCD /* glossary_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = glossary_iPhone.storyboard; sourceTree = "<group>"; };
+		09939F3E1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOGlossaryDefinitionViewController.h; sourceTree = "<group>"; };
+		09939F3F1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOGlossaryDefinitionViewController.m; sourceTree = "<group>"; };
 		42405B6818121F7800292674 /* CJOQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOQuestion.h; sourceTree = "<group>"; };
 		42405B6918121F7800292674 /* CJOQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOQuestion.m; sourceTree = "<group>"; };
 		42405B6B18121F8500292674 /* CJOTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOTree.h; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 		4252C3C0180F8888001F86F5 /* Camp Joy OutdoorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Camp Joy OutdoorsTests-Info.plist"; sourceTree = "<group>"; };
 		4252C3C2180F8888001F86F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4252C3C4180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camp_Joy_OutdoorsTests.m; sourceTree = "<group>"; };
+		4290D7EA1812F5AC00B8057A /* CJOConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOConstants.h; sourceTree = "<group>"; };
 		42EA2F501812C139007BB93B /* UIView+FrameSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameSize.h"; sourceTree = "<group>"; };
 		42EA2F511812C139007BB93B /* UIView+FrameSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameSize.m"; sourceTree = "<group>"; };
 		73C95832BE124778979EB613 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -142,6 +148,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09939F3B1812F6BC0043AFCD /* glossary */ = {
+			isa = PBXGroup;
+			children = (
+				09939F3C1812F73D0043AFCD /* glossary_iPhone.storyboard */,
+				4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */,
+				4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */,
+				09939F3E1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.h */,
+				09939F3F1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m */,
+			);
+			name = glossary;
+			sourceTree = "<group>";
+		};
 		42405B6718121F4400292674 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,8 +212,6 @@
 				4252C3A8180F8888001F86F5 /* Main_iPad.storyboard */,
 				4252C3AB180F8888001F86F5 /* CJOHomeViewController.h */,
 				4252C3AC180F8888001F86F5 /* CJOHomeViewController.m */,
-				4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */,
-				4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */,
 				4250A9001812143E00F2F282 /* CJOAboutUsViewController.h */,
 				4250A9011812143E00F2F282 /* CJOAboutUsViewController.m */,
 			);
@@ -218,6 +234,7 @@
 		4250A916181220D900F2F282 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				09939F3B1812F6BC0043AFCD /* glossary */,
 				4250A90A1812169900F2F282 /* Main */,
 				4250A9091812159900F2F282 /* Identify */,
 			);
@@ -259,6 +276,7 @@
 		4252C399180F8888001F86F5 /* Camp Joy Outdoors */ = {
 			isa = PBXGroup;
 			children = (
+				4290D7E91812F58600B8057A /* Utilities */,
 				42EA2F4F1812C110007BB93B /* Categories */,
 				4250A916181220D900F2F282 /* Views */,
 				4250A915181220C900F2F282 /* Classes */,
@@ -299,6 +317,14 @@
 				4252C3C1180F8888001F86F5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4290D7E91812F58600B8057A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4290D7EA1812F5AC00B8057A /* CJOConstants.h */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		42EA2F4F1812C110007BB93B /* Categories */ = {
@@ -396,6 +422,7 @@
 				4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */,
 				4252C3AA180F8888001F86F5 /* Main_iPad.storyboard in Resources */,
 				4252C3B2180F8888001F86F5 /* Images.xcassets in Resources */,
+				09939F3D1812F73D0043AFCD /* glossary_iPhone.storyboard in Resources */,
 				4252C3A7180F8888001F86F5 /* Main_iPhone.storyboard in Resources */,
 				4252C39E180F8888001F86F5 /* InfoPlist.strings in Resources */,
 				42405B821812F90700292674 /* campjoy.jpg in Resources */,
@@ -468,6 +495,7 @@
 				42EA2F521812C139007BB93B /* UIView+FrameSize.m in Sources */,
 				4250A91C1812326700F2F282 /* CJOAnswerCell.m in Sources */,
 				4250A8FF1812141D00F2F282 /* CJOGlossaryViewController.m in Sources */,
+				09939F401812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

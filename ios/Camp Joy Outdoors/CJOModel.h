@@ -18,6 +18,11 @@
 +(NSArray *) terms;
 
 +(NSArray *) termStrings;
-+(CJOQuestion *) findQuestionById:(int) questionId;
+
++(CJOQuestion *) findQuestionById:(NSString *) questionId;
+
++(CJOTree*) findTreeById:(NSString *) treeId;
+
++(CJOGlossaryTerm *) findTermByName:(NSString *) name;
 
 @end
