@@ -7,7 +7,6 @@
 //
 
 #import "CJOTreeImagesDataSource.h"
-#import "CJOTree.h"
 
 @implementation CJOTreeImagesDataSource
 
@@ -30,4 +29,31 @@
     return self;
 }
 
+- (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel {
+    return  [self.imagePaths count];
+}
+
+- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view {
+    UIView *viewContainer = [[UIView alloc] initWithFrame:CGRectMake(0,0,288,210)];
+    UIImage *image = [UIImage imageNamed:self.imagePaths[index]];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.frame = CGRectMake(4,0,280,210);
+    imageView.contentMode = UIViewContentModeScaleToFill;
+    [viewContainer addSubview:imageView];
+    return viewContainer;
+}
+
+
+- (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index {
+    NSLog(@"Selected index %d",index);
+}
+
+- (NSUInteger)numberOfPhotosInPhotoBrowser:(MWPhotoBrowser *)photoBrowser {
+    return [self.imagePaths count];
+}
+- (id<MWPhoto>)photoBrowser:(MWPhotoBrowser *)photoBrowser photoAtIndex:(NSUInteger)index {
+    NSString *imagePath = self.imagePaths[index];
+    MWPhoto *photo = [MWPhoto photoWithImage:[UIImage imageNamed:imagePath]];
+    return photo;
+}
 @end

@@ -9,11 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "CJOTree.h"
 #import "iCarousel.h"
+#import "MWPhotoBrowser.h"
 
-@interface CJOTreeImagesDataSource : NSObject
+@interface CJOTreeImagesDataSource : NSObject <iCarouselDataSource, MWPhotoBrowserDelegate>
 
 - (id) initWithTree:(CJOTree *)tree;
 
 @property (nonatomic, strong) NSArray *imagePaths;
+
+- (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel;
+- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index reusingView:(UIView *)view;
+
 
 @end
