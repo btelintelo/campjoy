@@ -20,10 +20,15 @@
     
     NSString *fmt = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? @"%@_iPhone" : @"%@_iPad";
     NSMutableArray *controllers = [[NSMutableArray alloc]initWithCapacity:[boardMap count]];
-    for (NSString *name in [boardMap allKeys]) {
-        UIStoryboard *board = [UIStoryboard storyboardWithName:[NSString stringWithFormat:fmt, name] bundle:nil];
+    for (NSString *cname in [boardMap allKeys]) {
+        UIStoryboard *board = [UIStoryboard storyboardWithName:[NSString stringWithFormat:fmt, cname] bundle:nil];
         UIViewController *controller = [board instantiateInitialViewController];
-        controller.title = boardMap[name];
+
+        NSString *name = boardMap[cname];
+        controller.title = name;
+        
+        UIImage *img = [UIImage imageNamed:[name lowercaseString]];
+        controller.tabBarItem = [[UITabBarItem alloc] initWithTitle:name image:img selectedImage:nil];
         [controllers addObject:controller];
         
     }
@@ -32,6 +37,7 @@
     [controllers insertObject:tabc.viewControllers[0] atIndex:0];
     [controllers addObject:[tabc.viewControllers lastObject]];
     [tabc setViewControllers:controllers];
+
     
     return YES;
 }
