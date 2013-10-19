@@ -30,18 +30,12 @@ public class QuestionFragment extends Fragment {
 		View view = inflater.inflate(R.layout.fragment_question, container, false);
 		firstTextView = (TextView) view.findViewById(R.id.text_first_question);
 		secondTextView = (TextView) view.findViewById(R.id.text_second_question);
-		
-		//firstImageView = (ImageView) getView().findViewById(R.id.image_first_question);
-		//secondImageView = (ImageView) getView().findViewById(R.id.image_second_question);
 
-		QuestionModel model = new QuestionModel(view.getContext());
-		//QuestionModel.getInstance().initInstance(view.getContext());
-		//questions = QuestionModel.getInstance().getQuestions();
+		//QuestionModel model = new QuestionModel(view.getContext());
 		
-		String first = model.getQuestions().get(0).getChoice().get(0)[0];
-		//String second = questions.get(1).getText();
+		//String first = model.getQuestions().get(0).getChoice().get(0)[0];
 		
-		firstTextView.setText(first);
+		//firstTextView.setText();
 		
 		return view;
 	}
