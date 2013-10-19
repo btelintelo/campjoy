@@ -1,20 +1,514 @@
 {
     "trees":[
     {
-        "id": 1,
-        "name": "Jap Maple",
-        "description": "Description 1",
-        "sciname": "Sci - Jap Maple",
-        "family": "Japanese",
-        "tableData":[{"key1":"value1"},{"key2":"value2"}]
+        "id": "shingle_oak",
+        "name": "Shingle Oak",
+        "description": "Unlike most oaks the Shingle Oak’s leaves are unlobed, instead they are oval shaped. Common name originates from its use to make shingles for houses.",
+        "sciname": "Quercus imbricaria",
+        "family": "Beech Family (Fagaceae)",
+        "tableData":[
+        {"Width(spread)":"70'"},
+        {"Height":"80'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Spreading"},
+        {"Soil Type":"Moist, well drained"},
+        {"Leaf Shape":"3\" to 6\" oval"},
+        {"Life Span":"100 to 250 years"}
+        ]
     },
     {
-        "id": 2,
-        "name": "Magnolia",
-        "description": "Description 2",
-        "sciname": "Sci - Mongnolia",
-        "family": "Mongolia",
-        "tableData":[{"key1":"value1"},{"key2":"value2"}]
+        "id": "white_ash",
+        "name": "White Ash",
+        "description": "A very common tree found in Ohio.  Known for its leaves changing color early in fall and long overhanging branches good for shade. White Ash is commonly used in the making of baseball bats.",
+        "sciname": "Fraxinus americana",
+        "family": "Olive Family",
+        "tableData":[
+        {"Width(spread)":"40' - 50'"},
+        {"Height":"50' - 80'"},
+        {"Growth Rate":"1' -2'+ per year"},
+        {"Sun":"Full"},
+        {"Shape":"Oval Shape"},
+        {"Soil Type":"Well drained moist soil"},
+        {"Leaf Shape":"opposite, pinnately compound, and have 5 to 9 dark green leaflets"},
+        {"Life Span":"600+"}
+        ]
+    },
+    {
+        "id": "american_basswood",
+        "name": "American Basswood",
+        "description": "Relatively weak wood, lightweight, and odorless making it ideal as material in food crates and boxes. Inner bark is tough; once used by Native Americans as rope, mats, and bandages.",
+        "sciname": "Tilia americana",
+        "family": "Linden Family",
+        "tableData":[
+        {"Width(spread)":"30' to 50'"},
+        {"Height":"50' - 80'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full"},
+        {"Shape":"Rounded"},
+        {"Soil Type":"Moist - well drained soil"},
+        {"Leaf Shape":"Toothed heart-shaped ovate leaves, Alternating"},
+        {"Life Span":"100+"}
+        ]
+    },
+    {
+        "id": "american_beech",
+        "name": "American Beech",
+        "description": "This tree has smooth, light gray bark throughout its life—which can extend well over 300 years! The roots of the American Beech remain close to the surface whiles its spread makes it difficult for anything to grow beneath its shady canopy. Some trunks are partially hollow, making it a great home for wildlife!",
+        "sciname": "Fagus grandifolia",
+        "family": "Beech Family",
+        "tableData":[
+        {"Width(spread)":"40' - 70'"},
+        {"Height":"50' - 80'"},
+        {"Growth Rate":"Up to or less than 1' per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Rounded with Low branches"},
+        {"Soil Type":"Moist, Well-Drained Soil"},
+        {"Leaf Shape":"Alternating simple leaves with parallel veins leading to toothed edge. "},
+        {"Life Span":"300+"}
+        ]
+    },
+    {
+        "id": "musclewood",
+        "name": "Musclewood",
+        "description": "The trunk of this tree has a smooth, sinewy appearance similar to a flexed muscle, hence its common name Musclewood. This strong wood was used by the Chippewa as main supporting posts for the ridge pole of their wigwams.",
+        "sciname": "Carpinus caroliniana",
+        "family": "Birch Family (Betulaceae)",
+        "tableData":[
+        {"Width(spread)":"20'"},
+        {"Height":"20' - 30'"},
+        {"Growth Rate":"Up to or less than 1' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Round or Flat top"},
+        {"Soil Type":"Moist to Dry"},
+        {"Leaf Shape":"Toothed Simple Leaves, Oblong to Ovate, Narrow and alternating"},
+        {"Life Span":"100+"}
+        ]
+    },
+    {
+        "id": "box_elder",
+        "name": "Box Elder",
+        "description": "This is the only maple tree native to Ohio containing compound leaves. These trees are common in areas that have experienced human influence, such as flood plains, hedges, and vacant lots. Their short lifespan (≤30 years) and rapid growth allow them to quickly establish. While they are native to North America, they are considered an invasive species in Australia.",
+        "sciname": "Acer negundo",
+        "family": "Maple Family (Acer)",
+        "tableData":[
+        {"Width(spread)":"40'"},
+        {"Height":"30'"},
+        {"Growth Rate":"Over 2' per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Wide round"},
+        {"Soil Type":"Wide range of soil types"},
+        {"Leaf Shape":"Opposite pinnately  compound with 3 to 5 leaflets"},
+        {"Life Span":"100+"}
+        ]
+    },
+    {
+        "id": "ohio_buckeye",
+        "name": "Ohio Buckeye",
+        "description": "The state tree of Ohio; leaves are small compound leaflets of about 5. Its nut is found in a soft spikey yellow covering with a hard brown nut inside.",
+        "sciname": "Aesculus glabra",
+        "family": "Horsechestnut Family (Hipeupockcastanaceae)",
+        "tableData":[
+        {"Width(spread)":"30'"},
+        {"Height":"60' - 80'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full to light shade"},
+        {"Shape":"Oval"},
+        {"Soil Type":"Moist, well Drained"},
+        {"Leaf Shape":"Opposite, palmately compound leaves, normally 5 leaflets"},
+        {"Life Span":"250+"}
+        ]
+    },
+    {
+        "id": "black",
+        "name": "Black",
+        "description": "The sun-loving Black Cherry is a pioneer invader tree that quickly establishes in previously harvested forests and open fields thanks to its abundant fruit production. Its black flaky bark is easy to spot in the forest, especially in the winter. The wood of this tree is sold as “cherry” and is highly prized in woodworking due to its strong red color and fine-grained heartwood.",
+        "sciname": "Prunus serotina",
+        "family": "Rose Family (Cherry)",
+        "tableData":[
+        {"Width(spread)":"30'"},
+        {"Height":"60' to 80'"},
+        {"Growth Rate":"2' + per year"},
+        {"Sun":"Full"},
+        {"Shape":"Oval"},
+        {"Soil Type":"Deep rich moist, well drained soil"},
+        {"Leaf Shape":"Alternating simple leaves with fine serrations"},
+        {"Life Span":"250+"}
+        ]
+    },
+    {
+        "id": "flowering_dogwood",
+        "name": "Flowering Dogwood",
+        "description": "Beginning in late March, the Flowering Dogwood produces its distinctive small greenish-yellow flowers. The flowers look much larger because each are surrounded by four large petal-like bracts, which appear to be white flowers from a distance.",
+        "sciname": "Cornus florida",
+        "family": "Dogwood Family (Cornaceae)",
+        "tableData":[
+        {"Width(spread)":"20'"},
+        {"Height":"15' - 30'"},
+        {"Growth Rate":"Up to or less than 2' per year"},
+        {"Sun":"Full to partial shade"},
+        {"Shape":"Round, horizontal branching"},
+        {"Soil Type":"Well drained soil"},
+        {"Leaf Shape":"Opposite smooth ovate simple leaves with parallel veins. "},
+        {"Life Span":"100+"}
+        ]
+    },
+    {
+        "id": "american_elm",
+        "name": "American Elm",
+        "description": "The American Elm’s iconic arching limbs graced city sidewalks in years past, forming leafy canopies over the roadway. Sadly, many mature members of this species have fallen victim to Dutch Elm disease; the spread of this disease by the elm bark beetle has made older specimens increasingly rare. Fortunately, young trees are immune to this disease and may even reach reproductive age before succumbing to the fungus.",
+        "sciname": "Ulmus americana",
+        "family": "Elm Family (Ulmaceae)",
+        "tableData":[
+        {"Width(spread)":"75' - 80'"},
+        {"Height":"60' - 80'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full to partial shade"},
+        {"Shape":"Vase-shaped"},
+        {"Soil Type":"Rich, moist soil"},
+        {"Leaf Shape":"Alternating asymmetrical leaves with defiant veins that lead to toothed edge"},
+        {"Life Span":"250+"}
+        ]
+    },
+    {
+        "id": "bitternut_hickory",
+        "name": "Bitternut Hickory",
+        "description": "The Bitternut Hickory is a moderately fast growing tree, but does not live as long as other hickory species (only about 200 years). The bark of young trees is smooth and light gray and develops shallow grooves with age. Bitternut Hickory wood is often used as fuel when making hickory-smoked meat and barbecue charcoal.",
+        "sciname": "Carya cordiformis",
+        "family": "Walnut Family (Juglandaceae)",
+        "tableData":[
+        {"Width(spread)":"35'"},
+        {"Height":"70' - 75'"},
+        {"Growth Rate":"Up to or less than 2'"},
+        {"Sun":"Full"},
+        {"Shape":"Slender, Cone"},
+        {"Soil Type":"Variety of soil"},
+        {"Leaf Shape":"Alternating compound pinnately, with 5 to 11 leaflets "},
+        {"Life Span":"250+"}
+        ]
+    },
+    {
+        "id": "shagbark_hickory",
+        "name": "Shagbark Hickory",
+        "description": "The distinct feature of the Shagbark Hickory is the peeling effect of the bark becoming more prominent with age.  The fruit produced by this tree is a sweet nut that falls in autumn which is delightful treat for humans and squirrels alike.  Along with most hickories, this tree produces a strong wood that is great for making sports equipment, handles for tools, and many other crafts.",
+        "sciname": "Carya ovata",
+        "family": "Walnut Family (Juglandaceae)",
+        "tableData":[
+        {"Width(spread)":"40'"},
+        {"Height":"60' - 100'"},
+        {"Growth Rate":"Up to or less than 2' per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Conincal"},
+        {"Soil Type":"Dry to moist well drained soil"},
+        {"Leaf Shape":"Alternating pinnately compound with 7 to 9 leaflets "},
+        {"Life Span":"250 - 300"}
+        ]
+    },
+    {
+        "id": "black_locust",
+        "name": "Black Locust",
+        "description": "Once native to only the southern Appalachian is now present throughout most of the United States. The wood is very durable and resistant to rot which makes it great  for watercrafts, railroad ties, and many other items. Abraham Lincoln use to split Black Locust for fence posting as a young man.  The sweet fragrance from the white blooms it produces in late spring also make this tree distinct.",
+        "sciname": "Robinia pseudoacacia",
+        "family": "Bean Family (Fabaceae)",
+        "tableData":[
+        {"Width(spread)":"25'"},
+        {"Height":"40' - 60'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Conical"},
+        {"Soil Type":"Dry to moist well drained soil"},
+        {"Leaf Shape":"Alternating compound pinnate leaves with smooth margins. "},
+        {"Life Span":"Up to 100 years"}
+        ]
+    },
+    {
+        "id": "honey_locust",
+        "name": "Honey Locust",
+        "description": "Sometimes referred to as the thorny locust, this tree uses thorns as a defense mechanism. At one time the thorns from a young Honey Locust were used as nails. The fruit is a sweet tasting pod that many herbivores enjoy. The wood from a Honey Locust is expensive and durable because it does not grow in large numbers.",
+        "sciname": "Gleditsia triacanthos",
+        "family": "Bean Family (Fabaceae)",
+        "tableData":[
+        {"Width(spread)":"30' - 60'"},
+        {"Height":"30' - 70'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full Sun"},
+        {"Shape":"Round to Oval"},
+        {"Soil Type":"Variety of soils"},
+        {"Leaf Shape":"Compound pinnate or bipinnate with 8 to 14 small leaflets"},
+        {"Life Span":"100 - 250 years"}
+        ]
+    },
+    {
+        "id": "red_maple",
+        "name": "Red Maple",
+        "description": "Red Maple is one of the top ten most common trees in the United States.  The tree’s distinct red winter buds develop into samaras in late winter to early spring; Sometimes this fruit is commonly referred to as “helicopter seeds.” The wood of this tree is soft, therefore it is not a great choice for woodworking. However, not as widely used as other maples, a Red  Maple can be tapped for syrup production.",
+        "sciname": "Acer rubrum",
+        "family": "Maple Family (Aceraceae)",
+        "tableData":[
+        {"Width(spread)":"40'"},
+        {"Height":"40' - 70'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Round"},
+        {"Soil Type":"Moist to wet soil"},
+        {"Leaf Shape":"Opposite petioles, with five lobes (two very small basal lobes ) or with three lobes"},
+        {"Life Span":"100 - 300 years"}
+        ]
+    },
+    {
+        "id": "sugar_maple",
+        "name": "Sugar Maple",
+        "description": "Sugar Maple trees are prized for  syrup and wood production along with the Black Maple.",
+        "sciname": "Acer saccharum",
+        "family": "Maple Family (Aceraceae)",
+        "tableData":[
+        {"Width(spread)":"40'"},
+        {"Height":"60' - 80'"},
+        {"Growth Rate":"Up to or less than 1' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Oval"},
+        {"Soil Type":"Deep moist well drained soil"},
+        {"Leaf Shape":"Opposite, petiole,with five lobes, each with sparsely incised or toothed."},
+        {"Life Span":"250 - 400 years"}
+        ]
+    },
+    {
+        "id": "red_mulberry",
+        "name": "Red Mulberry",
+        "description": "A common tree in the Americas is on the endangered species list in Canada.  Its fruits looks similar to a blackberry.",
+        "sciname": "Morus Rubra",
+        "family": "Mulberry Family (Moraceae)",
+        "tableData":[
+        {"Width(spread)":"50'"},
+        {"Height":"50' to 70'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Partial Shade"},
+        {"Shape":"Rounded"},
+        {"Soil Type":"Varios soil types"},
+        {"Leaf Shape":"Alternate, leafs range from oval o multi lobed"},
+        {"Life Span":"100 to 250 years"}
+        ]
+    },
+    {
+        "id": "chinquapin_oak",
+        "name": "Chinquapin Oak",
+        "description": "Closely resembles the chestnut oak. Its flowers usually show up in April. Usually grows on soil on top of limestone.",
+        "sciname": "Quercus muehlenbergii",
+        "family": "Beech Family (Fagaceae)",
+        "tableData":[
+        {"Width(spread)":"80'"},
+        {"Height":"60'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Spreading"},
+        {"Soil Type":"Moist, alkaline"},
+        {"Leaf Shape":"Rounded with small teeth"},
+        {"Life Span":"250+ year"}
+        ]
+    },
+    {
+        "id": "pin_oak",
+        "name": "Pin Oak",
+        "description": "A fast growing tree found most often in areas that have poor drainage.  At times it can give off a pungent smell.  ",
+        "sciname": "Quercus palustris",
+        "family": "Beech Family (Fagaceae)",
+        "tableData":[
+        {"Width(spread)":"40'"},
+        {"Height":"70' to 100'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Pyramidal"},
+        {"Soil Type":"Acidic and moist"},
+        {"Leaf Shape":"Broad with 4 to 7 lobs"},
+        {"Life Span":"100 to 250 years"}
+        ]
+    },
+    {
+        "id": "red_oak",
+        "name": "Red Oak",
+        "description": "The red oak gets its name from the reddish-brown coloration of the wood.  Any extremely fast growing tree.  Have been known to live to 500 years.",
+        "sciname": "Quercus rubra",
+        "family": "Beech Family (Fagaceae)",
+        "tableData":[
+        {"Width(spread)":"70'"},
+        {"Height":"60'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Rounded"},
+        {"Soil Type":"Moist"},
+        {"Leaf Shape":"Alternate, 7 to 10 sharp points along the side"},
+        {"Life Span":"250+ years"}
+        ]
+    },
+    {
+        "id": "white_oak",
+        "name": "White Oak",
+        "description": "The white oak is a wide spreading tree that is sometimes wider then it is tall. White oak wood is extremely hard and is useful in the lumber industry. Its fruit (acorn) is often food for many animals.",
+        "sciname": "Quercus alba",
+        "family": "Beech Family (Fagaceae)",
+        "tableData":[
+        {"Width(spread)":"70'"},
+        {"Height":"100'"},
+        {"Growth Rate":"Less than 1' per year"},
+        {"Sun":"Full"},
+        {"Shape":"Spreading"},
+        {"Soil Type":"Well-drained, Acidic"},
+        {"Leaf Shape":"Alternating. Finger like bumps on each side"},
+        {"Life Span":"250+ years"}
+        ]
+    },
+    {
+        "id": "osage_orange",
+        "name": "Osage Orange",
+        "description": "The Osage Orange tree gets its name from the Osage tribe and the orange-sized, green fruit it produces. It is also known as the “hedgeapple” because they were commonly used as a hedge tree in rows of planting on farms. Its fruit can be used as a natural insect repellent. ",
+        "sciname": "Maclura pomifera",
+        "family": "Mulberry Family (Moraceae)",
+        "tableData":[
+        {"Width(spread)":"40'"},
+        {"Height":"40'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Spreading"},
+        {"Soil Type":"Various soil types"},
+        {"Leaf Shape":"Alternate elliptical leaves"},
+        {"Life Span":"250+ years"}
+        ]
+    },
+    {
+        "id": "pawpaw",
+        "name": "Pawpaw",
+        "description": "Has one of the largest fruits produced by any tree found in the United States. Its leaves have a very tropical look.",
+        "sciname": "Asimina triloba",
+        "family": "Annona Family (Annonaceae)",
+        "tableData":[
+        {"Width(spread)":"15'"},
+        {"Height":"20'"},
+        {"Growth Rate":"Up to 2' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Pyramidal"},
+        {"Soil Type":"Moist, well drained, rich"},
+        {"Leaf Shape":"Large blade like"},
+        {"Life Span":"Less than 100 years"}
+        ]
+    },
+    {
+        "id": "redbud",
+        "name": "Redbud",
+        "description": "The Redbud tree is often one of the first trees to flower, sometimes flowering before it has produced leaves. Its purple-pink blossoms have made this very popular as a decorative tree.",
+        "sciname": "Cercis canadensis",
+        "family": "Bean Family (Fabaceae)",
+        "tableData":[
+        {"Width(spread)":"10'"},
+        {"Height":"30'"},
+        {"Growth Rate":"1' to 2' per year"},
+        {"Sun":"Full to partial"},
+        {"Shape":"Rounded"},
+        {"Soil Type":"It is found in various types"},
+        {"Leaf Shape":"Alternate heart shape"},
+        {"Life Span":"Less than 100 years"}
+        ]
+    },
+    {
+        "id": "sassafras",
+        "name": "Sassafras",
+        "description": "Historically, Sassafras extract was used to flavor traditional root beer. All parts of the plants are very fragrant and produce a spicy, citrus-like scent when crushed. ",
+        "sciname": "Sassafras albidum",
+        "family": "Laurel Family (Lauraceae)",
+        "tableData":[
+        {"Width(spread)":"30'"},
+        {"Height":"50' to 75'"},
+        {"Growth Rate":"1' t 2' +per year"},
+        {"Sun":"Full to partial sun"},
+        {"Shape":"rounded"},
+        {"Soil Type":"Moist, acidic and well drained"},
+        {"Leaf Shape":"Three different types. Oval, mitten and Ghost shaped."},
+        {"Life Span":"100 to 250 years"}
+        ]
+    },
+    {
+        "id": "sweetgum",
+        "name": "Sweetgum",
+        "description": "Has a star shaped leaf. The fruit is small and green with spikes protruding.  Is know for the pleasant aroma it gives off.",
+        "sciname": "Liquidambar styraciflua",
+        "family": "Witchhazel Family (Hamamelidaceae)",
+        "tableData":[
+        {"Width(spread)":"30'"},
+        {"Height":"80'"},
+        {"Growth Rate":"1' to 2'+ per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Pyramidal"},
+        {"Soil Type":"Moist, slightly acidic"},
+        {"Leaf Shape":"Alternating, Star shaped"},
+        {"Life Span":""}
+        ]
+    },
+    {
+        "id": "sycamore",
+        "name": "Sycamore",
+        "description": "This tree can be easily identified by the shedding of bark midway to the top of the tree exposing white wood underneath. ",
+        "sciname": "Platanus occidentalis",
+        "family": "Plane Tree Family (Platanaceae)",
+        "tableData":[
+        {"Width(spread)":"60'"},
+        {"Height":"100'"},
+        {"Growth Rate":"1' to 2'+ per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Open Massive Crown"},
+        {"Soil Type":"Moist, well drained"},
+        {"Leaf Shape":"Large broad alternating "},
+        {"Life Span":"250+ years"}
+        ]
+    },
+    {
+        "id": "tuliptree",
+        "name": "Tuliptree",
+        "description": "One of the tallest Eastern hardwoods, known to grow as high as 200 feet. Branches begin to appear at 70 feet.",
+        "sciname": "Liriodendron tulipifera",
+        "family": "Magnolia Family (Magnoliaceae)",
+        "tableData":[
+        {"Width(spread)":"40'"},
+        {"Height":"150'"},
+        {"Growth Rate":"2'+ a year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Symmetrical. Pyramidal"},
+        {"Soil Type":"Moist well-drained, slightly acidic, and rich"},
+        {"Leaf Shape":"Large alternating "},
+        {"Life Span":"100 to 250 years"}
+        ]
+    },
+    {
+        "id": "black_walnut",
+        "name": "Black Walnut",
+        "description": "Its fruit is a brown colored nut in a green tennis ball sized husk. Its alternate leaves have 15 to 20 leaflets.",
+        "sciname": "Juglans nigra",
+        "family": "Walnut Family (Juglandaceae)",
+        "tableData":[
+        {"Width(spread)":"70'"},
+        {"Height":"130'"},
+        {"Growth Rate":"2'+ a year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Upright rounded"},
+        {"Soil Type":"Deep. Moist, Rich, Well drained"},
+        {"Leaf Shape":"Alternate Compound"},
+        {"Life Span":"100 to 250 years"}
+        ]
+    },
+    {
+        "id": "black_willow",
+        "name": "Black Willow",
+        "description": "Often has many trunks coming from it base with many branches coming from each. Its cone shaped fruit is home to many seeds.",
+        "sciname": "Salix nigra",
+        "family": "Willow Family (Salicaceae)",
+        "tableData":[
+        {"Width(spread)":"30'"},
+        {"Height":"60'"},
+        {"Growth Rate":"2'+ per year"},
+        {"Sun":"Full to Partial"},
+        {"Shape":"Spreading irregular crown"},
+        {"Soil Type":"Moist, poorly drained"},
+        {"Leaf Shape":"Alternate, thin light green with a small pitole"},
+        {"Life Span":"Less than 100 years"}
+        ]
     }
     ]
 }

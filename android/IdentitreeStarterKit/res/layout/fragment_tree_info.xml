@@ -7,10 +7,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-
+	<FrameLayout 
+	    android:id="@+id/treeInfoFrameLayout"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentTop="true">
    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content" 
+        android:id="@+id/treeInfoImageScrollView"
+        android:layout_alignParentTop="true">
         <LinearLayout
             android:id="@+id/mygallery"
             android:layout_width="wrap_content"
@@ -18,5 +24,16 @@
             android:orientation="horizontal"
             />
     </HorizontalScrollView>
+    </FrameLayout>
+   <TextView
+                android:id="@+id/tree_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/treeInfoFrameLayout"
+                android:gravity="center"
+       			/>
 
 </RelativeLayout>

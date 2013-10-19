@@ -17,10 +17,12 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class TreeInfoFragment extends FragmentBase{
 	LinearLayout myGallery;
 	Tree tree;
+	TextView treeDescription;
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -33,7 +35,11 @@ public class TreeInfoFragment extends FragmentBase{
 		
 		View v =inflater.inflate(R.layout.fragment_tree_info, container, false);
 	
-		tree = TreeModel.getInstance(getActivity().getApplicationContext()).getTreeById(1);
+		tree = TreeModel.getInstance(getActivity().getApplicationContext()).getTreeById("american_basswood");
+		if(tree !=null)
+		{
+		treeDescription = (TextView)v.findViewById(R.id.tree_description);
+		treeDescription.setText(tree.getDescription());
         myGallery = (LinearLayout)v.findViewById(R.id.mygallery);
         
         //TODO remove hard code for tree name
@@ -42,7 +48,7 @@ public class TreeInfoFragment extends FragmentBase{
         myGallery.addView(insertPhoto("american_basswood_imgp8744.jpg"));
         myGallery.addView(insertPhoto("american_basswood_imgp8745.jpg"));
         myGallery.addView(insertPhoto("american_basswood_imgp8867.jpg"));
-         
+		}
         
         return v;
     }

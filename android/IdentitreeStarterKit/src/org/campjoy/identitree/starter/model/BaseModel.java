@@ -11,23 +11,25 @@ public abstract class BaseModel {
 
 	protected BaseModel(final Context applicationContext, final String fileName) {
 
-		Thread loader = new Thread() {
-			@Override
-			public void run() {
-				InputStream file = loadFile(applicationContext, fileName);
-				if (file == null) {
-					return;
-				}
-
-				loadModel(file);
-				try {
-					file.close();
-				} catch (IOException ex) {
-
-				}
-			}
-		};
-		loader.start();
+		InputStream file = loadFile(applicationContext, fileName);
+		loadModel(file);
+//		Thread loader = new Thread() {
+//			@Override
+//			public void run() {
+//				InputStream file = loadFile(applicationContext, fileName);
+//				if (file == null) {
+//					return;
+//				}
+//
+//				loadModel(file);
+//				try {
+//					file.close();
+//				} catch (IOException ex) {
+//
+//				}
+//			}
+//		};
+//		loader.start();
 	}
 
 	private InputStream loadFile(Context applicationContext, String fileName) {
