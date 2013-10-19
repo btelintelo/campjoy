@@ -44,7 +44,6 @@
 		4252C3BB180F8888001F86F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4252C397180F8888001F86F5 /* UIKit.framework */; };
 		4252C3C3180F8888001F86F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4252C3C1180F8888001F86F5 /* InfoPlist.strings */; };
 		4252C3C5180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4252C3C4180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m */; };
-		4290D7EE1813073800B8057A /* images in Resources */ = {isa = PBXBuildFile; fileRef = 4290D7ED1813073800B8057A /* images */; };
 		42EA2F521812C139007BB93B /* UIView+FrameSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA2F511812C139007BB93B /* UIView+FrameSize.m */; };
 		5506317E969D4A2890B04CD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D17A9345361743DFB82FFB8A /* libPods.a */; };
 		FA0B2BDF1812F22800FF21A7 /* trees in Resources */ = {isa = PBXBuildFile; fileRef = FA0B2BDE1812F22800FF21A7 /* trees */; };
@@ -121,7 +120,6 @@
 		4252C3C2180F8888001F86F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4252C3C4180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camp_Joy_OutdoorsTests.m; sourceTree = "<group>"; };
 		4290D7EA1812F5AC00B8057A /* CJOConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOConstants.h; sourceTree = "<group>"; };
-		4290D7ED1813073800B8057A /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../data/images; sourceTree = "<group>"; };
 		42EA2F501812C139007BB93B /* UIView+FrameSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameSize.h"; sourceTree = "<group>"; };
 		42EA2F511812C139007BB93B /* UIView+FrameSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameSize.m"; sourceTree = "<group>"; };
 		73C95832BE124778979EB613 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -429,7 +427,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4290D7EE1813073800B8057A /* images in Resources */,
 				4250A9081812158000F2F282 /* Identify_iPad.storyboard in Resources */,
 				42405B7C18122F7200292674 /* questions.json in Resources */,
 				FA0B2BDF1812F22800FF21A7 /* trees in Resources */,
