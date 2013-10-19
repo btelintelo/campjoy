@@ -1,0 +1,14 @@
+{
+    "terms":[
+		{
+		    "name": "Glossary Term 1",
+		    "description": "Description 1",
+		    "image": "image1.jpg"
+		},
+		{
+		    "name": "Glossary Term 2",
+		    "description": "Description 2",
+		    "image": "image1.jpg"
+		}
+    ]
+}
