@@ -25,7 +25,7 @@
     }
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
     UIViewController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"IdentifyNavigationController"];
-    [self presentViewController:navigationController animated:NO completion:nil];
+    [self.view addSubview:navigationController.view];
 }
 
 - (void)didReceiveMemoryWarning

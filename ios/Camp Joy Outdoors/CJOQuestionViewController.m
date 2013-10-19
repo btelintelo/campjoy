@@ -7,6 +7,7 @@
 //
 
 #import "CJOQuestionViewController.h"
+#import "CJOAnswerCell.h"
 
 @interface CJOQuestionViewController ()
 
@@ -18,11 +19,23 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
 
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.question.choices.count;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AnswerCell" forIndexPath:indexPath];
+    ((CJOAnswerCell *) cell).choice = self.question.choices[indexPath.row];
+    return cell;
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
