@@ -25,5 +25,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)startButtonPressed:(id)sender {
+    self.tabBarController.selectedViewController
+    = [self.tabBarController.viewControllers objectAtIndex:1];
+}
 
 @end

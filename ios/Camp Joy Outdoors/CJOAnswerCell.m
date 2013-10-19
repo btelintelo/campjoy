@@ -11,6 +11,11 @@
 #import "CJOGlossaryTerm.h"
 #import "CJOModel.h"
 
+@interface CJOAnswerCell()
+@property (nonatomic, strong) UITapGestureRecognizer * textViewGestureRecognizer;
+
+@end
+
 @implementation CJOAnswerCell
 
 - (id)initWithFrame:(CGRect)frame
@@ -22,18 +27,66 @@
     return self;
 }
 
--(void)layoutSubviews {
-    NSArray * glossaryTerms = [CJOModel termStrings];
-    self.textHeightConstraint.constant = self.answerText.contentSize.height;
+//Taking this out for now, just going to enable tap on disclosure indicator
+/*
+- (void)textViewTapped:(id)sender {
+    CGPoint location = [self.textViewGestureRecognizer locationInView:self.answerText];
+    NSUInteger index = [self.answerText.textContainer.layoutManager glyphIndexForPoint:location inTextContainer:self.answerText.textContainer];
+    //CGGlyph glyph = [self.answerText.textContainer.layoutManager glyphAtIndex:index];
+    NSUInteger characterIndex = [self.answerText.textContainer.layoutManager characterIndexForGlyphAtIndex:index];
+    NSLog(@"%d", characterIndex);
+    NSLog(@"%@", self.answerText.textStorage);
+    NSLog(@"%c",[self.answerText.text characterAtIndex:characterIndex]);
     
-    self.answerText.attributedText = [self matchTerms:glossaryTerms inString:self.choice.text];
+    [self dispatchTap];
 }
+*/
+- (IBAction)accessoryTapped:(id)sender {
+    [self dispatchTap];
+}
+
+-(void) dispatchTap {
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:self];
+    [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+    [self.tableView.delegate tableView:self.tableView didSelectRowAtIndexPath:indexPath];
+    
+}
+
+
+-(void)layoutSubviews {
+    /*self.textViewGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(textViewTapped:)];
+    self.answerText.gestureRecognizers = @[self.textViewGestureRecognizer];*/
+    NSArray * glossaryTerms = [CJOModel termStrings];
+    self.answerText.attributedText = [self matchTerms:glossaryTerms inString:self.choice.text];
+    self.image.image = self.choiceImage;
+    CGFloat aspectRatio = self.choiceImage.size.width / self.choiceImage.size.height;
+    if(aspectRatio != INFINITY && aspectRatio != 0 && !isnan(aspectRatio)) {
+        CGFloat imageHeight = 75;
+        CGFloat imageWidth = imageHeight * aspectRatio;
+        if(imageWidth > 267) {
+            imageWidth = 267;
+            imageHeight = imageWidth / aspectRatio;
+        }
+            
+        self.imageWidthConstraint.constant = imageWidth;
+    }
+    self.answerText.delegate = self;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.textHeightConstraint.constant = self.answerText.contentSize.height;
+        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    });
+    
+}
+
 
 -(NSAttributedString *) matchTerms:(NSArray *)terms inString:(NSString *)string {
     NSMutableAttributedString * matchedString = [[NSMutableAttributedString alloc] initWithString:string];
+    string = [string lowercaseString];
     [matchedString beginEditing];
     for(NSString *term in terms) {
-        NSArray * ranges = [self rangesOfString:term inString:string];
+        NSString *lowerTerm = [term lowercaseString];
+        NSArray * ranges = [self rangesOfString:lowerTerm inString:string];
         for(NSValue *value in ranges) {
             NSRange range = [value rangeValue];
             [matchedString addAttribute:NSLinkAttributeName value:[NSString stringWithFormat:@"identitree://glossary?term=%@", [term stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] range:range];

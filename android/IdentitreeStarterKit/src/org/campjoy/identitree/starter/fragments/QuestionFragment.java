@@ -28,17 +28,20 @@ public class QuestionFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_question, container, false);
-		firstTextView = (TextView) getView().findViewById(R.id.text_first_question);
-		secondTextView = (TextView) getView().findViewById(R.id.text_second_question);
+		firstTextView = (TextView) view.findViewById(R.id.text_first_question);
+		secondTextView = (TextView) view.findViewById(R.id.text_second_question);
+
+		firstImageView = (ImageView) view.findViewById(R.id.image_first_question);
+		secondImageView = (ImageView) view.findViewById(R.id.image_second_question);
 		
-		firstImageView = (ImageView) getView().findViewById(R.id.image_first_question);
-		secondImageView = (ImageView) getView().findViewById(R.id.image_second_question);
+		QuestionModel model = new QuestionModel(view.getContext());
 		
-		QuestionModel.getInstance().initInstance(getActivity());
-		questions = QuestionModel.getInstance().getQuestions();
+		String first = model.getQuestions().get(0).getChoice1().getText();
+		String second = model.getQuestions().get(0).getChoice2().getText();
 		
-		firstTextView.setText(questions.get(0).getText());
-		secondTextView.setText(questions.get(1).getText());
+		firstTextView.setText(first);
+		secondTextView.setText(second);
+		
 		return view;
 	}
 	

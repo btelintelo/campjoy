@@ -368,8 +368,8 @@
         "id": "29",
         "choices":[{
             "text": "Trunk muscular; bark smooth, gray; buds angle, bud scales in definite rows.",
-            "nextid": "musclewood",
-            "treeid": ""
+            "nextid": "",
+            "treeid": "musclewood"
         },
         {
             "text": "Trunk not as above; larger trees with long strips of shaggy bark",

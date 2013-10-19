@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -28,7 +28,7 @@
                             <constraint firstItem="iQr-d4-Ar2" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" id="GCv-eZ-Lr1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,7 +47,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Identify" id="eYv-MC-oMJ"/>
+                    <tabBarItem key="tabBarItem" title="Identify" image="identify" id="eYv-MC-oMJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B6y-g0-apw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,13 +79,13 @@
                             <constraint firstItem="ej5-n5-O85" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="dYc-7R-70W"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Glossary" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Glossary" image="glossary" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3098" y="1736"/>
         </scene>
-        <!--About Us View Controller - About Us-->
+        <!--About Us View Controller - About-->
         <scene sceneID="bpF-0e-7ty">
             <objects>
                 <viewController id="jxK-vs-Dzp" customClass="CJOAboutUsViewController" sceneMemberID="viewController">
@@ -98,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About Us" id="LbY-Fu-I9p"/>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="LbY-Fu-I9p"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2e7-cO-KrZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,8 +127,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="about" width="26" height="26"/>
+        <image name="glossary" width="24" height="22"/>
+        <image name="home" width="27" height="26"/>
+        <image name="identify" width="24" height="24"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>

@@ -33,4 +33,30 @@ public class GlossaryModel extends BaseModel {
 			e.printStackTrace();
 		}
 	}
+	
+	public boolean hasTermThatStartsWith(String term)
+	{
+		term = term.toLowerCase();
+		for(String key : terms.keySet())
+		{
+			if(key.toLowerCase().startsWith(term))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public boolean hasTerm(String term)
+	{
+		term = term.toLowerCase();
+		for(String key : terms.keySet())
+		{
+			if(key.toLowerCase().equalsIgnoreCase(term))
+			{
+				return true;
+			}
+		}
+		return false;
+	}
 }

@@ -8,6 +8,7 @@
 
 #import "CJOAppDelegate.h"
 #import "CJOModel.h"
+#import "CJOTreeImagesDataSource.h"
 #import "CJOConstants.h"
 
 @implementation CJOAppDelegate

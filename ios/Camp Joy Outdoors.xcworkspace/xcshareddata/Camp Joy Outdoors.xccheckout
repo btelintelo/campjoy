@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>38DB815B-28DD-46D4-9E16-7F60F56D16C3</string>
+	<string>27B28998-85DC-4017-A4AA-91E3EADDEB05</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Camp Joy Outdoors</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>FFB113F0-CA28-47D8-B5A6-315AD0B38A3E</key>
-		<string>https://github.com/btelintelo/campjoy.git</string>
+		<key>5265D46E-B4A0-4C47-9F1C-2141A6CA3913</key>
+		<string>https://github.com/btelintelo/campjoy</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ios/Camp Joy Outdoors.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>FFB113F0-CA28-47D8-B5A6-315AD0B38A3E</key>
+		<key>5265D46E-B4A0-4C47-9F1C-2141A6CA3913</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/btelintelo/campjoy.git</string>
+	<string>https://github.com/btelintelo/campjoy</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>FFB113F0-CA28-47D8-B5A6-315AD0B38A3E</string>
+	<string>5265D46E-B4A0-4C47-9F1C-2141A6CA3913</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FFB113F0-CA28-47D8-B5A6-315AD0B38A3E</string>
+			<string>5265D46E-B4A0-4C47-9F1C-2141A6CA3913</string>
 			<key>IDESourceControlWCCName</key>
 			<string>campjoy</string>
 		</dict>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -15,9 +15,46 @@
                     <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Wi-B1-fbz">
+                                <rect key="frame" x="12" y="313" width="280" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="JMo-AF-Li2"/>
+                                    <constraint firstAttribute="width" constant="280" id="wr0-Nb-kBp"/>
+                                </constraints>
+                                <string key="text">Since 1938, we have been focused on making a difference in people's lives. That's why even today our mission is to "Help people grow and succeed through life-long, experience-based learning." </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campjoy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NtI-sp-N70">
+                                <rect key="frame" x="72" y="120" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZU-bb-Y3N">
+                                <rect key="frame" x="81" y="28" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start Tree Identification">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="CZ4-MO-1fc" eventType="touchUpInside" id="4Mb-O7-U3g"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Wi-B1-fbz" firstAttribute="centerX" secondItem="NtI-sp-N70" secondAttribute="centerX" id="7eb-Dj-4bt"/>
+                            <constraint firstItem="pZU-bb-Y3N" firstAttribute="top" secondItem="Cpf-5d-uRB" secondAttribute="bottom" constant="8" id="Fwp-bc-Um4"/>
+                            <constraint firstItem="NtI-sp-N70" firstAttribute="top" secondItem="pZU-bb-Y3N" secondAttribute="bottom" constant="62" id="Nfv-3L-DQU"/>
+                            <constraint firstItem="9Wi-B1-fbz" firstAttribute="top" secondItem="NtI-sp-N70" secondAttribute="bottom" constant="33" id="QWf-c7-udC"/>
+                            <constraint firstAttribute="centerX" secondItem="NtI-sp-N70" secondAttribute="centerX" constant="8" id="a0w-dW-nUy"/>
+                            <constraint firstAttribute="centerX" secondItem="pZU-bb-Y3N" secondAttribute="centerX" id="riL-Kv-JKx"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="u1e-5L-l1D"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,6 +74,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Identify" image="identify" id="Z7h-1E-pvt"/>
+                    <navigationItem key="navigationItem" id="gTI-nv-aMz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +99,7 @@
             </objects>
             <point key="canvasLocation" x="651" y="1161"/>
         </scene>
-        <!--About Us View Controller - About Us-->
+        <!--About Us View Controller - About-->
         <scene sceneID="T0E-FR-cXm">
             <objects>
                 <viewController id="lv6-Uq-QR0" customClass="CJOAboutUsViewController" sceneMemberID="viewController">
@@ -72,9 +110,32 @@
                     <view key="view" contentMode="scaleToFill" id="OQu-ho-MQd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="campjoy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JIs-VT-8Cg">
+                                <rect key="frame" x="8" y="20" width="280" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ccZ-Bj-SJl">
+                                <rect key="frame" x="20" y="156" width="280" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">The IdentiTree was lovingly developed for Camp Joy by volunteer software engineers at the 2013 Southwest Ohio Give Camp.   Special thanks to Nate Hirt, Alex Argo, Jeremy Spitzig, Sam Corder, Brian Telintelo, Parag Joshi, Mark Mathis, Neil Giri</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ccZ-Bj-SJl" firstAttribute="top" secondItem="JIs-VT-8Cg" secondAttribute="bottom" constant="8" id="1Sp-ew-bXv"/>
+                            <constraint firstItem="ccZ-Bj-SJl" firstAttribute="leading" secondItem="OQu-ho-MQd" secondAttribute="leading" constant="20" id="74g-ir-iZN"/>
+                            <constraint firstItem="Qlo-V5-fqe" firstAttribute="top" secondItem="ccZ-Bj-SJl" secondAttribute="bottom" constant="27" id="MtG-ed-dmi"/>
+                            <constraint firstAttribute="centerX" secondItem="JIs-VT-8Cg" secondAttribute="centerX" id="Ogg-9i-ORi"/>
+                            <constraint firstItem="JIs-VT-8Cg" firstAttribute="top" secondItem="WKt-ny-TQx" secondAttribute="bottom" id="b3B-yX-60e"/>
+                            <constraint firstAttribute="trailing" secondItem="ccZ-Bj-SJl" secondAttribute="trailing" constant="20" id="fRU-6A-SZz"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About Us" image="about" id="g7P-Er-2LT"/>
+                    <tabBarItem key="tabBarItem" title="About" image="about" id="g7P-Er-2LT"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuR-Go-za3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,6 +165,8 @@
     </scenes>
     <resources>
         <image name="about" width="26" height="26"/>
+        <image name="campjoy.jpg" width="160" height="160"/>
+        <image name="campjoy.jpg" width="160" height="160"/>
         <image name="glossary" width="24" height="22"/>
         <image name="home" width="27" height="26"/>
         <image name="identify" width="24" height="24"/>
