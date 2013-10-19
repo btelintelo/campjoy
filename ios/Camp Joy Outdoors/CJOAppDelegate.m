@@ -8,13 +8,13 @@
 
 #import "CJOAppDelegate.h"
 #import "CJOModel.h"
+#import "CJOTreeImagesDataSource.h"
 #import "CJOConstants.h"
 
 @implementation CJOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
     return YES;
 }
 							

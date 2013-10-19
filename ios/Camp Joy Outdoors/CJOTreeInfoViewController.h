@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "CJOTree.h"
+#import "iCarousel.h"
+#import "MWPhotoBrowser.h"
 
-@interface CJOTreeInfoViewController : UITableViewController <UITableViewDataSource>
+
+@interface CJOTreeInfoViewController : UITableViewController <UITableViewDataSource, iCarouselDelegate>
     @property (nonatomic, strong) CJOTree * tree;
 @end

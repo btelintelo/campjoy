@@ -8,12 +8,14 @@
 
 #import "CJOTreeInfoViewController.h"
 #import "CJOModel.h"
+#import "CJOTreeImagesDataSource.h"
 
 @interface CJOTreeInfoViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *descriptionHeightConstraint;
 @property (weak, nonatomic) IBOutlet UILabel *scientificNameLabel;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
-@property (weak, nonatomic) IBOutlet UIView *carousel;
+@property (weak, nonatomic) IBOutlet iCarousel *carousel;
+@property (strong, nonatomic) CJOTreeImagesDataSource* imagesDataSource;
 @end
 
 @implementation CJOTreeInfoViewController
@@ -38,13 +40,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.tree = [CJOModel trees][0];
+    self.imagesDataSource = [[CJOTreeImagesDataSource alloc] initWithTree:self.tree];
+    self.carousel.dataSource = self.imagesDataSource;
     self.navigationItem.title = self.tree.name;
     self.scientificNameLabel.text = [NSString stringWithFormat:@"%@ - %@",self.tree.sciname,self.tree.family];
     self.descriptionTextView.text = self.tree.description;
 
     [self resizeHeaderViewsForDescriptionText];
+    [self configureCarousel];
+}
+
+- (void) configureCarousel {
+
 }
 
 #pragma mark - UITableViewDataSource;
@@ -76,6 +84,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - iCarouselDelegate {
+- (void)carousel:(iCarousel *)carousel didSelectItemAtIndex:(NSInteger)index{
+    MWPhotoBrowser *browser = [[MWPhotoBrowser alloc] initWithDelegate:self.imagesDataSource];
+    [browser setCurrentPhotoIndex:index];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:browser];
+    UIViewController *rootViewController = [[UIApplication sharedApplication] keyWindow].rootViewController;
+    [rootViewController presentViewController:navigationController animated:YES completion:nil];
 }
 
 #pragma mark - Utilities
