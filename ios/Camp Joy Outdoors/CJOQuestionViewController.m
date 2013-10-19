@@ -44,12 +44,14 @@
     return 0;
 }
 
--(void)tableView:(UITableView *)tableView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     CJOAnswerCell * cell = (CJOAnswerCell *)[tableView cellForRowAtIndexPath:indexPath];
     CJOChoice * choice = cell.choice;
 
     if(choice.nextid) {
-        [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
+        [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
+        
+//        [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
     } else if(choice.treeid || YES) {
         [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
     }
