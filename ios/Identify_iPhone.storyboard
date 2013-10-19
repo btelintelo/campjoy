@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="-185" y="-24"/>
         </scene>
-        <!--Question View Controller-->
+        <!--Question View Controller - Please choose-->
         <scene sceneID="Afw-4g-Vvz">
             <objects>
                 <tableViewController id="rn2-3u-e2c" customClass="CJOQuestionViewController" sceneMemberID="viewController">
@@ -86,7 +86,7 @@
                             <outlet property="delegate" destination="rn2-3u-e2c" id="RIE-I8-8Re"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="LcP-fU-63t">
+                    <navigationItem key="navigationItem" title="Please choose" id="LcP-fU-63t">
                         <barButtonItem key="rightBarButtonItem" title="Restart" id="9Ha-Gc-lmm">
                             <connections>
                                 <action selector="restartQuestions:" destination="rn2-3u-e2c" id="3Za-eV-1PG"/>
