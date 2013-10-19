@@ -9,7 +9,7 @@ import org.json.JSONObject;
 
 import android.content.Context;
 
-public class JSONParser {
+public class QuestionJSONParser {
 
 	private Context context;
 	private String path;
@@ -21,7 +21,7 @@ public class JSONParser {
 	private static final String TAG_TREE_ID = "treeid";
 	private static final String TAG_TEXT = "text";
 
-	public JSONParser(Context context, String path) {
+	public QuestionJSONParser(Context context, String path) {
 		this.context = context;
 		this.path = path;
 	}
@@ -50,6 +50,7 @@ public class JSONParser {
 		try {
 			JSONObject jObject = new JSONObject(json);
 			JSONArray questions = jObject.getJSONArray(TAG_QUESTIONS);
+			JSONObject result;
 			
 		} catch (JSONException e) {
 			e.printStackTrace();
