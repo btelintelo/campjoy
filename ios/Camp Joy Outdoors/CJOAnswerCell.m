@@ -21,6 +21,9 @@
 
 -(void)layoutSubviews {
     self.answerText.text = self.choice.text;
+    if(self.choiceImage == nil) {
+        self.image.hidden = YES;
+    }
 }
 
 @end

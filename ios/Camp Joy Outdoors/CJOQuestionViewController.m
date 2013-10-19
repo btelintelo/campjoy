@@ -36,6 +36,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AnswerImageCell"];
     ((CJOAnswerCell *) cell).choice = self.question.choices[indexPath.row];
+    ((CJOAnswerCell *) cell).choiceImage = [self imageForIndexPath:indexPath];
     return cell;
 }
 
