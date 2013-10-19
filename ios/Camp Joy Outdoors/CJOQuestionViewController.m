@@ -53,9 +53,9 @@
     CJOAnswerCell * cell = (CJOAnswerCell *)[tableView cellForRowAtIndexPath:indexPath];
     CJOChoice * choice = cell.choice;
 
-    if(choice.nextid) {
+    if(choice.nextid.length > 0) {
         [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
-    } else if(choice.treeid) {
+    } else if(choice.treeid.length > 0) {
         [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
     }
 }
