@@ -20,4 +20,5 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *firstAnswerHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *secondImageHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *secondAnswerHeightConstraint;
+@property (nonatomic, assign) BOOL hideRestartButton;
 @end
