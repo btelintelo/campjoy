@@ -1,0 +1,30 @@
+{
+    "questions":[
+    {
+        "id": 1,
+        "choices":[{
+            "text": "Option 1",
+            "nextid": 2,
+            "treeid":""
+        },
+        {
+            "text": "Option 2",
+            "nextid": 3,
+            "treeid":""
+        }]
+    },
+    {
+        "id": 2,
+        "choices":[{
+            "text": "Option 1",
+            "nextid": "",
+            "treeid":1
+        },
+        {
+            "text": "Option 2",
+            "nextid": "",
+            "treeid":2
+        }]
+    }
+    ]
+}
