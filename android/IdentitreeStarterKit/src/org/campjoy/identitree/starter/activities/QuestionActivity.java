@@ -2,11 +2,11 @@ package org.campjoy.identitree.starter.activities;
 
 import org.campjoy.identitree.starter.R;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 
-public class QuestionActivity extends Activity {
+public class QuestionActivity extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
