@@ -7,5 +7,7 @@
     <string name="title_activity_question">Question</string>
     <string name="text_first">Insert First Question</string>
     <string name="text_question">Start Question</string>
+    <string name="image">Image</string>
+    <string name="text_second">Insert Second Question</string>
 
 </resources>
