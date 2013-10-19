@@ -15,12 +15,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSDictionary *boardMap = @{@"Identify":@"Identify", @"glossary":@"Glossary"};
+    NSArray *keys = @[@"Identify", @"glossary"];
+    NSDictionary *boardMap = @{@"glossary":@"Glossary", @"Identify":@"Identify"};
 
     
     NSString *fmt = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? @"%@_iPhone" : @"%@_iPad";
     NSMutableArray *controllers = [[NSMutableArray alloc]initWithCapacity:[boardMap count]];
-    for (NSString *cname in [boardMap allKeys]) {
+    for (NSString *cname in keys) {
         UIStoryboard *board = [UIStoryboard storyboardWithName:[NSString stringWithFormat:fmt, cname] bundle:nil];
         UIViewController *controller = [board instantiateInitialViewController];
 
