@@ -7,6 +7,7 @@
 //
 
 #import "CJOAnswerCell.h"
+#import "UIView+FrameSize.h"
 
 @implementation CJOAnswerCell
 
@@ -21,9 +22,16 @@
 
 -(void)layoutSubviews {
     self.answerText.text = self.choice.text;
+//    self.answerText set
     if(self.choiceImage == nil) {
         self.image.hidden = YES;
     }
+}
+
+-(CGRect) measureText:(NSString *) text withFont:(UIFont *) font andWidth:(CGFloat)width{
+    NSDictionary * attributes = @{ NSFontAttributeName: font };
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:text attributes:attributes];
+    return [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
 }
 
 @end

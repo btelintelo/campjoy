@@ -40,6 +40,10 @@
     return cell;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0;
+}
+
 -(void)tableView:(UITableView *)tableView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     CJOAnswerCell * cell = (CJOAnswerCell *)[tableView cellForRowAtIndexPath:indexPath];
     CJOChoice * choice = cell.choice;
