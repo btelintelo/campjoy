@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CJOQuestion.h"
 
-@interface CJOQuestionViewController : UICollectionViewController
+@interface CJOQuestionViewController : UICollectionViewController<UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 @property (nonatomic, strong) CJOQuestion * question;
 @property (weak, nonatomic) IBOutlet UILabel *firstAnswerLabel;

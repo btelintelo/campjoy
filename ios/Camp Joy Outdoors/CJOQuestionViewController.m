@@ -8,6 +8,8 @@
 
 #import "CJOQuestionViewController.h"
 #import "CJOAnswerCell.h"
+#import "CJOTree.h"
+#import "CJOTreeInfoViewController.h"
 
 @interface CJOQuestionViewController ()
 
@@ -32,20 +34,51 @@
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AnswerCell" forIndexPath:indexPath];
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"AnswerImageCell" forIndexPath:indexPath];
     ((CJOAnswerCell *) cell).choice = self.question.choices[indexPath.row];
     return cell;
 }
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    CJOAnswerCell * cell = (CJOAnswerCell *)[collectionView dequeueReusableCellWithReuseIdentifier:@"AnswerImageCell" forIndexPath:indexPath];
+    CJOChoice * choice = cell.choice;
+
+    if(choice.nextid) {
+        [self performSegueWithIdentifier:@"nextQuestionSegue" sender:cell];
+    } else if(choice.treeid) {
+        [self performSegueWithIdentifier:@"treeIdentifiedSegue" sender:cell];
+    }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    CJOAnswerCell * cell = (CJOAnswerCell *) sender;
+    if([segue.identifier isEqualToString:@"nextQuestionSegue"]) {
+        CJOQuestionViewController * destinationViewController = [segue destinationViewController];
+        destinationViewController.question = [self nextQuestion:cell.choice];
+    } else if ([segue.identifier isEqualToString:@"treeIdentifiedSegue"]) {
+        CJOTreeInfoViewController * destinationViewController = [segue destinationViewController];
+        destinationViewController.tree = [self identifiedTree:cell.choice];
+    }
 }
+
+-(CJOQuestion *) nextQuestion: (CJOChoice *) choice {
+    return self.question;
+}
+
+-(CJOTree *) identifiedTree: (CJOChoice *) choice {
+    return nil;
+}
+
+//We'll reduce the height if there's no image to display
+/*
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return CGSizeMake(320, 158);
+}
+
+-(NSString *) imageForIndexPath:(NSIndexPath *) indexPath {
+    return nil;
+}
+*/
 
 @end

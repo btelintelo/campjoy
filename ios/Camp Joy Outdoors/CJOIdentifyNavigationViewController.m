@@ -9,6 +9,7 @@
 #import "CJOIdentifyNavigationViewController.h"
 #import "CJOQuestion.h"
 #import "CJOQuestionViewController.h"
+#import "CJOModel.h"
 
 @interface CJOIdentifyNavigationViewController ()
 
@@ -30,7 +31,7 @@
     [super viewDidLoad];
 	
     // Get initial question
-    CJOQuestion * initialQuestion = nil;
+    CJOQuestion * initialQuestion = (CJOQuestion *)[CJOModel questions][0];
     
     // set question on root view controller
     CJOQuestionViewController * rootViewController = (CJOQuestionViewController *)self.viewControllers[0];
