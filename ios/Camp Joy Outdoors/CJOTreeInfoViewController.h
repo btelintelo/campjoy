@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CJOTree.h"
 
 @interface CJOTreeInfoViewController : UIViewController
-
+    @property (nonatomic, strong) CJOTree * tree;
 @end

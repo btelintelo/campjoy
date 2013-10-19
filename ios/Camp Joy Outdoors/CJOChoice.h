@@ -10,9 +10,8 @@
 
 @interface CJOChoice : NSObject
 
-@property (nonatomic, retain) NSString *choiceId;
 @property (nonatomic, retain) NSString *text;
-@property (nonatomic, retain) NSNumber *nextId;
-@property (nonatomic, retain) NSNumber *treeId;
+@property (nonatomic, retain) NSNumber *nextid;
+@property (nonatomic, retain) NSNumber *treeid;
 
 @end

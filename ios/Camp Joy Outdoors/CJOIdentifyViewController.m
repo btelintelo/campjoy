@@ -10,6 +10,7 @@
 #import "CJOUtilities.h"
 
 @interface CJOIdentifyViewController ()
+@property(nonatomic, strong) UIViewController * navigationController;
 
 @end
 
@@ -24,8 +25,9 @@
         storyboardName = @"Identify_iPad";
     }
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle:nil];
-    UIViewController *navigationController = [storyboard instantiateViewControllerWithIdentifier:@"IdentifyNavigationController"];
-    [self presentViewController:navigationController animated:NO completion:nil];
+    self.navigationController = [storyboard instantiateViewControllerWithIdentifier:@"IdentifyNavigationController"];
+    self.navigationController.view.frame = self.view.bounds;
+    [self.view addSubview:self.navigationController.view];
 }
 
 - (void)didReceiveMemoryWarning

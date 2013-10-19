@@ -24,6 +24,7 @@
 		4250A910181216FB00F2F282 /* CJOTreeInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A90F181216FB00F2F282 /* CJOTreeInfoViewController.m */; };
 		4250A914181220A800F2F282 /* CJOUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A913181220A800F2F282 /* CJOUtilities.m */; };
 		4250A919181228F600F2F282 /* CJOIdentifyNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A918181228F600F2F282 /* CJOIdentifyNavigationViewController.m */; };
+		4250A91C1812326700F2F282 /* CJOAnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A91B1812326700F2F282 /* CJOAnswerCell.m */; };
 		4252C394180F8888001F86F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4252C393180F8888001F86F5 /* Foundation.framework */; };
 		4252C396180F8888001F86F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4252C395180F8888001F86F5 /* CoreGraphics.framework */; };
 		4252C398180F8888001F86F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4252C397180F8888001F86F5 /* UIKit.framework */; };
@@ -83,6 +84,8 @@
 		4250A913181220A800F2F282 /* CJOUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOUtilities.m; sourceTree = "<group>"; };
 		4250A917181228F600F2F282 /* CJOIdentifyNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOIdentifyNavigationViewController.h; sourceTree = "<group>"; };
 		4250A918181228F600F2F282 /* CJOIdentifyNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOIdentifyNavigationViewController.m; sourceTree = "<group>"; };
+		4250A91A1812326700F2F282 /* CJOAnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOAnswerCell.h; sourceTree = "<group>"; };
+		4250A91B1812326700F2F282 /* CJOAnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOAnswerCell.m; sourceTree = "<group>"; };
 		4252C390180F8888001F86F5 /* Camp Joy Outdoors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camp Joy Outdoors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4252C393180F8888001F86F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4252C395180F8888001F86F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -173,6 +176,8 @@
 				4250A90F181216FB00F2F282 /* CJOTreeInfoViewController.m */,
 				4250A917181228F600F2F282 /* CJOIdentifyNavigationViewController.h */,
 				4250A918181228F600F2F282 /* CJOIdentifyNavigationViewController.m */,
+				4250A91A1812326700F2F282 /* CJOAnswerCell.h */,
+				4250A91B1812326700F2F282 /* CJOAnswerCell.m */,
 			);
 			name = Identify;
 			sourceTree = "<group>";
@@ -443,6 +448,7 @@
 				4252C3AD180F8888001F86F5 /* CJOHomeViewController.m in Sources */,
 				4250A910181216FB00F2F282 /* CJOTreeInfoViewController.m in Sources */,
 				4252C3B0180F8888001F86F5 /* CJOIdentifyViewController.m in Sources */,
+				4250A91C1812326700F2F282 /* CJOAnswerCell.m in Sources */,
 				4250A8FF1812141D00F2F282 /* CJOGlossaryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

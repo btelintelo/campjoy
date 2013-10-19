@@ -7,6 +7,9 @@
 //
 
 #import "CJOIdentifyNavigationViewController.h"
+#import "CJOQuestion.h"
+#import "CJOQuestionViewController.h"
+#import "CJOModel.h"
 
 @interface CJOIdentifyNavigationViewController ()
 
@@ -26,7 +29,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    // Get initial question
+    CJOQuestion * initialQuestion = (CJOQuestion *)[CJOModel questions][0];
+    
+    // set question on root view controller
+    CJOQuestionViewController * rootViewController = (CJOQuestionViewController *)self.viewControllers[0];
+    rootViewController.question = initialQuestion;
 }
 
 - (void)didReceiveMemoryWarning
