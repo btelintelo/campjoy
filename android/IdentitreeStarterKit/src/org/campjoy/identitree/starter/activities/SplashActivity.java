@@ -37,7 +37,7 @@ public class SplashActivity extends Activity implements AnimationListener {
 		splashLayoutImg = (ImageView)findViewById(R.id.splash_activity_image);
 		
 		try {
-			splashLayoutImg.setBackgroundDrawable(Drawable.createFromStream(getAssets().open("images/trees/american_basswood/img_0107.jpg"), null));
+			splashLayoutImg.setBackgroundDrawable(Drawable.createFromStream(getAssets().open("american_basswood_img_0107.jpg"), null));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
