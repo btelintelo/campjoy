@@ -15,15 +15,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSArray *boardNames = @[@"Identify", @"glossary"];
+    NSDictionary *boardMap = @{@"Identify":@"Identify", @"glossary":@"Glossary"};
+
+    
     NSString *fmt = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? @"%@_iPhone" : @"%@_iPad";
-    NSMutableArray *controllers = [[NSMutableArray alloc]initWithCapacity:[boardNames count]];
-    for (NSString *name in boardNames) {
+    NSMutableArray *controllers = [[NSMutableArray alloc]initWithCapacity:[boardMap count]];
+    for (NSString *name in [boardMap allKeys]) {
         UIStoryboard *board = [UIStoryboard storyboardWithName:[NSString stringWithFormat:fmt, name] bundle:nil];
-        [controllers addObject:[board instantiateInitialViewController]];
+        UIViewController *controller = [board instantiateInitialViewController];
+        controller.title = boardMap[name];
+        [controllers addObject:controller];
+        
     }
     
     UITabBarController *tabc = (UITabBarController *)self.window.rootViewController;
+    [controllers insertObject:tabc.viewControllers[0] atIndex:0];
+    [controllers addObject:[tabc.viewControllers lastObject]];
     [tabc setViewControllers:controllers];
     
     return YES;

@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Glossary View Controller-->
+        <!--Glossary View Controller - Glossary-->
         <scene sceneID="Nmu-26-vTB">
             <objects>
                 <tableViewController id="1fh-HY-3Bj" customClass="CJOGlossaryViewController" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="definition" textLabel="47m-hO-MWe" detailTextLabel="vur-pW-i0v" style="IBUITableViewCellStyleSubtitle" id="E8g-yF-VzN">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E8g-yF-VzN">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E8g-yF-VzN" id="och-Pz-vgv">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -43,7 +43,7 @@
                             <outlet property="delegate" destination="1fh-HY-3Bj" id="ovw-8k-2Yz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="IRN-Be-RhV"/>
+                    <navigationItem key="navigationItem" title="Glossary" id="IRN-Be-RhV"/>
                     <connections>
                         <segue destination="HIq-Yg-oHl" kind="push" identifier="definition" id="SOq-j3-Ylc"/>
                     </connections>
@@ -65,15 +65,16 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Definition text that is long and should have word wrapping" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="290" translatesAutoresizingMaskIntoConstraints="NO" id="Aju-tm-RYB">
-                                <rect key="frame" x="16" y="249" width="290" height="41"/>
+                                <rect key="frame" x="16" y="184" width="290" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wVg-8h-C2B">
-                                <rect key="frame" x="-1" y="64" width="320" height="175"/>
+                                <rect key="frame" x="-1" y="-1" width="320" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="1gM-y5-FZt"/>
                                     <constraint firstAttribute="height" constant="175" id="tmS-Bp-fJ6"/>
@@ -85,13 +86,14 @@
                             <constraint firstAttribute="trailing" secondItem="Aju-tm-RYB" secondAttribute="trailing" constant="14" id="01d-or-Apt"/>
                             <constraint firstItem="Aju-tm-RYB" firstAttribute="leading" secondItem="jba-CA-TCv" secondAttribute="leading" constant="16" id="1Gp-ia-gxi"/>
                             <constraint firstItem="Aju-tm-RYB" firstAttribute="top" secondItem="wVg-8h-C2B" secondAttribute="bottom" constant="10" id="CCu-Sp-dH0"/>
-                            <constraint firstItem="wVg-8h-C2B" firstAttribute="top" secondItem="TRP-5W-pwr" secondAttribute="bottom" id="G4u-BO-NbQ"/>
+                            <constraint firstItem="wVg-8h-C2B" firstAttribute="top" secondItem="TRP-5W-pwr" secondAttribute="bottom" constant="-65" id="G4u-BO-NbQ"/>
                             <constraint firstAttribute="centerX" secondItem="wVg-8h-C2B" secondAttribute="centerX" constant="1" id="H2v-Mt-HqO"/>
                         </constraints>
                     </scrollView>
                     <navigationItem key="navigationItem" title="Word" id="jhy-ih-9BV"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="definitionImageView" destination="wVg-8h-C2B" id="gSF-DC-GDJ"/>
                         <outlet property="descriptionLabel" destination="Aju-tm-RYB" id="Vhr-id-mDF"/>
                     </connections>
                 </viewController>

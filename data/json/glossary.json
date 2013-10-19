@@ -3,97 +3,97 @@
 		{
 		    "name": "Acorn",
 		    "description": "Small nut that is produced by oak trees. Has a cap on top resembling a beanie",
-		    "image": "acorn.jpg"
+		    "image": "acorn.png"
 		},
 		{
 		    "name": "Alternate",
 		    "description": "Leaves or buds staggered along the twigs or branches",
-		    "image": "alternate.jpg"
+		    "image": "alternate.png"
 		},
 		{
 		    "name": "Bud",
 		    "description": "A small protrusion found either on the end or sides of the trees twigs, this is the point from which the trees leaves or flowers will grow",
-		    "image": "bud.jpg"
+		    "image": "bud.png"
 		},
 		{
 		    "name": "Bundle scar",
 		    "description": "The dots inside a leaf scar",
-		    "image": "bundle_scar.jpg"
+		    "image": "bundle_scar.png"
 		},
 		{
 		    "name": "End bud",
 		    "description": "Buds which grow at the very tip of the twig growing straight out; sometimes referred to as true end buds",
-		    "image": "end_bud.jpg"
+		    "image": "end_bud.png"
 		},
 		{
 		    "name": "False end bud",
 		    "description": "Do not have a true end bud, end buds appear to be bent, small or set off to the side",
-		    "image": "false_end_bud.jpg"
+		    "image": "false_end_bud.png"
 		},
 		{
 		    "name": "Flower Bud",
 		    "description": "A bud that will turn into a flower as opposed to a leaf",
-		    "image": "flower_bud.jpg"
+		    "image": "flower_bud.png"
 		},
 		{
 		    "name": "Fruit",
 		    "description": "The seed containing a pod, nut, samara, berry, or more traditional fleshy fruit (ie. apple or orange)",
-		    "image": "fruit.jpg"
+		    "image": "fruit.png"
 		},
 		{
 		    "name": "Furrows",
 		    "description": "The grooves or channels in the trees bark",
-		    "image": "furrows.jpg"
+		    "image": "furrows.png"
 		},
 		{
 		    "name": "Inner bark",
 		    "description": "Inner most part of the bark attached to the tree’s trunk",
-		    "image": "inner_bark.jpg"
+		    "image": "inner_bark.png"
 		},
 		{
 		    "name": "Leaf scar",
 		    "description": "The mark left on a twig when the leaf is removed",
-		    "image": "leaf_scar.jpg"
+		    "image": "leaf_scar.png"
 		},
 		{
 		    "name": "Lobed",
 		    "description": "A leaf with multiple rounded portions along the edge (ie. hand with fingers spread apart)",
-		    "image": "lobed.jpg"
+		    "image": "lobed.png"
 		},
 		{
 		    "name": "Opposite",
 		    "description": "Leaves and twigs which grow out exactly across from one another",
-		    "image": "opposite.jpg"
+		    "image": "opposite.png"
 		},
 		{
 		    "name": "Paired thorn",
 		    "description": "Two thorns grouped together side-by-side",
-		    "image": "paired_thorn.jpg"
+		    "image": "paired_thorn.png"
 		},
 		{
 		    "name": "Samara",
 		    "description": "A dry, seeded, 'winged' fruit. The fruit of maples, ashes, and elms",
-		    "image": "samara.jpg"
+		    "image": "samara.png"
 		},
 		{
 		    "name": "Scale",
 		    "description": "Minute leaves that are needle-like or flat and overlapping like reptilian skin",
-		    "image": "scale.jpg"
+		    "image": "scale.png"
 		},
 		{
 		    "name": "Thorn",
 		    "description": "A sharp-pointed, woody outgrowth of the internal vascular system of the plant",
-		    "image": "thorn.jpg"
+		    "image": "thorn.png"
 		},
 		{
 		    "name": "Twig",
 		    "description": "The newer growth off a branch, varies in colors different than the branch’s bark where the buds are found",
-		    "image": "twig.jpg"
+		    "image": "twig.png"
 		},
 		{
 		    "name": "Un-lobed",
 		    "description": "A leaf without lobes (ie. hand with fingers NOT spread apart)",
-		    "image": "un-lobed.jpg"
+		    "image": "un-lobed_leaf.png"
 		}
     ]
 }
