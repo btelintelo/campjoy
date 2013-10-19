@@ -8,12 +8,14 @@
 
 #import "CJOModel.h"
 #import "CJOJSONParser.h"
+#import "CJOGlossaryTerm.h"
 
 @implementation CJOModel
 
 NSArray *questions;
 NSArray *trees;
 NSArray *terms;
+NSArray *termStrings;
 
 +(NSArray *) questions
 {
@@ -32,5 +34,18 @@ NSArray *terms;
     if(!terms)
         terms = [CJOJSONParser terms];
     return terms;
+}
+
++(NSArray *)termStrings
+{
+    if(!termStrings) {
+        terms = [self terms];
+        NSMutableArray * names = [[NSMutableArray alloc] init];
+        for (CJOGlossaryTerm * glossaryTerm in terms) {
+            [names addObject:glossaryTerm.name];
+        }
+        termStrings = names;
+    }
+    return termStrings;
 }
 @end

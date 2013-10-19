@@ -14,4 +14,6 @@
 +(NSArray *) trees;
 +(NSArray *) terms;
 
++(NSArray *) termStrings;
+
 @end
