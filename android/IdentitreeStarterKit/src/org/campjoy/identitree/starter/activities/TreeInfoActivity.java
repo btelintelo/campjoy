@@ -17,7 +17,7 @@ public class TreeInfoActivity extends FragmentActivityBase {
 		
 		treeInfoFragment = new TreeInfoFragment();
 		
-		startFragment(treeInfoFragment, null);
+		loadFragment(treeInfoFragment);
 	}
 
 }
