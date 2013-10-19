@@ -189,7 +189,7 @@
             </objects>
             <point key="canvasLocation" x="1103" y="681"/>
         </scene>
-        <!--Question View Controller-->
+        <!--Question View Controller - Please choose-->
         <scene sceneID="yH5-N7-Nk8">
             <objects>
                 <viewController id="aNL-VE-7Ws" customClass="CJOQuestionViewController" sceneMemberID="viewController">
@@ -265,7 +265,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqc-wy-FPf">
-                                <rect key="frame" x="251" y="488" width="49" height="30"/>
+                                <rect key="frame" x="251" y="530" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="49" id="BqV-35-JYc"/>
@@ -281,11 +281,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="EtS-Rq-ELF" firstAttribute="top" secondItem="nqc-wy-FPf" secondAttribute="bottom" constant="50" id="bqq-jS-c2F"/>
+                            <constraint firstItem="EtS-Rq-ELF" firstAttribute="top" secondItem="nqc-wy-FPf" secondAttribute="bottom" constant="20" symbolic="YES" id="bqq-jS-c2F"/>
                             <constraint firstAttribute="trailing" secondItem="nqc-wy-FPf" secondAttribute="trailing" constant="20" symbolic="YES" id="j7z-y9-8BH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="mTD-qv-kLV"/>
+                    <navigationItem key="navigationItem" title="Please choose" id="mTD-qv-kLV"/>
                     <connections>
                         <outlet property="tableView" destination="WhB-o2-did" id="38F-dc-uZ1"/>
                         <segue destination="ds8-GN-CqV" kind="push" identifier="treeIdentifiedSegue" id="Qyz-1L-I4m"/>
