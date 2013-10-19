@@ -49,6 +49,7 @@
 		FA0B2BDF1812F22800FF21A7 /* trees in Resources */ = {isa = PBXBuildFile; fileRef = FA0B2BDE1812F22800FF21A7 /* trees */; };
 		FA0B2BE21812F60900FF21A7 /* CJOTreeImagesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B2BE11812F60900FF21A7 /* CJOTreeImagesDataSource.m */; };
 		FA0B2BE41812FFCF00FF21A7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0B2BE31812FFCF00FF21A7 /* QuartzCore.framework */; };
+		FA4638B518131C2A007F62DD /* maps in Resources */ = {isa = PBXBuildFile; fileRef = FA4638B418131C2A007F62DD /* maps */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,7 @@
 		FA0B2BE01812F60900FF21A7 /* CJOTreeImagesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOTreeImagesDataSource.h; sourceTree = "<group>"; };
 		FA0B2BE11812F60900FF21A7 /* CJOTreeImagesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOTreeImagesDataSource.m; sourceTree = "<group>"; };
 		FA0B2BE31812FFCF00FF21A7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA4638B418131C2A007F62DD /* maps */ = {isa = PBXFileReference; lastKnownFileType = folder; name = maps; path = ../../data/images/maps; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,7 @@
 		4252C39A180F8888001F86F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA4638B418131C2A007F62DD /* maps */,
 				FA0B2BDE1812F22800FF21A7 /* trees */,
 				4252C39B180F8888001F86F5 /* Camp Joy Outdoors-Info.plist */,
 				4252C39C180F8888001F86F5 /* InfoPlist.strings */,
@@ -436,6 +439,7 @@
 				4252C3AA180F8888001F86F5 /* Main_iPad.storyboard in Resources */,
 				4252C3B2180F8888001F86F5 /* Images.xcassets in Resources */,
 				09939F3D1812F73D0043AFCD /* glossary_iPhone.storyboard in Resources */,
+				FA4638B518131C2A007F62DD /* maps in Resources */,
 				4252C3A7180F8888001F86F5 /* Main_iPhone.storyboard in Resources */,
 				4252C39E180F8888001F86F5 /* InfoPlist.strings in Resources */,
 				42405B821812F90700292674 /* campjoy.jpg in Resources */,
