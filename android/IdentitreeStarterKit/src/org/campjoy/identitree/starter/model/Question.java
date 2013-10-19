@@ -1,7 +1,5 @@
 package org.campjoy.identitree.starter.model;
 
-import java.util.ArrayList;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -11,7 +9,8 @@ import android.util.Log;
 public class Question {
 
 	private String id, text, nextid, treeid;
-	private ArrayList<String[]> choice = new ArrayList<String[]>();
+	private Choice choice1 = new Choice();
+	private Choice choice2 = new Choice();
 	
 	public Question(JSONObject question) {
 		parseQuestion(question);
@@ -32,16 +31,25 @@ public class Question {
 	private void parseTableData(JSONArray choices) {
 		try {
 			JSONObject menuObject = choices.getJSONObject(0);
+			
 			text = menuObject.getString("text");
 			nextid = menuObject.getString("nextid");
 			treeid = menuObject.getString("treeid");
-			choice.add(new String[] {text, nextid, treeid});
+			
+			choice1.setText(text);
+			choice1.setNextId(nextid);
+			choice1.setTreeId(treeid);
 			
 			menuObject = choices.getJSONObject(1);
+			
 			text = menuObject.getString("text");
 			nextid = menuObject.getString("nextid");
 			treeid = menuObject.getString("treeid");
-			choice.add(new String[] {text, nextid, treeid});
+			
+			choice2.setText(text);
+			choice2.setNextId(nextid);
+			choice2.setTreeId(treeid);
+			
 		} catch (JSONException e1) {
 			e1.printStackTrace();
 			Log.d("Question", "Failed");
@@ -64,7 +72,11 @@ public class Question {
 		return result.toString();
 	}
 
-	public ArrayList<String[]> getChoice() {
-		return choice;
+	public Choice getChoice1() {
+		return choice1;
+	}
+
+	public Choice getChoice2() {
+		return choice2;
 	}
 }

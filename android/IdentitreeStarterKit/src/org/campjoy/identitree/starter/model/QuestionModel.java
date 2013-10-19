@@ -18,14 +18,7 @@ public class QuestionModel {
 	private ArrayList<Question> questions = new ArrayList<Question>();
 	
 	public QuestionModel(final Context applicationContext) {
-		Thread loader = new Thread() {
-			@Override
-			public void run() {
-				loadQuestions(applicationContext);
-			}
-		};
-
-		loader.start();
+		loadQuestions(applicationContext);
 	}
 
 	private void loadQuestions(Context applicationContext) {
