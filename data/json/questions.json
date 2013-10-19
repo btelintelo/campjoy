@@ -5,13 +5,11 @@
         "choices":[{
             "text": "Option 1",
             "nextid": 2,
-            "images":["img1.jpg","img2.jpg"],
             "treeid":""
         },
         {
             "text": "Option 2",
             "nextid": 3,
-            "images":["img3.jpg","img3.jpg"],
             "treeid":""
         }]
     },
@@ -20,13 +18,11 @@
         "choices":[{
             "text": "Option 1",
             "nextid": "",
-            "images":["img1.jpg","img2.jpg"],
             "treeid":1
         },
         {
             "text": "Option 2",
             "nextid": "",
-            "images":["img3.jpg","img3.jpg"],
             "treeid":2
         }]
     }
