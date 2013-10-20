@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CJOSpeciesTableViewController : UIViewController
+@interface CJOSpeciesTableViewController : UITableViewController
 
 @end

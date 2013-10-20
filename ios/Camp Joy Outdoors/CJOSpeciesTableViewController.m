@@ -11,7 +11,6 @@
 #import "CJOTreeInfoViewController.h"
 
 @interface CJOSpeciesTableViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -47,6 +46,7 @@
     NSString * imageName = [NSString stringWithFormat:@"thumb/%@_thumb.jpg", tree.id];
     UIImage *img = [UIImage imageNamed:imageName];
     cell.imageView.frame = CGRectMake(0, 0, 44, 44);
+    cell.imageView.bounds =CGRectMake(0, 0, 44, 44);
     cell.imageView.image = img;
     
 }
