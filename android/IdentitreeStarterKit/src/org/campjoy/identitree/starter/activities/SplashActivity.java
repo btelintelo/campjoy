@@ -54,7 +54,7 @@ public class SplashActivity extends Activity implements AnimationListener {
 	@Override
 	public void onAnimationEnd(Animation animation) {
 		// TODO Auto-generated method stub
-		startActivity(new Intent(SplashActivity.this, MainTabActivity.class));
+		startActivity(new Intent(this, MainTabActivity.class));
 	}
 
 	@Override
