@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CJOImageLabelTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIImageView *treeThumb;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @end
