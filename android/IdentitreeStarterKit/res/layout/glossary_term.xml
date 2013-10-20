@@ -11,16 +11,12 @@
 
         <ImageView
             android:id="@+id/term_image"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </FrameLayout>
 
     <TextView
         android:id="@+id/term_name"
-        android:paddingLeft="20dp"
-        android:paddingRight="10dp"
         android:layout_width="fill_parent"
         android:textAppearance="?android:attr/textAppearanceLargeInverse"
         android:layout_height="wrap_content" />
@@ -28,8 +24,6 @@
     <TextView
         android:id="@+id/term_description"
         android:textAppearance="?android:attr/textAppearanceMediumInverse"
-        android:paddingLeft="20dp"
-        android:paddingRight="10dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content" />
 
