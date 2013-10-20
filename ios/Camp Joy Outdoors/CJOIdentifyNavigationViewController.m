@@ -47,17 +47,15 @@
 -(void)handleGlossaryNotification:(NSNotification *) notification {
     NSDictionary * userInfo = notification.userInfo;
     NSString * term = userInfo[@"term"];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        CJOGlossaryDefinitionViewController * definitionViewController = [[CJOGlossaryDefinitionViewController alloc] init];
-        definitionViewController.word = term;
-        [self pushViewController:definitionViewController animated:YES];
-    });
+
+    NSString *boardName = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? @"glossary_iPhone" : @"glossary_iPad";
+    UIStoryboard *board = [UIStoryboard storyboardWithName:boardName  bundle:nil];
+    
+    CJOGlossaryDefinitionViewController *definitionViewController = [board instantiateViewControllerWithIdentifier:@"definition"];
+    definitionViewController.word = term;
+    [self pushViewController:definitionViewController animated:YES];
+
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
