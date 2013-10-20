@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="identitreelogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ggJ-CN-vsx">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="indentitree_home.png" translatesAutoresizingMaskIntoConstraints="NO" id="ggJ-CN-vsx">
                                         <rect key="frame" x="60" y="44" width="200" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <constraints>
@@ -273,7 +273,7 @@
         <image name="home" width="27" height="26"/>
         <image name="homebackground.png" width="640" height="960"/>
         <image name="identify" width="24" height="24"/>
-        <image name="identitreelogo.png" width="500" height="700"/>
+        <image name="indentitree_home.png" width="500" height="700"/>
         <image name="infobutton.png" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
