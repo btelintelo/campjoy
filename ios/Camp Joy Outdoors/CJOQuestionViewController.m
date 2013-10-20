@@ -13,6 +13,7 @@
 #import "CJOModel.h"
 #import "CJOConstants.h"
 #import "CJOGlossaryDefinitionViewController.h"
+#import "CJOPathViewController.h"
 
 @interface CJOQuestionViewController ()
 
@@ -35,6 +36,7 @@
         self.navigationItem.rightBarButtonItem = nil;
     }
 }
+
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -73,10 +75,17 @@
     CJOAnswerCell * cell = (CJOAnswerCell *) sender;
     if([segue.identifier isEqualToString:@"nextQuestionSegue"]) {
         CJOQuestionViewController * destinationViewController = [segue destinationViewController];
-        destinationViewController.question = [self nextQuestion:cell.choice];
+        CJOQuestion * question = [self nextQuestion:cell.choice];
+        destinationViewController.path = [self.path arrayByAddingObject:cell.choice];
+        destinationViewController.question = question;
     } else if ([segue.identifier isEqualToString:@"treeIdentifiedSegue"]) {
         CJOTreeInfoViewController * destinationViewController = [segue destinationViewController];
         destinationViewController.tree = [self identifiedTree:cell.choice];
+    } else if ([segue.identifier isEqualToString:@"showHistorySegue"]) {
+        UINavigationController * navigationViewController = [segue destinationViewController];
+        CJOPathViewController * destinationViewController = navigationViewController.viewControllers[0];
+        destinationViewController.delegate = self;
+        destinationViewController.path = self.path;
     }
 }
 
@@ -124,6 +133,14 @@
     }
     NSString * imageName = [NSString stringWithFormat:@"dichotomy/%@%@", self.question.id, imageIndex];
     return [UIImage imageNamed:imageName];
+}
+
+-(void)pathViewControllerDone {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+-(void)pathViewControllerDidSelectIndex:(NSInteger)index {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToViewController:self.navigationController.viewControllers[index] animated:YES];
 }
 
 
