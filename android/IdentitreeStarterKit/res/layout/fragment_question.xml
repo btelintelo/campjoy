@@ -9,8 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp" >
+        android:layout_centerHorizontal="true" >
 
         <ImageView
             android:id="@+id/image_first_question"
@@ -29,23 +28,17 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/image_first_question"
             android:layout_marginTop="29dp"
-            android:text="@string/text_first" />
+            android:text="@string/text_first"
+            android:textSize="20sp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/relativeLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp" >
-
-        <TextView
-            android:id="@+id/text_second_question"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="@string/text_second" />
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="110dp" >
 
         <ImageView
             android:id="@+id/image_second_question"
@@ -53,8 +46,19 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
             android:contentDescription="@string/image"
             android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/text_second_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/image_second_question"
+            android:layout_marginTop="29dp"
+            android:text="@string/text_first"
+            android:textSize="20sp" />
     </RelativeLayout>
 
 </RelativeLayout>
