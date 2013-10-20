@@ -1,6 +1,9 @@
 package org.campjoy.identitree.starter.fragments;
 
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import org.campjoy.identitree.starter.FragmentBase;
 import org.campjoy.identitree.starter.R;
@@ -25,10 +28,11 @@ public class TreeInfoFragment extends FragmentBase{
 	Tree tree;
 	TextView treeDescription,imageCaption;
 	ImageView mapImage;
-	LinearLayout widthText, widthValue, heightText, heightValue;
-	LinearLayout gowthText, growthValue, sunText, sunValue;
-	LinearLayout shapeText, shapeValue,soilTypeText, soilTypeValue;
-	LinearLayout leafShapeText, leafShapeValue, lifeSpanText, lifeSpanValue;
+	TextView widthText, heightText, heightValue;
+	TextView widthValue;
+	TextView gowthText, growthValue, sunText, sunValue;
+	TextView shapeText, shapeValue,soilTypeText, soilTypeValue;
+	TextView leafShapeText, leafShapeValue, lifeSpanText, lifeSpanValue;
 	
 	
 	@Override
@@ -69,7 +73,55 @@ public class TreeInfoFragment extends FragmentBase{
         
         
 		}
+		
+		widthValue = (TextView)v.findViewById(R.id.widthValue);
+		heightValue= (TextView)v.findViewById(R.id.heightValue);
+		growthValue= (TextView)v.findViewById(R.id.growthRateValue);
+		sunValue= (TextView)v.findViewById(R.id.sunValue);
+		shapeValue = (TextView)v.findViewById(R.id.shapeValue);
+		soilTypeValue= (TextView)v.findViewById(R.id.soilTypeValue);
+		leafShapeValue= (TextView)v.findViewById(R.id.leafShapeValue);
+		lifeSpanValue= (TextView)v.findViewById(R.id.lifeSpanValue);
         
+		
+	
+		for (String key : tree.getTable().keySet()) {
+			if(key.equalsIgnoreCase("Width(spread)"))
+			{
+				widthValue.setText(tree.getTable().get(key));
+			}
+			else if((key.equalsIgnoreCase("Height")))
+			{
+				heightValue.setText(tree.getTable().get(key));
+			}
+			else if((key.equalsIgnoreCase("Growth Rate")))
+			{
+				growthValue.setText(tree.getTable().get(key));
+			}
+			else if((key.equalsIgnoreCase("Sun")))
+			{
+				sunValue.setText(tree.getTable().get(key));
+			}
+			else if((key.equalsIgnoreCase("Shape")))
+			{
+				shapeValue.setText(tree.getTable().get(key));
+			}
+			else if((key.equalsIgnoreCase("Soil Type")))
+			{
+				soilTypeValue.setText(tree.getTable().get(key));
+			}
+			else if((key.equalsIgnoreCase("Leaf Shape")))
+			{
+				leafShapeValue.setText(tree.getTable().get(key));
+			}
+			else if((key.equalsIgnoreCase("Life Span")))
+			{
+				lifeSpanValue.setText(tree.getTable().get(key));
+			}
+	
+		}
+		
+		
         return v;
     }
 

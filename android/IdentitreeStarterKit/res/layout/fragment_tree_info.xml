@@ -1,12 +1,21 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+  <ScrollView  android:id="@+id/tree_details_scroll_layout"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"  android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+       xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+        
+        
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+    
 	<FrameLayout 
 	    android:id="@+id/treeInfoFrameLayout"
 	    android:layout_width="match_parent"
@@ -37,35 +46,40 @@
                 android:layout_marginRight="20dp"
                />
     </FrameLayout>
+  
    <TextView
                 android:id="@+id/tree_description"
                 android:layout_width="match_parent"
+                android:layout_below="@+id/treeInfoFrameLayout"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:layout_below="@+id/treeInfoFrameLayout"
-             	/>
+               />
    		<LinearLayout   android:id="@+id/tree_details_layout"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tree_description"
-            android:orientation="horizontal">
+            android:orientation="vertical">
         <LinearLayout  
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
             android:orientation="horizontal">
              <TextView
                 android:id="@+id/widthText"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
+                android:text="Width(spread)"
                 android:layout_marginBottom="5dp"
                />
               <TextView
                 android:id="@+id/widthValue"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
@@ -73,20 +87,24 @@
                />
         </LinearLayout>
          <LinearLayout  
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/white"
             android:orientation="horizontal">
              <TextView
                 android:id="@+id/heightText"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:text="Height"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="5dp"
                />
               <TextView
                 android:id="@+id/heightValue"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
@@ -94,20 +112,24 @@
                />
         </LinearLayout>
          <LinearLayout  
-            android:layout_width="wrap_content"
+           android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
             android:orientation="horizontal">
              <TextView
                 android:id="@+id/growthRateText"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
+                 android:text="Growth Rate"
                 android:layout_marginBottom="5dp"
                />
               <TextView
                 android:id="@+id/growthRateValue"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
@@ -115,20 +137,24 @@
                />
         </LinearLayout>
          <LinearLayout  
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/white"
             android:orientation="horizontal">
              <TextView
                 android:id="@+id/sunText"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
+                android:text="Sun"
                 android:layout_marginBottom="5dp"
                />
               <TextView
                 android:id="@+id/sunValue"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
@@ -136,20 +162,24 @@
                />
         </LinearLayout>
          <LinearLayout  
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
             android:orientation="horizontal">
              <TextView
                 android:id="@+id/shapeText"
-                android:layout_width="match_parent"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                 android:text="Shape"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="5dp"
                />
               <TextView
                 android:id="@+id/shapeValue"
-                android:layout_width="match_parent"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
@@ -157,20 +187,24 @@
                />
         </LinearLayout>
          <LinearLayout  
-            android:layout_width="wrap_content"
+             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/white"
             android:orientation="horizontal">
              <TextView
                 android:id="@+id/soilTypeText"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
+                 android:text="Soil Type"
                 android:layout_marginBottom="5dp"
                />
               <TextView
                 android:id="@+id/soilTypeValue"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
@@ -178,20 +212,24 @@
                />
         </LinearLayout>
          <LinearLayout  
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
             android:orientation="horizontal">
              <TextView
                 android:id="@+id/leafShapeText"
-                android:layout_width="match_parent"
+                 android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
+                android:text="Leaf Shape"
                 android:layout_marginBottom="5dp"
                />
               <TextView
                 android:id="@+id/leafShapeValue"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
@@ -199,20 +237,24 @@
                />
         </LinearLayout>
          <LinearLayout  
-            android:layout_width="wrap_content"
+             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/white"
             android:orientation="horizontal">
              <TextView
                 android:id="@+id/lifeSpanText"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:text="Life Span"
                 android:layout_marginLeft="5dp"
                 android:layout_marginBottom="5dp"
                />
               <TextView
                 android:id="@+id/lifeSpanValue"
-                android:layout_width="match_parent"
+                  android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
@@ -227,3 +269,4 @@
       android:layout_width="match_parent"
       android:layout_height="match_parent"/>
 </RelativeLayout>
+ </ScrollView>
