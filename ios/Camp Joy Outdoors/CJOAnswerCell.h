@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "CJOChoice.h"
 
+@protocol CJOAnswerCellDelegate;
+
 @interface CJOAnswerCell : UITableViewCell<UITextViewDelegate, UIGestureRecognizerDelegate>
+
+@property (nonatomic, weak) id<CJOAnswerCellDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UITextView *answerText;
 @property (strong, nonatomic) UIImage * choiceImage;
@@ -18,5 +22,10 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageWidthConstraint;
 @property (weak, nonatomic) UITableView* tableView;
 
+@end
+
+@protocol CJOAnswerCellDelegate <NSObject>
+
+-(void)answerCell:(CJOAnswerCell *)cell didSelectGlossaryTerm:(CJOGlossaryTerm *)glossaryTerm boundByRect:(CGRect)rect;
 
 @end

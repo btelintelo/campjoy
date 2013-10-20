@@ -11,10 +11,92 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dp6-mO-uSC">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="7DT-Kv-RDx" kind="relationship" relationship="rootViewController" id="sgB-IP-O8F"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1u9-Qb-jxk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-605" y="-344"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rJx-ma-GMR">
+            <objects>
+                <viewController id="7DT-Kv-RDx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h6D-fb-uod"/>
+                        <viewControllerLayoutGuide type="bottom" id="byh-pZ-sro"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cCY-71-fxc">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="irn-eP-HzS">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1090"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="156" id="AkY-Bj-dR0">
+                                        <rect key="frame" x="0.0" y="86" width="768" height="156"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AkY-Bj-dR0" id="LDa-QS-FHP">
+                                            <rect key="frame" x="0.0" y="0.0" width="768" height="155"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvm-yw-MMH">
+                                                    <rect key="frame" x="20" y="20" width="728" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="SdD-e1-Prc"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fX7-gX-syD">
+                                                    <rect key="frame" x="251" y="60" width="267" height="75"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="267" id="3nI-95-Qa3"/>
+                                                        <constraint firstAttribute="height" constant="75" id="81D-Xc-k2h"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fX7-gX-syD" firstAttribute="top" secondItem="fvm-yw-MMH" secondAttribute="bottom" constant="8" id="2fn-vC-5k2"/>
+                                                <constraint firstItem="fvm-yw-MMH" firstAttribute="leading" secondItem="LDa-QS-FHP" secondAttribute="leading" constant="20" id="DyX-mA-P6R"/>
+                                                <constraint firstAttribute="trailing" secondItem="fvm-yw-MMH" secondAttribute="trailing" constant="20" id="EUs-2n-MOQ"/>
+                                                <constraint firstAttribute="centerX" secondItem="fX7-gX-syD" secondAttribute="centerX" constant="-0.5" id="HmB-Zy-Ei2"/>
+                                                <constraint firstItem="fvm-yw-MMH" firstAttribute="top" secondItem="LDa-QS-FHP" secondAttribute="top" constant="20" id="sob-i2-TRc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRH-Gr-Upj">
+                                <rect key="frame" x="699" y="986" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ZgC-hF-oah"/>
+                                    <constraint firstAttribute="width" constant="49" id="cOf-QH-NCn"/>
+                                </constraints>
+                                <state key="normal" title="History">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VRH-Gr-Upj" secondAttribute="trailing" constant="20" symbolic="YES" id="4lg-X1-rle"/>
+                            <constraint firstItem="byh-pZ-sro" firstAttribute="top" secondItem="VRH-Gr-Upj" secondAttribute="bottom" constant="20" symbolic="YES" id="r68-Mg-2Rr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GAu-mE-pvK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Kd-hF-piT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="365" y="-344"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

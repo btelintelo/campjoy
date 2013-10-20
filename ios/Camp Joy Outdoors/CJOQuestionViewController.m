@@ -143,5 +143,9 @@
     [self.navigationController popToViewController:self.navigationController.viewControllers[index] animated:YES];
 }
 
+-(void)answerCell:(CJOAnswerCell *)cell didSelectGlossaryTerm:(CJOGlossaryTerm *)glossaryTerm boundByRect:(CGRect)rect {
+    
+}
+
 
 @end
