@@ -13,11 +13,13 @@ public class QuestionActivity extends FragmentActivityBase {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		int id = 0;		
+		int id = 0;
+		String path = "Path: ";
 		QuestionFragment questionFragment = new QuestionFragment();
 		
 		Bundle bundle = new Bundle();
 		bundle.putInt("ID", id);
+		bundle.putString("Path", path);
 		
 		questionFragment.setArguments(bundle);
 		startFragment(questionFragment, String.valueOf(id));
