@@ -68,9 +68,9 @@
     if(section == 0) {
         return @"Information";
     } else if (section == 1) {
-        return @"Full Tree";
+        return @"Tree Silhouette";
     } else {
-        return @"Native Habitat";
+        return @"Where It Grows";
     }
     
 }
