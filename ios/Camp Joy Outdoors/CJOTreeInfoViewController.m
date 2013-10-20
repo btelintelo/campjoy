@@ -56,7 +56,7 @@
 }
 
 - (void) configureCarousel {
-
+    self.carousel.decelerationRate = 0.5;
 }
 
 #pragma mark - UITableViewDataSource;
