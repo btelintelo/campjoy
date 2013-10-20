@@ -42,7 +42,7 @@
     {
         "id": "4",
         "choices":[{
-            "text": "Green twigs with short buds, with few scales, a shade of pink at the base with a white tip; Bark has a slight orange color to it.  Has paired samara",
+            "text": "Green twigs with short buds, with few scales, a shade of pink at the base with a white tip; Bark has a slight orange color to it.  Has paired samara",
             "nextid": "",
             "treeid": "box_elder"
         },
@@ -226,7 +226,7 @@
         "choices":[{
             "text": "Bark of tree white and can be chipped away easily.",
             "nextid": "",
-            "treeid": "chinkapin_oak"
+            "treeid": "chinquapin_oak"
         },
         {
             "text": "Bark of tree darker in color and firm.",
@@ -354,7 +354,7 @@
     {
         "id": "28",
         "choices":[{
-            "text": "Buds small, yellow and brown; twigs thin, with a strong smell of almonds when split; newer trees  contain horizontal white bumps on a rusty-brown bark, older trees with bumps splitting into black or burnt looking plates.",
+            "text": "Buds small, yellow and brown; twigs thin, with a strong smell of almonds when split; newer trees  contain horizontal white bumps on a rusty-brown bark, older trees with bumps splitting into black or burnt looking plates.",
             "nextid": "",
             "treeid": "black_cherry"
         },
@@ -376,3 +376,6 @@
             "nextid": "",
             "treeid": "shagbark_hickory"
         }]
+    }
+    ]
+}
