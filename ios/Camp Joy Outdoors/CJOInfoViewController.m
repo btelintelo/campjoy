@@ -30,7 +30,7 @@
 	// Do any additional setup after loading the view.
 }
 - (IBAction)closePushed:(id)sender {
-    [self.delegate closeModal];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

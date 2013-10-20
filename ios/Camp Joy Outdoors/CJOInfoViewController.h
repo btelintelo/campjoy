@@ -8,18 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol  InfoDelegate;
-
 
 @interface CJOInfoViewController : UIViewController
 
-@property (weak) id <InfoDelegate> delegate;
 
-@end
-
-
-@protocol InfoDelegate
-
--(void)closeModal;
 
 @end
