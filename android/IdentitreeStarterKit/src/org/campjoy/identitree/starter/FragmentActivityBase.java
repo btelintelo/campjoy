@@ -53,7 +53,7 @@ public abstract class FragmentActivityBase extends FragmentActivity {
 		tx.commit();
 	}
 	
-	protected void loadFragment(Fragment frag)
+	public void loadFragment(Fragment frag)
 	{
 		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
 

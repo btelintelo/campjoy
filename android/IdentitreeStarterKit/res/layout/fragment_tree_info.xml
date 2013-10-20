@@ -15,12 +15,22 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
    >
+   
+    <Button
+        android:id="@+id/button_start1"
+        android:layout_width="match_parent"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Start Over" />
     
 	<FrameLayout 
 	    android:id="@+id/treeInfoFrameLayout"
 	    android:layout_width="match_parent"
         android:layout_height="wrap_content" 
-        android:layout_alignParentTop="true">
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/button_start1">
    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
@@ -268,5 +278,14 @@
       android:layout_alignParentBottom="true"
       android:layout_width="match_parent"
       android:layout_height="match_parent"/>
+  
+    <Button
+        android:id="@+id/button_start2"
+        android:layout_width="match_parent"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/tree_map_image"
+        android:text="Start Over" />
 </RelativeLayout>
  </ScrollView>

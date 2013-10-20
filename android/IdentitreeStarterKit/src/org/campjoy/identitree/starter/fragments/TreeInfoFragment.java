@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import org.campjoy.identitree.starter.FragmentActivityBase;
 import org.campjoy.identitree.starter.FragmentBase;
 import org.campjoy.identitree.starter.R;
 import org.campjoy.identitree.starter.model.Tree;
@@ -17,8 +18,10 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -33,7 +36,7 @@ public class TreeInfoFragment extends FragmentBase{
 	TextView gowthText, growthValue, sunText, sunValue;
 	TextView shapeText, shapeValue,soilTypeText, soilTypeValue;
 	TextView leafShapeText, leafShapeValue, lifeSpanText, lifeSpanValue;
-
+	Button start1,start2;
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
@@ -141,7 +144,43 @@ public class TreeInfoFragment extends FragmentBase{
 
 			}
 		}
-
+		
+		start1 = (Button) v.findViewById(R.id.button_start1);
+		start1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				int id = 0;
+				String path = "Path: ";
+				QuestionFragment questionFragment = new QuestionFragment();
+				
+				Bundle bundle = new Bundle();
+				bundle.putInt("ID", id);
+				bundle.putString("Path", path);
+				
+				questionFragment.setArguments(bundle);
+				((FragmentActivityBase) getActivity()).loadFragment(questionFragment);
+				
+			}
+		});
+		start2 = (Button) v.findViewById(R.id.button_start2);
+		start2.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				int id = 0;
+				String path = "Path: ";
+				QuestionFragment questionFragment = new QuestionFragment();
+				
+				Bundle bundle = new Bundle();
+				bundle.putInt("ID", id);
+				bundle.putString("Path", path);
+				
+				questionFragment.setArguments(bundle);
+				((FragmentActivityBase) getActivity()).loadFragment(questionFragment);
+				
+			}
+		});
 		return v;
 	}
 
