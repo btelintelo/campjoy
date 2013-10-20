@@ -129,7 +129,7 @@ public class QuestionFragment extends FragmentBase {
 					bundle.putString("Path", pathsTraversed);
 					questionFragment.setArguments(bundle);
 					
-					((FragmentActivityBase) getActivity()).startFragment(questionFragment, String.valueOf(nextId));
+					((FragmentActivityBase) getActivity()).loadFragment(questionFragment);
 				} else {
 					// Executes when treeid = ""
 					// Method to start Treeinfo Fragment
@@ -139,7 +139,7 @@ public class QuestionFragment extends FragmentBase {
 					Bundle bundle = new Bundle();
 					bundle.putString("TreeId", treeId);
 					treeInfoFragment.setArguments(bundle);
-					((FragmentActivityBase) getActivity()).startFragment(treeInfoFragment,treeId);
+					((FragmentActivityBase) getActivity()).loadFragment(treeInfoFragment);
 				}
 			}
 		});
@@ -160,8 +160,9 @@ public class QuestionFragment extends FragmentBase {
 					bundle.putInt("ID", nextId);
 					bundle.putString("Path", pathsTraversed);
 					questionFragment.setArguments(bundle);
-
-					((FragmentActivityBase) getActivity()).startFragment(questionFragment, String.valueOf(nextId));
+					
+					
+					((FragmentActivityBase) getActivity()).loadFragment(questionFragment);
 				}
 				else
 				{
@@ -170,7 +171,7 @@ public class QuestionFragment extends FragmentBase {
 					Bundle bundle = new Bundle();
 					bundle.putString("TreeId", treeId);
 					treeInfoFragment.setArguments(bundle);
-					((FragmentActivityBase) getActivity()).startFragment(treeInfoFragment,treeId);
+					((FragmentActivityBase) getActivity()).loadFragment(treeInfoFragment);
 				}
 			}
 		});
