@@ -69,10 +69,6 @@
                             blue:((float) b / 255.0f)
                            alpha:1.0f];
 }
-- (IBAction)infoPressed:(id)sender {
-    CJOInfoViewController *infoController = [[CJOInfoViewController alloc] init];
-    infoController.delegate = self;
-    [self.navigationController pushViewController:infoController animated:YES];
-}
+
 
 @end
