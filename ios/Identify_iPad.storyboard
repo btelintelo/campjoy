@@ -16,58 +16,6 @@
             </objects>
             <point key="canvasLocation" x="-605" y="-344"/>
         </scene>
-        <!--Question View Controller-->
-        <scene sceneID="ahW-gK-m7F">
-            <objects>
-                <viewController id="fhc-DY-TNo" customClass="CJOQuestionViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="d1p-lk-3K3"/>
-                        <viewControllerLayoutGuide type="bottom" id="iL5-F2-UOm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HyP-12-9WB">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="wka-9c-69i"/>
-                    <connections>
-                        <segue destination="1XV-aF-EKx" kind="push" identifier="treeIdentifiedSegue" id="sU0-Wg-30w"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vPV-Cu-LUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UIl-9m-qza">
-                    <rect key="frame" x="0.0" y="0.0" width="73" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" title="Button">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <segue destination="fhc-DY-TNo" kind="push" identifier="nextQuestionSegue" id="PtD-sC-xQq"/>
-                    </connections>
-                </button>
-            </objects>
-            <point key="canvasLocation" x="225" y="-352"/>
-        </scene>
-        <!--Tree Info View Controller-->
-        <scene sceneID="H1R-DG-FRn">
-            <objects>
-                <viewController id="1XV-aF-EKx" customClass="CJOTreeInfoViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9Yo-je-F4x"/>
-                        <viewControllerLayoutGuide type="bottom" id="Ezv-gM-Kkn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ao6-B3-Q3v">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="psU-Ab-k1T"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tKM-c0-xPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1296" y="-344"/>
-        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="lightContent"/>

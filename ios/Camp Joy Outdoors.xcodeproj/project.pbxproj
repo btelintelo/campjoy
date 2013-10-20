@@ -49,6 +49,7 @@
 		4290D7F01813293E00B8057A /* dichotomy in Resources */ = {isa = PBXBuildFile; fileRef = 4290D7EF1813293E00B8057A /* dichotomy */; };
 		4290D7F31813307E00B8057A /* CJOPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4290D7F21813307E00B8057A /* CJOPathViewController.m */; };
 		4290D7F6181333F900B8057A /* CJOPathCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4290D7F5181333F900B8057A /* CJOPathCell.m */; };
+		4290D7F81813546500B8057A /* glossary_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4290D7F71813546500B8057A /* glossary_iPad.storyboard */; };
 		42EA2F521812C139007BB93B /* UIView+FrameSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA2F511812C139007BB93B /* UIView+FrameSize.m */; };
 		5506317E969D4A2890B04CD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D17A9345361743DFB82FFB8A /* libPods.a */; };
 		FA0B2BDF1812F22800FF21A7 /* trees in Resources */ = {isa = PBXBuildFile; fileRef = FA0B2BDE1812F22800FF21A7 /* trees */; };
@@ -133,6 +134,7 @@
 		4290D7F21813307E00B8057A /* CJOPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOPathViewController.m; sourceTree = "<group>"; };
 		4290D7F4181333F900B8057A /* CJOPathCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOPathCell.h; sourceTree = "<group>"; };
 		4290D7F5181333F900B8057A /* CJOPathCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOPathCell.m; sourceTree = "<group>"; };
+		4290D7F71813546500B8057A /* glossary_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = glossary_iPad.storyboard; sourceTree = "<group>"; };
 		42EA2F501812C139007BB93B /* UIView+FrameSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameSize.h"; sourceTree = "<group>"; };
 		42EA2F511812C139007BB93B /* UIView+FrameSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameSize.m"; sourceTree = "<group>"; };
 		73C95832BE124778979EB613 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				09939F3C1812F73D0043AFCD /* glossary_iPhone.storyboard */,
+				4290D7F71813546500B8057A /* glossary_iPad.storyboard */,
 				4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */,
 				4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */,
 				09939F3E1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.h */,
@@ -449,6 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4290D7F81813546500B8057A /* glossary_iPad.storyboard in Resources */,
 				4250A9081812158000F2F282 /* Identify_iPad.storyboard in Resources */,
 				42405B7C18122F7200292674 /* questions.json in Resources */,
 				FA0B2BDF1812F22800FF21A7 /* trees in Resources */,
