@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "CJOInfoViewController.h"
-@interface CJOHomeViewController : UIViewController<InfoDelegate>
+@interface CJOHomeViewController : UIViewController
 
 @end
