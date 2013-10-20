@@ -89,8 +89,8 @@
 		42405B7E1812301600292674 /* CJOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOModel.h; sourceTree = "<group>"; };
 		42405B7F1812301600292674 /* CJOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOModel.m; sourceTree = "<group>"; };
 		42405B811812F90700292674 /* campjoy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = campjoy.jpg; path = ../../data/campjoy.jpg; sourceTree = "<group>"; };
-		42405BC91813555F00292674 /* CJOSpeciesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJOSpeciesTableViewController.h; path = "Camp Joy Outdoors/CJOSpeciesTableViewController.h"; sourceTree = "<group>"; };
-		42405BCA1813555F00292674 /* CJOSpeciesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJOSpeciesTableViewController.m; path = "Camp Joy Outdoors/CJOSpeciesTableViewController.m"; sourceTree = "<group>"; };
+		42405BC91813555F00292674 /* CJOSpeciesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOSpeciesTableViewController.h; sourceTree = "<group>"; };
+		42405BCA1813555F00292674 /* CJOSpeciesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOSpeciesTableViewController.m; sourceTree = "<group>"; };
 		42405BCC1813558000292674 /* thumb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = thumb; path = ../../data/images/thumb; sourceTree = "<group>"; };
 		4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOGlossaryViewController.h; sourceTree = "<group>"; };
 		4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOGlossaryViewController.m; sourceTree = "<group>"; };
@@ -214,6 +214,8 @@
 		4250A9091812159900F2F282 /* Identify */ = {
 			isa = PBXGroup;
 			children = (
+				42405BC91813555F00292674 /* CJOSpeciesTableViewController.h */,
+				42405BCA1813555F00292674 /* CJOSpeciesTableViewController.m */,
 				4252C3AE180F8888001F86F5 /* CJOIdentifyViewController.h */,
 				4252C3AF180F8888001F86F5 /* CJOIdentifyViewController.m */,
 				4250A9071812158000F2F282 /* Identify_iPad.storyboard */,
@@ -273,8 +275,6 @@
 		4252C387180F8888001F86F5 = {
 			isa = PBXGroup;
 			children = (
-				42405BC91813555F00292674 /* CJOSpeciesTableViewController.h */,
-				42405BCA1813555F00292674 /* CJOSpeciesTableViewController.m */,
 				4252C399180F8888001F86F5 /* Camp Joy Outdoors */,
 				4252C3BE180F8888001F86F5 /* Camp Joy OutdoorsTests */,
 				4252C392180F8888001F86F5 /* Frameworks */,
