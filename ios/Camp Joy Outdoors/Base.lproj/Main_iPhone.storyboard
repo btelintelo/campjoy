@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -96,18 +96,45 @@
         <scene sceneID="Twd-8r-xPp">
             <objects>
                 <tableViewController id="yrb-iD-uP3" customClass="CJOSpeciesTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZWq-Ud-piz">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZWq-Ud-piz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tree" id="dxu-ce-ic2">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tree" rowHeight="48" id="dxu-ce-ic2" customClass="CJOImageLabelTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dxu-ce-ic2" id="dJq-Nc-BOW">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dx6-Cd-aCd">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="0bi-Qc-nac"/>
+                                                <constraint firstAttribute="height" constant="44" id="cTj-MY-xSd"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQl-zI-PgX">
+                                            <rect key="frame" x="52" y="11" width="248" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="DQl-zI-PgX" secondAttribute="trailing" constant="20" symbolic="YES" id="1Ad-kv-iM5"/>
+                                        <constraint firstItem="DQl-zI-PgX" firstAttribute="leading" secondItem="dx6-Cd-aCd" secondAttribute="trailing" constant="8" symbolic="YES" id="BgZ-zq-9sD"/>
+                                        <constraint firstItem="DQl-zI-PgX" firstAttribute="top" secondItem="dJq-Nc-BOW" secondAttribute="top" constant="11" id="GbV-wv-isr"/>
+                                        <constraint firstItem="dx6-Cd-aCd" firstAttribute="top" secondItem="dJq-Nc-BOW" secondAttribute="top" id="clc-B8-eOs"/>
+                                        <constraint firstItem="dx6-Cd-aCd" firstAttribute="leading" secondItem="dJq-Nc-BOW" secondAttribute="leading" id="pDE-XA-aaE"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageView" destination="dx6-Cd-aCd" id="CV1-gA-hsT"/>
+                                    <outlet property="nameLabel" destination="DQl-zI-PgX" id="5nh-s9-olS"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

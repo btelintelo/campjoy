@@ -9,6 +9,7 @@
 #import "CJOSpeciesTableViewController.h"
 #import "CJOTree.h"
 #import "CJOTreeInfoViewController.h"
+#import "CJOImageLabelTableViewCell.h"
 
 @interface CJOSpeciesTableViewController ()
 
@@ -32,29 +33,28 @@
     return [[CJOModel trees] count];
 }
 
+- (void)configureCell:(CJOImageLabelTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
+    CJOTree *tree = [[CJOModel trees] objectAtIndex:indexPath.row];
+    cell.nameLabel.text = tree.name;
+    NSString * imageName = [NSString stringWithFormat:@"thumb/%@_thumb.jpg", tree.id];
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    UIImage *img = [UIImage imageNamed:imageName];
+    cell.imageView.image = img;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tree" forIndexPath:indexPath];
+    CJOImageLabelTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tree" forIndexPath:indexPath];
     
+    [self configureCell:cell atIndexPath:indexPath];
+
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    CJOTree *tree = [[CJOModel trees] objectAtIndex:indexPath.row];
-    cell.textLabel.text = tree.name;
-    NSString * imageName = [NSString stringWithFormat:@"thumb/%@_thumb.jpg", tree.id];
-    UIImage *img = [UIImage imageNamed:imageName];
-    cell.imageView.frame = CGRectMake(0, 0, 44, 44);
-    cell.imageView.bounds =CGRectMake(0, 0, 44, 44);
-    cell.imageView.image = img;
-    
-}
-
-CJOTree *tree;
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    CJOTree *tree;
     tree = [[CJOModel trees] objectAtIndex:indexPath.row];
     
     CJOTreeInfoViewController *treeInfo = [[UIStoryboard storyboardWithName:@"Identify_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"TreeInfoViewController"];
