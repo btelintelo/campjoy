@@ -21,6 +21,7 @@
 		42405B801812301600292674 /* CJOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B7F1812301600292674 /* CJOModel.m */; };
 		42405B821812F90700292674 /* campjoy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42405B811812F90700292674 /* campjoy.jpg */; };
 		42405B87181348E900292674 /* CJOSpeciesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B86181348E900292674 /* CJOSpeciesTableViewController.m */; };
+		42405BC8181354A500292674 /* thumb in Resources */ = {isa = PBXBuildFile; fileRef = 42405BC7181354A500292674 /* thumb */; };
 		4250A8FF1812141D00F2F282 /* CJOGlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */; };
 		4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250A9051812156700F2F282 /* Identify_iPhone.storyboard */; };
 		4250A9081812158000F2F282 /* Identify_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250A9071812158000F2F282 /* Identify_iPad.storyboard */; };
@@ -87,6 +88,7 @@
 		42405B811812F90700292674 /* campjoy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = campjoy.jpg; path = ../../data/campjoy.jpg; sourceTree = "<group>"; };
 		42405B85181348E900292674 /* CJOSpeciesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOSpeciesTableViewController.h; sourceTree = "<group>"; };
 		42405B86181348E900292674 /* CJOSpeciesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOSpeciesTableViewController.m; sourceTree = "<group>"; };
+		42405BC7181354A500292674 /* thumb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = thumb; path = ../../data/images/thumb; sourceTree = "<group>"; };
 		4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOGlossaryViewController.h; sourceTree = "<group>"; };
 		4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOGlossaryViewController.m; sourceTree = "<group>"; };
 		4250A9051812156700F2F282 /* Identify_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Identify_iPhone.storyboard; path = ../Identify_iPhone.storyboard; sourceTree = "<group>"; };
@@ -310,6 +312,7 @@
 		4252C39A180F8888001F86F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42405BC7181354A500292674 /* thumb */,
 				09939F4118132B300043AFCD /* glossary */,
 				4290D7EF1813293E00B8057A /* dichotomy */,
 				FA4638B418131C2A007F62DD /* maps */,
@@ -441,6 +444,7 @@
 				FA0B2BDF1812F22800FF21A7 /* trees in Resources */,
 				42405B7B18122F7200292674 /* glossary.json in Resources */,
 				42405B7D18122F7200292674 /* trees.json in Resources */,
+				42405BC8181354A500292674 /* thumb in Resources */,
 				4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */,
 				4252C3AA180F8888001F86F5 /* Main_iPad.storyboard in Resources */,
 				4252C3B2180F8888001F86F5 /* Images.xcassets in Resources */,
