@@ -39,6 +39,7 @@
     [controllers addObject:[tabc.viewControllers lastObject]];
     [tabc setViewControllers:controllers];
 
+    self.window.tintColor = [UIColor colorWithRed:0x39/255.0f green:0xb5/255.0f blue:0x4a/255.0f alpha:1.0f];
     
     return YES;
 }
