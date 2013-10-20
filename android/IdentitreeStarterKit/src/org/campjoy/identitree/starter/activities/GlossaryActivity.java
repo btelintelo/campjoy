@@ -16,7 +16,7 @@ public class GlossaryActivity extends FragmentActivityBase {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_glossary);
 		
-		GlossaryModel glossary = new GlossaryModel(getApplicationContext());
+		GlossaryModel glossary = GlossaryModel.loadInstance(getApplicationContext());
 		GlossaryAdapter adapter = new GlossaryAdapter(getApplicationContext(), glossary);
 		
 		ListView termListView = (ListView) findViewById(R.id.glossary_list);

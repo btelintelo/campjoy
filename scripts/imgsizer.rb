@@ -20,7 +20,7 @@ def prerender(dirname, filename)
         scales.each do|scale|
             width = (size * scale).to_i
             thumbname = "trees/#{slug}/#{basename}#{ext.downcase}"
-            androidthumbname = "trees/#{slug}_#{basename}#{ext.downcase}"
+            androidthumbname = "androidtrees/#{slug}_#{basename}#{ext.downcase}"
             if(File.exist?(thumbname) == false)
                 original = fullname
                 image = Magick::ImageList.new(original)
@@ -65,7 +65,7 @@ Dir.chdir "../../camp_joy_images"
 tree_dirs = Dir.entries(".")
 
 tree_dirs.each do|d|
-    if (d.start_with?(".") == false and File.directory?(d) and d != "trees") then
+    if (d.start_with?(".") == false and File.directory?(d) and d != "trees" and d != "androidtrees") then
         puts "Folder #{d}"
         images = Dir.entries d
         images.each do|i|
