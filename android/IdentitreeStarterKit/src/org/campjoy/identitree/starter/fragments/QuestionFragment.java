@@ -8,7 +8,9 @@ import java.util.List;
 import org.campjoy.identitree.starter.FragmentActivityBase;
 import org.campjoy.identitree.starter.FragmentBase;
 import org.campjoy.identitree.starter.R;
+import org.campjoy.identitree.starter.model.GlossaryModel;
 import org.campjoy.identitree.starter.model.QuestionModel;
+import org.campjoy.identitree.starter.popup.HotTap;
 
 import android.content.res.AssetManager;
 import android.graphics.drawable.Drawable;
@@ -65,6 +67,7 @@ public class QuestionFragment extends FragmentBase {
 		secondText = model.getQuestions().get(id).getChoice2().getText();
 		
 		firstTextView.setText(firstText);
+		new HotTap(getActivity(), firstTextView);
 		secondTextView.setText(secondText);
 		pathTextView.setText(pathsTraversed);
 		

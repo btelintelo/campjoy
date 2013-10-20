@@ -6,6 +6,8 @@ import org.campjoy.identitree.starter.CJApplication;
 import org.campjoy.identitree.starter.MainActivity;
 import org.campjoy.identitree.starter.MainTabActivity;
 import org.campjoy.identitree.starter.R;
+import org.campjoy.identitree.starter.model.GlossaryModel;
+import org.campjoy.identitree.starter.model.TreeModel;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -36,7 +38,9 @@ public class SplashActivity extends Activity implements AnimationListener {
 		setContentView(R.layout.activity_splash);
 		
 		splashLayoutImg = (ImageView)findViewById(R.id.splash_activity_image);
-		
+		TreeModel.loadInstance(getApplicationContext());
+		GlossaryModel.loadInstance(getApplicationContext());
+
 		try {
 			splashLayoutImg.setBackgroundDrawable(Drawable.createFromStream(getAssets().open("american_basswood_img_0107.jpg"), null));
 		} catch (IOException e) {
@@ -53,8 +57,7 @@ public class SplashActivity extends Activity implements AnimationListener {
 
 	@Override
 	public void onAnimationEnd(Animation animation) {
-		// TODO Auto-generated method stub
-		startActivity(new Intent(SplashActivity.this, MainTabActivity.class));
+		startActivity(new Intent(this, MainTabActivity.class));
 	}
 
 	@Override
