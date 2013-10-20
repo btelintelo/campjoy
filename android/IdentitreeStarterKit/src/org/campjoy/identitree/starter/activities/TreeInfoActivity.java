@@ -17,6 +17,9 @@ public class TreeInfoActivity extends FragmentActivityBase {
 		
 		treeInfoFragment = new TreeInfoFragment();
 		
+		Bundle bundle = new Bundle();
+		bundle.putString("TreeId", "american_basswood");
+		treeInfoFragment.setArguments(bundle);
 		loadFragment(treeInfoFragment);
 	}
 

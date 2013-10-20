@@ -97,21 +97,27 @@ public class QuestionFragment extends FragmentBase {
 				if(!stringNextId.equals("")) {
 					// Need to add Paths from ids
 					nextId = Integer.parseInt(stringNextId);
+					//Accounts for array start index
+					nextId=nextId-1;
+					
+					QuestionFragment questionFragment = new QuestionFragment();
+					Bundle bundle = new Bundle();
+					bundle.putInt("ID", nextId);
+					bundle.putString("Path", pathsTraversed);
+					questionFragment.setArguments(bundle);
+					
+					((FragmentActivityBase) getActivity()).startFragment(questionFragment, String.valueOf(nextId));
 				} else {
 					// Executes when treeid = ""
 					// Method to start Treeinfo Fragment
 					// TODO INSERT TREEINFO SCREEN CALL HERE
+					TreeInfoFragment treeInfoFragment = new TreeInfoFragment();
+					String treeId= model.getQuestions().get(id).getChoice1().getTreeId();
+					Bundle bundle = new Bundle();
+					bundle.putString("TreeId", treeId);
+					treeInfoFragment.setArguments(bundle);
+					((FragmentActivityBase) getActivity()).startFragment(treeInfoFragment,treeId);
 				}
-				
-				nextId--;
-				
-				QuestionFragment questionFragment = new QuestionFragment();
-				Bundle bundle = new Bundle();
-				bundle.putInt("ID", nextId);
-				bundle.putString("Path", pathsTraversed);
-				questionFragment.setArguments(bundle);
-				
-				((FragmentActivityBase) getActivity()).startFragment(questionFragment, String.valueOf(nextId));
 			}
 		});
 		
@@ -121,7 +127,8 @@ public class QuestionFragment extends FragmentBase {
 			public void onClick(View v) {
 				String stringNextId = model.getQuestions().get(id).getChoice2().getNextId();
 				int nextId = Integer.parseInt(stringNextId);
-				nextId--;
+//				nextId--;
+				nextId= nextId-1;
 				
 				QuestionFragment questionFragment = new QuestionFragment();
 				Bundle bundle = new Bundle();
