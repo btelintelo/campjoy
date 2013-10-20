@@ -18,34 +18,36 @@ public class TreeModel extends BaseModel {
 	private static TreeModel instance;
 	private HashMap<String, Tree> trees;
 
-	public TreeModel(Context applicationContext)
-	{
+	private TreeModel(Context applicationContext) {
 		super(applicationContext, "trees.json");
 	}
-	
-	public static TreeModel getInstance(Context applicationContext) {
-		if(instance ==null)
-		{
+
+	public static TreeModel loadInstance(Context applicationContext) {
+		if (instance == null) {
 			instance = new TreeModel(applicationContext);
 		}
 		return instance;
 	}
-	
-	
+
+	public static TreeModel getInstance() {
+		if (instance == null) {
+			throw new IllegalStateException(
+					"You must call loadInstance before you can call getInstance");
+		}
+		return instance;
+	}
+
 	@Override
-	protected void parseJson(String json)
-	{
-		if(trees ==null)
-		{
+	protected void parseJson(String json) {
+		if (trees == null) {
 			trees = new HashMap<String, Tree>();
 		}
-		
+
 		try {
 			JSONObject readableJson = new JSONObject(json);
 			JSONArray trees = readableJson.getJSONArray("trees");
-			
-			for(int i = 0; i < trees.length(); i++)
-			{
+
+			for (int i = 0; i < trees.length(); i++) {
 				JSONObject oneTree = trees.getJSONObject(i);
 				Tree t = new Tree(oneTree);
 				this.trees.put(t.getId(), t);
@@ -54,23 +56,8 @@ public class TreeModel extends BaseModel {
 			Log.e(LOG_TAG, "Failed to load trees from json");
 		}
 	}
-	
-	public Tree getTreeById(String id)
-	{
-		Tree result = null;
-		
-		Iterator<Entry<String, Tree>> it = trees.entrySet().iterator();
-	    while (it.hasNext()) {
-	    	
-	    	Map.Entry<String, Tree> treePair = (Map.Entry<String, Tree>)it.next();
-	    	if(treePair.getKey().equalsIgnoreCase(id))
-	    	{
-	    		return treePair.getValue();
-	    	}
-	        it.remove(); // avoids a ConcurrentModificationException
-	    }
-		
-		return result;
-		
+
+	public Tree getTreeById(String id) {
+		return trees.get(id);
 	}
 }

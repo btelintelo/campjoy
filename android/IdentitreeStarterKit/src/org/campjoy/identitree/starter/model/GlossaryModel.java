@@ -13,8 +13,29 @@ public class GlossaryModel extends BaseModel {
 
 	private HashMap<String, Term> termMap;
 	private String[] terms;
+	
+	private static GlossaryModel instance = null;
 
-	public GlossaryModel(final Context applicationContext) {
+	public static GlossaryModel loadInstance(Context applicationContext)
+	{
+		if (instance == null)
+		{
+			instance = new GlossaryModel(applicationContext);
+		}
+
+		return instance;
+	}
+	
+	public static GlossaryModel getInstance()
+	{
+		if (instance == null)
+		{
+			throw new IllegalStateException("You must load the model before you call getInstance");
+		}
+		return instance;
+	}
+
+	private GlossaryModel(final Context applicationContext) {
 		super(applicationContext, "glossary.json");
 	}
 
@@ -28,7 +49,7 @@ public class GlossaryModel extends BaseModel {
 			for (int i = 0; i < terms.length(); i++) {
 				JSONObject oneTerm = terms.getJSONObject(i);
 				Term t = new Term(oneTerm);
-				this.termMap.put(t.getName(), t);
+				this.termMap.put(t.getName().toLowerCase(), t);
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();
