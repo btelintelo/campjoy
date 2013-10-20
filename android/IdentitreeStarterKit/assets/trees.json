@@ -3,7 +3,7 @@
     {
         "id": "shingle_oak",
         "name": "Shingle Oak",
-        "description": "Unlike most oaks the Shingle Oak’s leaves are unlobed, instead they are oval shaped. Common name originates from its use to make shingles for houses.",
+        "description": "Unlike most oaks the Shingle Oak‚Äôs leaves are unlobed, instead they are oval shaped. Common name originates from its use to make shingles for houses.",
         "sciname": "Quercus imbricaria",
         "family": "Beech Family (Fagaceae)",
         "tableData":[
@@ -54,7 +54,7 @@
     {
         "id": "american_beech",
         "name": "American Beech",
-        "description": "This tree has smooth, light gray bark throughout its life—which can extend well over 300 years! The roots of the American Beech remain close to the surface whiles its spread makes it difficult for anything to grow beneath its shady canopy. Some trunks are partially hollow, making it a great home for wildlife!",
+        "description": "This tree has smooth, light gray bark throughout its life‚Äîwhich can extend well over 300 years! The roots of the American Beech remain close to the surface whiles its spread makes it difficult for anything to grow beneath its shady canopy. Some trunks are partially hollow, making it a great home for wildlife!",
         "sciname": "Fagus grandifolia",
         "family": "Beech Family",
         "tableData":[
@@ -88,7 +88,7 @@
     {
         "id": "box_elder",
         "name": "Box Elder",
-        "description": "This is the only maple tree native to Ohio containing compound leaves. These trees are common in areas that have experienced human influence, such as flood plains, hedges, and vacant lots. Their short lifespan (≤30 years) and rapid growth allow them to quickly establish. While they are native to North America, they are considered an invasive species in Australia.",
+        "description": "This is the only maple tree native to Ohio containing compound leaves. These trees are common in areas that have experienced human influence, such as flood plains, hedges, and vacant lots. Their short lifespan (‚â§30 years) and rapid growth allow them to quickly establish. While they are native to North America, they are considered an invasive species in Australia.",
         "sciname": "Acer negundo",
         "family": "Maple Family (Acer)",
         "tableData":[
@@ -122,7 +122,7 @@
     {
         "id": "black_cherry",
         "name": "Black Cherry",
-        "description": "The sun-loving Black Cherry is a pioneer invader tree that quickly establishes in previously harvested forests and open fields thanks to its abundant fruit production. Its black flaky bark is easy to spot in the forest, especially in the winter. The wood of this tree is sold as “cherry” and is highly prized in woodworking due to its strong red color and fine-grained heartwood.",
+        "description": "The sun-loving Black Cherry is a pioneer invader tree that quickly establishes in previously harvested forests and open fields thanks to its abundant fruit production. Its black flaky bark is easy to spot in the forest, especially in the winter. The wood of this tree is sold as ‚Äúcherry‚Äù and is highly prized in woodworking due to its strong red color and fine-grained heartwood.",
         "sciname": "Prunus serotina",
         "family": "Rose Family (Cherry)",
         "tableData":[
@@ -156,7 +156,7 @@
     {
         "id": "american_elm",
         "name": "American Elm",
-        "description": "The American Elm’s iconic arching limbs graced city sidewalks in years past, forming leafy canopies over the roadway. Sadly, many mature members of this species have fallen victim to Dutch Elm disease; the spread of this disease by the elm bark beetle has made older specimens increasingly rare. Fortunately, young trees are immune to this disease and may even reach reproductive age before succumbing to the fungus.",
+        "description": "The American Elm‚Äôs iconic arching limbs graced city sidewalks in years past, forming leafy canopies over the roadway. Sadly, many mature members of this species have fallen victim to Dutch Elm disease; the spread of this disease by the elm bark beetle has made older specimens increasingly rare. Fortunately, young trees are immune to this disease and may even reach reproductive age before succumbing to the fungus.",
         "sciname": "Ulmus americana",
         "family": "Elm Family (Ulmaceae)",
         "tableData":[
@@ -241,7 +241,7 @@
     {
         "id": "red_maple",
         "name": "Red Maple",
-        "description": "Red Maple is one of the top ten most common trees in the United States.  The tree’s distinct red winter buds develop into samaras in late winter to early spring; Sometimes this fruit is commonly referred to as “helicopter seeds.” The wood of this tree is soft, therefore it is not a great choice for woodworking. However, not as widely used as other maples, a Red  Maple can be tapped for syrup production.",
+        "description": "Red Maple is one of the top ten most common trees in the United States.  The tree‚Äôs distinct red winter buds develop into samaras in late winter to early spring; Sometimes this fruit is commonly referred to as ‚Äúhelicopter seeds.‚Äù The wood of this tree is soft, therefore it is not a great choice for woodworking. However, not as widely used as other maples, a Red  Maple can be tapped for syrup production.",
         "sciname": "Acer rubrum",
         "family": "Maple Family (Aceraceae)",
         "tableData":[
@@ -360,7 +360,7 @@
     {
         "id": "osage_orange",
         "name": "Osage Orange",
-        "description": "The Osage Orange tree gets its name from the Osage tribe and the orange-sized, green fruit it produces. It is also known as the “hedgeapple” because they were commonly used as a hedge tree in rows of planting on farms. Its fruit can be used as a natural insect repellent. ",
+        "description": "The Osage Orange tree gets its name from the Osage tribe and the orange-sized, green fruit it produces. It is also known as the ‚Äúhedgeapple‚Äù because they were commonly used as a hedge tree in rows of planting on farms. Its fruit can be used as a natural insect repellent. ",
         "sciname": "Maclura pomifera",
         "family": "Mulberry Family (Moraceae)",
         "tableData":[
