@@ -20,6 +20,8 @@
 		42405B7D18122F7200292674 /* trees.json in Resources */ = {isa = PBXBuildFile; fileRef = 42405B7A18122F7200292674 /* trees.json */; };
 		42405B801812301600292674 /* CJOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B7F1812301600292674 /* CJOModel.m */; };
 		42405B821812F90700292674 /* campjoy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42405B811812F90700292674 /* campjoy.jpg */; };
+		42405BCB1813555F00292674 /* CJOSpeciesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405BCA1813555F00292674 /* CJOSpeciesTableViewController.m */; };
+		42405BCD1813558000292674 /* thumb in Resources */ = {isa = PBXBuildFile; fileRef = 42405BCC1813558000292674 /* thumb */; };
 		4250A8FF1812141D00F2F282 /* CJOGlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */; };
 		4250A9021812143F00F2F282 /* CJOAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A9011812143E00F2F282 /* CJOAboutUsViewController.m */; };
 		4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250A9051812156700F2F282 /* Identify_iPhone.storyboard */; };
@@ -87,6 +89,9 @@
 		42405B7E1812301600292674 /* CJOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOModel.h; sourceTree = "<group>"; };
 		42405B7F1812301600292674 /* CJOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOModel.m; sourceTree = "<group>"; };
 		42405B811812F90700292674 /* campjoy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = campjoy.jpg; path = ../../data/campjoy.jpg; sourceTree = "<group>"; };
+		42405BC91813555F00292674 /* CJOSpeciesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CJOSpeciesTableViewController.h; path = "Camp Joy Outdoors/CJOSpeciesTableViewController.h"; sourceTree = "<group>"; };
+		42405BCA1813555F00292674 /* CJOSpeciesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CJOSpeciesTableViewController.m; path = "Camp Joy Outdoors/CJOSpeciesTableViewController.m"; sourceTree = "<group>"; };
+		42405BCC1813558000292674 /* thumb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = thumb; path = ../../data/images/thumb; sourceTree = "<group>"; };
 		4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOGlossaryViewController.h; sourceTree = "<group>"; };
 		4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOGlossaryViewController.m; sourceTree = "<group>"; };
 		4250A9001812143E00F2F282 /* CJOAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOAboutUsViewController.h; sourceTree = "<group>"; };
@@ -270,6 +275,8 @@
 		4252C387180F8888001F86F5 = {
 			isa = PBXGroup;
 			children = (
+				42405BC91813555F00292674 /* CJOSpeciesTableViewController.h */,
+				42405BCA1813555F00292674 /* CJOSpeciesTableViewController.m */,
 				4252C399180F8888001F86F5 /* Camp Joy Outdoors */,
 				4252C3BE180F8888001F86F5 /* Camp Joy OutdoorsTests */,
 				4252C392180F8888001F86F5 /* Frameworks */,
@@ -320,6 +327,7 @@
 		4252C39A180F8888001F86F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42405BCC1813558000292674 /* thumb */,
 				09939F4118132B300043AFCD /* glossary */,
 				4290D7EF1813293E00B8057A /* dichotomy */,
 				FA4638B418131C2A007F62DD /* maps */,
@@ -451,6 +459,7 @@
 				FA0B2BDF1812F22800FF21A7 /* trees in Resources */,
 				42405B7B18122F7200292674 /* glossary.json in Resources */,
 				42405B7D18122F7200292674 /* trees.json in Resources */,
+				42405BCD1813558000292674 /* thumb in Resources */,
 				4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */,
 				4252C3AA180F8888001F86F5 /* Main_iPad.storyboard in Resources */,
 				4252C3B2180F8888001F86F5 /* Images.xcassets in Resources */,
@@ -514,6 +523,7 @@
 			files = (
 				42405B6A18121F7800292674 /* CJOQuestion.m in Sources */,
 				4290D7F6181333F900B8057A /* CJOPathCell.m in Sources */,
+				42405BCB1813555F00292674 /* CJOSpeciesTableViewController.m in Sources */,
 				42405B731812219800292674 /* CJOChoice.m in Sources */,
 				42405B801812301600292674 /* CJOModel.m in Sources */,
 				42405B761812298A00292674 /* CJOJSONParser.m in Sources */,
