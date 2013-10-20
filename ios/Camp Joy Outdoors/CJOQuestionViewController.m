@@ -155,7 +155,8 @@
 }
 
 -(void)launchApplicationURLForGlossaryTerm:(CJOGlossaryTerm *) glossaryTerm {
-    NSURL * url = [NSURL URLWithString:[NSString stringWithFormat:@"identitree://glossary?term=%@", glossaryTerm.name]];
+    NSString *urlEncodeString = [glossaryTerm.name stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL * url = [NSURL URLWithString:[NSString stringWithFormat:@"identitree://glossary?term=%@", urlEncodeString]];
     [[UIApplication sharedApplication] openURL:url];
 }
 
