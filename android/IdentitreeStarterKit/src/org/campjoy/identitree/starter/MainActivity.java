@@ -14,10 +14,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 
-	private Button questionButton;
-	private ImageView treeBrowserImgView;
-	private ImageView aboutImgView;
-	private ImageView glossaryImgView;
+	private ImageView questionButton;
 	
 	
 	@Override
@@ -26,7 +23,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		final Intent intent = new Intent(this, QuestionActivity.class);
-		questionButton = (Button) findViewById(R.id.button_question);
+		questionButton = (ImageView) findViewById(R.id.button_question);
 		questionButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -34,34 +31,6 @@ public class MainActivity extends Activity {
 			}
 		});
 		
-		
-		final Intent about = new Intent(this, AboutActivity.class);
-		aboutImgView = (ImageView) findViewById(R.id.imageAbout);
-		aboutImgView.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(about);
-			}
-		});
-		
-		final Intent treeBrowser = new Intent(this, TreeInfoActivity.class);
-		treeBrowserImgView = (ImageView) findViewById(R.id.imageTreeBrowser);
-		treeBrowserImgView.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startActivity(treeBrowser);
-			}
-		});
-		
-		final Intent glossaryIntent = new Intent(this, GlossaryActivity.class);
-		glossaryImgView = (ImageView) findViewById(R.id.imageGlossary);
-		glossaryImgView.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				startActivity(glossaryIntent);
-			}
-		});
 		
 	}
 
