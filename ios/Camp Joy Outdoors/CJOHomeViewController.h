@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CJOInfoViewController.h"
 @interface CJOHomeViewController : UIViewController
 
 @end
