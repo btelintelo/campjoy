@@ -26,6 +26,7 @@
 		42405BD21814333500292674 /* infobutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 42405BD11814333500292674 /* infobutton.png */; };
 		42405BD41814336E00292674 /* indentitree_home.png in Resources */ = {isa = PBXBuildFile; fileRef = 42405BD31814336E00292674 /* indentitree_home.png */; };
 		42405BD61814348200292674 /* homebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 42405BD51814348200292674 /* homebackground.png */; };
+		42405BD81814384D00292674 /* identitreelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 42405BD71814384D00292674 /* identitreelogo.png */; };
 		4250A8FF1812141D00F2F282 /* CJOGlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */; };
 		4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250A9051812156700F2F282 /* Identify_iPhone.storyboard */; };
 		4250A9081812158000F2F282 /* Identify_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250A9071812158000F2F282 /* Identify_iPad.storyboard */; };
@@ -103,6 +104,7 @@
 		42405BD11814333500292674 /* infobutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = infobutton.png; path = ../../data/homescreenimages/images/infobutton.png; sourceTree = "<group>"; };
 		42405BD31814336E00292674 /* indentitree_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = indentitree_home.png; path = ../../data/homescreenimages/images/indentitree_home.png; sourceTree = "<group>"; };
 		42405BD51814348200292674 /* homebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homebackground.png; path = ../../data/homescreenimages/homebackground.png; sourceTree = "<group>"; };
+		42405BD71814384D00292674 /* identitreelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = identitreelogo.png; path = ../../data/homescreenimages/identitreelogo.png; sourceTree = "<group>"; };
 		4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOGlossaryViewController.h; sourceTree = "<group>"; };
 		4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOGlossaryViewController.m; sourceTree = "<group>"; };
 		4250A9051812156700F2F282 /* Identify_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Identify_iPhone.storyboard; path = ../Identify_iPhone.storyboard; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				4252C3B1180F8888001F86F5 /* Images.xcassets */,
 				42405BD11814333500292674 /* infobutton.png */,
 				42405BD51814348200292674 /* homebackground.png */,
+				42405BD71814384D00292674 /* identitreelogo.png */,
 				42405BD31814336E00292674 /* indentitree_home.png */,
 				42405B811812F90700292674 /* campjoy.jpg */,
 				4252C39A180F8888001F86F5 /* Supporting Files */,
@@ -481,6 +484,7 @@
 				4250A9081812158000F2F282 /* Identify_iPad.storyboard in Resources */,
 				42405B7C18122F7200292674 /* questions.json in Resources */,
 				FA0B2BDF1812F22800FF21A7 /* trees in Resources */,
+				42405BD81814384D00292674 /* identitreelogo.png in Resources */,
 				42405B7B18122F7200292674 /* glossary.json in Resources */,
 				42405B7D18122F7200292674 /* trees.json in Resources */,
 				42405BCD1813558000292674 /* thumb in Resources */,
