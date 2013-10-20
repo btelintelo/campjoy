@@ -98,8 +98,9 @@ public class QuestionFragment extends FragmentBase {
 					// Need to add Paths from ids
 					nextId = Integer.parseInt(stringNextId);
 				} else {
+					// Executes when treeid = ""
+					// Method to start Treeinfo Fragment
 					// TODO INSERT TREEINFO SCREEN CALL HERE
-					
 				}
 				
 				nextId--;
