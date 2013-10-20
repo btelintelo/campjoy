@@ -2,12 +2,15 @@ package org.campjoy.identitree.starter.fragments;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Arrays;
+import java.util.List;
 
 import org.campjoy.identitree.starter.FragmentActivityBase;
 import org.campjoy.identitree.starter.FragmentBase;
 import org.campjoy.identitree.starter.R;
 import org.campjoy.identitree.starter.model.QuestionModel;
 
+import android.content.res.AssetManager;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -68,24 +71,44 @@ public class QuestionFragment extends FragmentBase {
 		firstImagePath = String.valueOf((id + 1)) + "a.png";
 		secondImagePath = String.valueOf((id + 1)) + "b.png";
 		
-		InputStream ims = null;
-		try {
-			ims = getActivity().getAssets().open(firstImagePath);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	    Drawable d = Drawable.createFromStream(ims, null);
-	    firstImageView.setImageDrawable(d);
-	    
-	    InputStream ims1 = null;
-		try {
-			ims1 = getActivity().getAssets().open(secondImagePath);
-		} catch (IOException e) {
-			e.printStackTrace();
+		AssetManager am = null;
+		List<String> mapList = null;
+		
+		if (mapList == null) {
+	        am = getActivity().getAssets();
+	        try {
+	            mapList = Arrays.asList(am.list(""));
+	        } catch (IOException e) {
+	        	e.printStackTrace();
+	        }
+	    }
+		
+		if(mapList.contains(firstImagePath)) {
+			InputStream ims = null;
+			try {
+				ims = am.open(firstImagePath);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		    Drawable d = Drawable.createFromStream(ims, null);
+		    firstImageView.setImageDrawable(d);
+		} else {
+			firstImageView.setImageDrawable(null);
 		}
 		
-	    Drawable d1 = Drawable.createFromStream(ims1, null);
-	    secondImageView.setImageDrawable(d1);
+		if(mapList.contains(secondImagePath)) {
+			InputStream ims1 = null;
+			try {
+				ims1 = getActivity().getAssets().open(secondImagePath);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			
+		    Drawable d1 = Drawable.createFromStream(ims1, null);
+		    secondImageView.setImageDrawable(d1);
+		} else {
+			secondImageView.setImageDrawable(null);
+		}
 		
 		firstLayout.setOnClickListener(new View.OnClickListener() {
 			
@@ -137,8 +160,7 @@ public class QuestionFragment extends FragmentBase {
 					bundle.putInt("ID", nextId);
 					bundle.putString("Path", pathsTraversed);
 					questionFragment.setArguments(bundle);
-					
-					
+
 					((FragmentActivityBase) getActivity()).loadFragment(questionFragment);
 				}
 				else
