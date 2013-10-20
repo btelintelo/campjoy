@@ -55,7 +55,15 @@ public class QuestionFragment extends FragmentBase {
 			
 			@Override
 			public void onClick(View v) {
-				int nextId = Integer.parseInt(model.getQuestions().get(id).getChoice1().getNextId());
+				String stringNextId = model.getQuestions().get(id).getChoice1().getNextId();
+				int nextId = 2;
+				
+				if(!stringNextId.equals("")) {
+					nextId = Integer.parseInt(stringNextId);
+				} else {
+					// TODO INSERT TREEINFO SCREEN CALL HERE
+				}
+				
 				nextId--;
 				
 				QuestionFragment questionFragment = new QuestionFragment();
@@ -71,7 +79,8 @@ public class QuestionFragment extends FragmentBase {
 			
 			@Override
 			public void onClick(View v) {
-				int nextId = Integer.parseInt(model.getQuestions().get(id).getChoice2().getNextId());
+				String stringNextId = model.getQuestions().get(id).getChoice2().getNextId();
+				int nextId = Integer.parseInt(stringNextId);
 				nextId--;
 				
 				QuestionFragment questionFragment = new QuestionFragment();
