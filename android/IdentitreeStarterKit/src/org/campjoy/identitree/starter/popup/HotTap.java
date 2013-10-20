@@ -8,6 +8,7 @@ import org.campjoy.identitree.starter.model.GlossaryModel;
 import org.campjoy.identitree.starter.model.Term;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.text.Spannable;
 import android.text.TextPaint;
@@ -38,6 +39,8 @@ public class HotTap implements OnTouchListener {
 		glossary = GlossaryModel.getInstance();
 		v.setOnTouchListener(this);
 		createSpans(v);
+		TextView tv = (TextView)v;
+		tv.setHighlightColor(Color.TRANSPARENT);
 	}
 
 	private void createSpans(View v) {
