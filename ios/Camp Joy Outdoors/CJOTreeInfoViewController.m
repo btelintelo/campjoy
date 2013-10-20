@@ -60,7 +60,7 @@
 }
 
 #pragma mark - UITableViewDataSource;
-- (int) numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
     return 3;
 }
 
@@ -68,14 +68,14 @@
     if(section == 0) {
         return @"Information";
     } else if (section == 1) {
-        return @"Full Tree";
+        return @"Tree Silhouette";
     } else {
-        return @"Native Habitat";
+        return @"Where It Grows";
     }
     
 }
 
-- (int) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if(section == 0) {
         return self.tree.tableData.count;
     } else {
@@ -83,7 +83,7 @@
     }
 }
 
-- (float) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if(indexPath.section == 0) {
         return 48;
     } else {
