@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.campjoy.identitree.starter.R;
 import org.campjoy.identitree.starter.model.GlossaryModel;
+import org.campjoy.identitree.starter.model.Term;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -22,21 +23,21 @@ import android.widget.PopupWindow;
 import android.widget.PopupWindow.OnDismissListener;
 import android.widget.TextView;
 
-public class HotTap implements OnTouchListener, OnDismissListener {
+public class HotTap implements OnTouchListener {
+	private static final String LOG_TAG = HotTap.class.getSimpleName();
+
 	private final LayoutInflater inflater;
 	private final GlossaryModel glossary;
 
-	private PopupWindow popup = null;
-	private boolean dismissFlag = false;
+	private HotTapBubble popup = null;
 	private float popupX = -1f;
 	private float popupY = -1f;
 
-	public HotTap(Context activityContext, View v, GlossaryModel glossary) {
+	public HotTap(Context activityContext, View v) {
 		inflater = LayoutInflater.from(activityContext);
+		glossary = GlossaryModel.getInstance();
 		v.setOnTouchListener(this);
 		createSpans(v);
-
-		this.glossary = glossary;
 	}
 
 	private void createSpans(View v) {
@@ -69,12 +70,19 @@ public class HotTap implements OnTouchListener, OnDismissListener {
 			@Override
 			public void onClick(View widget) {
 				TextView tv = (TextView) widget;
-				String s = tv
-						.getText()
-						.subSequence(tv.getSelectionStart(),
-								tv.getSelectionEnd()).toString();
+				String s;
+				try {
+					s = tv.getText()
+							.subSequence(tv.getSelectionStart(),
+									tv.getSelectionEnd()).toString();
+				} catch (Exception ex) {
+					Log.e(LOG_TAG, "Error finding hot tap location");
+					return;
+				}
 				if (popup == null) {
-					initializeAndShowPopup(tv);
+					initializeAndShowPopup(tv, s);
+				} else {
+					popup.show(tv, popupX, popupY);
 				}
 				Log.d("tapped on:", s);
 			}
@@ -84,23 +92,13 @@ public class HotTap implements OnTouchListener, OnDismissListener {
 			}
 		};
 	}
-	
-	private void initializeAndShowPopup(View parent)
-	{
-		if(dismissFlag)
-		{
-			dismissFlag = false;
-			return;
-		}
-		View popupView = inflater.inflate(R.layout.glossary_popup, null);
-		popup = new PopupWindow(popupView, 500, 0);
-		popup.setOnDismissListener(HotTap.this);
-		popup.setOutsideTouchable(true);
 
-		Drawable bubbleBackground = inflater.getContext().getResources().getDrawable(R.drawable.bubble);
-		popup.setBackgroundDrawable(bubbleBackground);
-		popup.setWindowLayoutMode(0, LayoutParams.WRAP_CONTENT);
-		popup.showAsDropDown(parent, (int) popupX, (int) popupY);
+	private void initializeAndShowPopup(View parent, String title) {
+		Term term = glossary.getTermById(title);
+		popup = new HotTapBubble(inflater.getContext(), term.getName(),
+				term.getDescription());
+
+		popup.show(parent, popupX, popupY);
 	}
 
 	public static Integer[] getIndices(String s, char c) {
@@ -119,11 +117,5 @@ public class HotTap implements OnTouchListener, OnDismissListener {
 		popupY = event.getY();
 		System.out.println(event.getX() + " " + event.getY());
 		return false;
-	}
-
-	@Override
-	public void onDismiss() {
-		dismissFlag = true;
-		popup = null;
 	}
 }

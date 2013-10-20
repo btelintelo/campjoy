@@ -52,7 +52,8 @@ public class TreeInfoFragment extends FragmentBase{
 
 		Bundle bundle = this.getArguments(); 
 		String id = bundle.getString("TreeId");
-		tree = TreeModel.getInstance(getActivity().getApplicationContext()).getTreeById(id);
+		TreeModel model = TreeModel.getInstance();
+		tree = model.getTreeById(id);
 		if(tree !=null)
 		{
 			treeDescription = (TextView)v.findViewById(R.id.tree_description);
