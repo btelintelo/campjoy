@@ -1,27 +1,23 @@
 package org.campjoy.identitree.starter.popup;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.regex.Matcher;
 
-import org.campjoy.identitree.starter.R;
 import org.campjoy.identitree.starter.model.GlossaryModel;
 import org.campjoy.identitree.starter.model.Term;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.text.Spannable;
 import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.util.Log;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
-import android.view.ViewGroup.LayoutParams;
-import android.widget.PopupWindow;
-import android.widget.PopupWindow.OnDismissListener;
 import android.widget.TextView;
 
 public class HotTap implements OnTouchListener {
@@ -39,7 +35,7 @@ public class HotTap implements OnTouchListener {
 		glossary = GlossaryModel.getInstance();
 		v.setOnTouchListener(this);
 		createSpans(v);
-		TextView tv = (TextView)v;
+		TextView tv = (TextView) v;
 		tv.setHighlightColor(Color.TRANSPARENT);
 	}
 
@@ -48,24 +44,14 @@ public class HotTap implements OnTouchListener {
 		definitionView.setMovementMethod(LinkMovementMethod.getInstance());
 
 		Spannable spans = (Spannable) definitionView.getText();
-		Integer[] indices = getIndices(definitionView.getText().toString(), ' ');
-		int start = 0;
-		int end = 0;
-		// to cater last/only word loop will run equal to the length of
-		// indices.length
-		for (int i = 0; i <= indices.length; i++) {
+		ArrayList<Pair<Integer, Integer>> indices = getIndices(definitionView
+				.getText().toString());
+		
+		for (Pair<Integer, Integer> p : indices)
+		{
 			ClickableSpan clickSpan = getClickableSpan();
-			// to cater last/only word
-			end = (i < indices.length ? indices[i] : spans.length());
-			String word = definitionView.getText().subSequence(start, end)
-					.toString();
-			if (glossary.hasTerm(word)) {
-				spans.setSpan(clickSpan, start, end,
-						Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
-			}
-			start = end + 1;
+			spans.setSpan(clickSpan, p.first, p.second, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 		}
-
 	}
 
 	private ClickableSpan getClickableSpan() {
@@ -97,28 +83,28 @@ public class HotTap implements OnTouchListener {
 	}
 
 	private void initializeAndShowPopup(View parent, String title) {
-		Term term = glossary.getTermById(title);
+		Term term = glossary.getTermByLink(title);
 		popup = new HotTapBubble(inflater.getContext(), term.getName(),
 				term.getDescription());
 
 		popup.show(parent, popupX, popupY);
 	}
 
-	public static Integer[] getIndices(String s, char c) {
-		int pos = s.indexOf(c, 0);
-		List<Integer> indices = new ArrayList<Integer>();
-		do {
-			indices.add(pos);
-			pos = s.indexOf(c, pos + 1);
-		} while (pos != -1);
-		return (Integer[]) indices.toArray(new Integer[0]);
+	public static ArrayList<Pair<Integer, Integer>> getIndices(String s) {
+		ArrayList<Matcher> matches = GlossaryModel.getInstance().findMatches(s);
+
+		ArrayList<Pair<Integer, Integer>> pairs = new ArrayList<Pair<Integer, Integer>>();
+		for (Matcher match : matches) {
+			pairs.add(new Pair<Integer, Integer>(match.start(), match.end()));
+		}
+
+		return pairs;
 	}
 
 	@Override
 	public boolean onTouch(View v, MotionEvent event) {
 		popupX = event.getX();
 		popupY = event.getY();
-		System.out.println(event.getX() + " " + event.getY());
 		return false;
 	}
 }

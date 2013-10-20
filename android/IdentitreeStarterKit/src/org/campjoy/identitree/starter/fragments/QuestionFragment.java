@@ -69,6 +69,7 @@ public class QuestionFragment extends FragmentBase {
 		firstTextView.setText(firstText);
 		new HotTap(getActivity(), firstTextView);
 		secondTextView.setText(secondText);
+		new HotTap(getActivity(), secondTextView);
 		pathTextView.setText(pathsTraversed);
 		
 		firstImagePath = String.valueOf((id + 1)) + "a.png";
