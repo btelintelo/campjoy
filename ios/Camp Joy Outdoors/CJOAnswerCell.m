@@ -70,6 +70,7 @@
                         if(termName) {
                             wordFound = YES;
                             CJOGlossaryTerm * glossaryTerm = [CJOModel findTermByName:termName];
+                            [self.delegate answerCell:self didSelectGlossaryTerm:glossaryTerm boundByRect:rect];
                         }
                     }];
                 }
@@ -129,8 +130,8 @@
 
 
 -(void)layoutSubviews {
-    /*self.textViewGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(textViewTapped:)];
-    self.answerText.gestureRecognizers = @[self.textViewGestureRecognizer];*/
+    self.textViewGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(textViewTapped:)];
+    self.answerText.gestureRecognizers = @[self.textViewGestureRecognizer];
     NSArray * glossaryTerms = [CJOModel termStringsWithPlurals];
     self.answerText.attributedText = [self matchTerms:glossaryTerms inString:self.choice.text];
     self.image.image = self.choiceImage;
@@ -171,7 +172,7 @@
             if([terms containsObject:termForURLWithOutLastCharacter]) {
                 termForURL = termForURLWithOutLastCharacter;
             }
-            [matchedString addAttribute:NSLinkAttributeName value:[NSString stringWithFormat:@"identitree://glossary?term=%@", [termForURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] range:range];
+            [matchedString addAttribute:NSLinkAttributeName value:termForURL range:range];
         }
     }
     [matchedString endEditing];
