@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Hdf-uO-VB8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Hdf-uO-VB8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
@@ -220,7 +220,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="155"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cKS-Ik-cFb">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cKS-Ik-cFb">
                                                     <rect key="frame" x="20" y="49" width="267" height="75"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <constraints>
@@ -292,7 +292,13 @@
                             <constraint firstAttribute="trailing" secondItem="nqc-wy-FPf" secondAttribute="trailing" constant="20" symbolic="YES" id="j7z-y9-8BH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Please choose" id="mTD-qv-kLV"/>
+                    <navigationItem key="navigationItem" title="Please choose" id="mTD-qv-kLV">
+                        <barButtonItem key="rightBarButtonItem" title="Restart" id="a94-6B-rfw">
+                            <connections>
+                                <action selector="restartQuestions:" destination="aNL-VE-7Ws" id="dV5-nf-Ex5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="WhB-o2-did" id="38F-dc-uZ1"/>
                         <segue destination="ds8-GN-CqV" kind="push" identifier="treeIdentifiedSegue" id="Qyz-1L-I4m"/>

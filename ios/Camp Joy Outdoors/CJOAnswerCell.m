@@ -53,7 +53,6 @@
                 
                 // Correct the rect for the text views insets
                 rect = CGRectMake(rect.origin.x + self.answerText.textContainerInset.left, rect.origin.y + self.answerText.textContainerInset.top, rect.size.width, rect.size.height);
-                NSLog(@"Checking a word");
                 
                 // Inflate the rect we compare against a bit to account for near taps, and spaces between
                 // multiword glossary terms. Only used in the comparison.
