@@ -56,7 +56,8 @@ CJOTree *tree;
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     tree = [[CJOModel trees] objectAtIndex:indexPath.row];
-    CJOTreeInfoViewController *treeInfo = [[CJOTreeInfoViewController alloc] init];
+    
+    CJOTreeInfoViewController *treeInfo = [[UIStoryboard storyboardWithName:@"Identify_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"TreeInfoViewController"];
     treeInfo.tree = tree;
     [self.navigationController pushViewController:treeInfo animated:YES];
 }
