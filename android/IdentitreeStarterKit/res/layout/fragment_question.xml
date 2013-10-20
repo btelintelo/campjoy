@@ -61,4 +61,15 @@
             android:textSize="20sp" />
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/text_path"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/image"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
 </RelativeLayout>

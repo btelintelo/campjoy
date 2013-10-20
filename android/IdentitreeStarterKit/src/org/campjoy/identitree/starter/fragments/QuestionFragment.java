@@ -21,6 +21,7 @@ public class QuestionFragment extends FragmentBase {
 
 	private TextView firstTextView;
 	private TextView secondTextView;
+	private TextView pathTextView;
 	
 	private ImageView firstImageView;
 	private ImageView secondImageView;
@@ -31,6 +32,8 @@ public class QuestionFragment extends FragmentBase {
 	private String firstImagePath = "";
 	private String secondImagePath = "";
 	
+	private String pathsTraversed = "";
+	
 	private int id;
 	
 	@Override
@@ -40,7 +43,8 @@ public class QuestionFragment extends FragmentBase {
 		
 		firstTextView = (TextView) view.findViewById(R.id.text_first_question);
 		secondTextView = (TextView) view.findViewById(R.id.text_second_question);
-
+		pathTextView = (TextView) view.findViewById(R.id.text_path);
+		
 		firstImageView = (ImageView) view.findViewById(R.id.image_first_question);
 		secondImageView = (ImageView) view.findViewById(R.id.image_second_question);
 		
@@ -49,6 +53,8 @@ public class QuestionFragment extends FragmentBase {
 		
 		Bundle bundle = this.getArguments(); 
 		id = bundle.getInt("ID");
+		pathsTraversed = bundle.getString("Path");
+		pathsTraversed += String.valueOf((id + 1)) + ", ";
 		
 		final QuestionModel model = new QuestionModel(getActivity().getApplicationContext());
 		
@@ -57,6 +63,7 @@ public class QuestionFragment extends FragmentBase {
 		
 		firstTextView.setText(firstText);
 		secondTextView.setText(secondText);
+		pathTextView.setText(pathsTraversed);
 		
 		firstImagePath = String.valueOf((id + 1)) + "a.png";
 		secondImagePath = String.valueOf((id + 1)) + "b.png";
@@ -85,11 +92,14 @@ public class QuestionFragment extends FragmentBase {
 			@Override
 			public void onClick(View v) {
 				String stringNextId = model.getQuestions().get(id).getChoice1().getNextId();
-				int nextId = 2;
+				int nextId = -1;
 				
 				if(!stringNextId.equals("")) {
+					// Need to add Paths from ids
 					nextId = Integer.parseInt(stringNextId);
 				} else {
+					// Executes when treeid = ""
+					// Method to start Treeinfo Fragment
 					// TODO INSERT TREEINFO SCREEN CALL HERE
 				}
 				
@@ -98,6 +108,7 @@ public class QuestionFragment extends FragmentBase {
 				QuestionFragment questionFragment = new QuestionFragment();
 				Bundle bundle = new Bundle();
 				bundle.putInt("ID", nextId);
+				bundle.putString("Path", pathsTraversed);
 				questionFragment.setArguments(bundle);
 				
 				((FragmentActivityBase) getActivity()).startFragment(questionFragment, String.valueOf(nextId));
@@ -115,6 +126,7 @@ public class QuestionFragment extends FragmentBase {
 				QuestionFragment questionFragment = new QuestionFragment();
 				Bundle bundle = new Bundle();
 				bundle.putInt("ID", nextId);
+				bundle.putString("Path", pathsTraversed);
 				questionFragment.setArguments(bundle);
 				
 				((FragmentActivityBase) getActivity()).startFragment(questionFragment, String.valueOf(nextId));

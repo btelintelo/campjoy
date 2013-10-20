@@ -42,12 +42,12 @@
     {
         "id": "4",
         "choices":[{
-            "text": "Green twigs with short buds, with few scales, a shade of pink at the base with a white tip; Bark has a slight orange color to it.  Has paired samara",
+            "text": "Green twigs with short buds, with few scales, a shade of pink at the base with a white tip; Bark has a slight orange color to it. Â Has paired samara",
             "nextid": "",
             "treeid": "box_elder"
         },
         {
-            "text": "Twigs have one side that’s flat with the other side sometimes purplish; leaf buds are 2 scaled and paintbrush shape, flower buds have a white onion shape with 4 scales; twigs are largest where the buds come out and get skinnier; as the tree gets older the bark gets a more scale like pattern. Often has a red fruit.",
+            "text": "Twigs have one side thatâ€™s flat with the other side sometimes purplish; leaf buds are 2 scaled and paintbrush shape, flower buds have a white onion shape with 4 scales; twigs are largest where the buds come out and get skinnier; as the tree gets older the bark gets a more scale like pattern. Often has a red fruit.",
             "nextid": "",
             "treeid": "flowering_dogwwod"
         }]
@@ -112,7 +112,7 @@
             "treeid": "honey_locust"
         },
         {
-            "text": "Plants with thorns, singular, smooth, slightly curved; thorns vary, but normally ½ to ¾ inch long; end buds false; twigs with a milky sap; fruit is green-yellow in color, grapefruit sized; whole tree in winter has a yellowish-orange tint.",
+            "text": "Plants with thorns, singular, smooth, slightly curved; thorns vary, but normally Â½ to Â¾ inch long; end buds false; twigs with a milky sap; fruit is green-yellow in color, grapefruit sized; whole tree in winter has a yellowish-orange tint.",
             "nextid": "",
             "treeid": "osage_orange"
         }]
@@ -263,7 +263,7 @@
     {
         "id": "21",
         "choices":[{
-            "text": "Two bud scales, come together like a duck’s bill; shallow furrowed bark; trunk grows tall and straight.",
+            "text": "Two bud scales, come together like a duck's bill; shallow furrowed bark; trunk grows tall and straight.",
             "nextid": "",
             "treeid": "tuliptree"
         },
@@ -354,7 +354,7 @@
     {
         "id": "28",
         "choices":[{
-            "text": "Buds small, yellow and brown; twigs thin, with a strong smell of almonds when split; newer trees  contain horizontal white bumps on a rusty-brown bark, older trees with bumps splitting into black or burnt looking plates.",
+            "text": "Buds small, yellow and brown; twigs thin, with a strong smell of almonds when split; newer trees Â contain horizontal white bumps on a rusty-brown bark, older trees with bumps splitting into black or burnt looking plates.",
             "nextid": "",
             "treeid": "black_cherry"
         },
@@ -368,8 +368,8 @@
         "id": "29",
         "choices":[{
             "text": "Trunk muscular; bark smooth, gray; buds angle, bud scales in definite rows.",
-            "nextid": "musclewood",
-            "treeid": ""
+            "nextid": "",
+            "treeid": "musclewood"
         },
         {
             "text": "Trunk not as above; larger trees with long strips of shaggy bark",
