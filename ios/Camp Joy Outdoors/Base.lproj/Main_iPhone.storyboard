@@ -94,7 +94,7 @@
                                 <rect key="frame" x="20" y="216" width="280" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">The IdentiTree was developed for Camp Joy by volunteer software engineers at the 2013 Southwest Ohio Give Camp.   Special thanks to Nate Hirt, Alex Argo, Jeremy Spitzig, Sam Corder, Brian Telintelo, Parag Joshi, Mark Mathis, Neil Giridharan</string>
+                                <string key="text">The IdentiTree was developed for Camp Joy by volunteer software engineers at the 2013 Southwest Ohio Give Camp.   Special thanks to Nate Hirt, Alex Argo, Jeremy Spitzig, Sam Corder, Brian Telintelo, Parag Joshi, Mark Mathis, Neil Giridharan, Jill Griffin, Jenny Beruscha</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
