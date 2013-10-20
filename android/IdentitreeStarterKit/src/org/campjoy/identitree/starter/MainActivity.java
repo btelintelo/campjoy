@@ -22,7 +22,9 @@ public class MainActivity extends FragmentActivityBase {
 		questionButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				startActivity(intent);
+//				startActivity(intent);
+				getCJApplication().setStartingIndex(0);
+				((MainTabActivity) getParent()).getTabHost().setCurrentTab(1);
 			}
 		});
 		

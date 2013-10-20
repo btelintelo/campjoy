@@ -122,24 +122,36 @@ public class QuestionFragment extends FragmentBase {
 		});
 		
 		secondLayout.setOnClickListener(new View.OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				String stringNextId = model.getQuestions().get(id).getChoice2().getNextId();
-				int nextId = Integer.parseInt(stringNextId);
-//				nextId--;
-				nextId= nextId-1;
-				
-				QuestionFragment questionFragment = new QuestionFragment();
-				Bundle bundle = new Bundle();
-				bundle.putInt("ID", nextId);
-				bundle.putString("Path", pathsTraversed);
-				questionFragment.setArguments(bundle);
-				
-				((FragmentActivityBase) getActivity()).startFragment(questionFragment, String.valueOf(nextId));
+				if(!stringNextId.equals(""))
+				{
+					int nextId = Integer.parseInt(stringNextId);
+					//				nextId--;
+					nextId= nextId-1;
+
+					QuestionFragment questionFragment = new QuestionFragment();
+					Bundle bundle = new Bundle();
+					bundle.putInt("ID", nextId);
+					bundle.putString("Path", pathsTraversed);
+					questionFragment.setArguments(bundle);
+
+					((FragmentActivityBase) getActivity()).startFragment(questionFragment, String.valueOf(nextId));
+				}
+				else
+				{
+					TreeInfoFragment treeInfoFragment = new TreeInfoFragment();
+					String treeId= model.getQuestions().get(id).getChoice2().getTreeId();
+					Bundle bundle = new Bundle();
+					bundle.putString("TreeId", treeId);
+					treeInfoFragment.setArguments(bundle);
+					((FragmentActivityBase) getActivity()).startFragment(treeInfoFragment,treeId);
+				}
 			}
 		});
-		
+
 		return view;
 	}
 }

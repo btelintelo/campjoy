@@ -1,5 +1,6 @@
 package org.campjoy.identitree.starter.activities;
 
+import org.campjoy.identitree.starter.CJApplication;
 import org.campjoy.identitree.starter.FragmentActivityBase;
 import org.campjoy.identitree.starter.R;
 import org.campjoy.identitree.starter.fragments.QuestionFragment;
@@ -12,8 +13,8 @@ public class QuestionActivity extends FragmentActivityBase {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-		int id = 0;
+		CJApplication cjApplication = getCJApplication();
+		int id = cjApplication.getStartingIndex();
 		String path = "Path: ";
 		QuestionFragment questionFragment = new QuestionFragment();
 		
@@ -22,7 +23,16 @@ public class QuestionActivity extends FragmentActivityBase {
 		bundle.putString("Path", path);
 		
 		questionFragment.setArguments(bundle);
-		startFragment(questionFragment, String.valueOf(id));
+		loadFragment(questionFragment);
+		
+	}
+	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		
+		
 	}
 
 	@Override
