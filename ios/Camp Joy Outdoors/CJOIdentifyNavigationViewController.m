@@ -46,7 +46,7 @@
 
 -(void)handleGlossaryNotification:(NSNotification *) notification {
     NSDictionary * userInfo = notification.userInfo;
-    NSString * term = userInfo[@"term"];
+    NSString * term = [userInfo[@"term"] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 
     NSString *boardName = UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? @"glossary_iPhone" : @"glossary_iPad";
     UIStoryboard *board = [UIStoryboard storyboardWithName:boardName  bundle:nil];
