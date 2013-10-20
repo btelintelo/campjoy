@@ -57,6 +57,7 @@
 		FA0B2BE41812FFCF00FF21A7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0B2BE31812FFCF00FF21A7 /* QuartzCore.framework */; };
 		FA4638B518131C2A007F62DD /* maps in Resources */ = {isa = PBXBuildFile; fileRef = FA4638B418131C2A007F62DD /* maps */; };
 		FA4638B818138652007F62DD /* CJOImageLabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4638B718138652007F62DD /* CJOImageLabelTableViewCell.m */; };
+		FAF1FC4918138DB5009ACEBD /* CJOBigImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF1FC4818138DB5009ACEBD /* CJOBigImageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +148,8 @@
 		FA4638B418131C2A007F62DD /* maps */ = {isa = PBXFileReference; lastKnownFileType = folder; name = maps; path = ../../data/images/maps; sourceTree = "<group>"; };
 		FA4638B618138652007F62DD /* CJOImageLabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOImageLabelTableViewCell.h; sourceTree = "<group>"; };
 		FA4638B718138652007F62DD /* CJOImageLabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOImageLabelTableViewCell.m; sourceTree = "<group>"; };
+		FAF1FC4718138DB5009ACEBD /* CJOBigImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOBigImageCell.h; sourceTree = "<group>"; };
+		FAF1FC4818138DB5009ACEBD /* CJOBigImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOBigImageCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +240,8 @@
 				4290D7F5181333F900B8057A /* CJOPathCell.m */,
 				FA4638B618138652007F62DD /* CJOImageLabelTableViewCell.h */,
 				FA4638B718138652007F62DD /* CJOImageLabelTableViewCell.m */,
+				FAF1FC4718138DB5009ACEBD /* CJOBigImageCell.h */,
+				FAF1FC4818138DB5009ACEBD /* CJOBigImageCell.m */,
 			);
 			name = Identify;
 			sourceTree = "<group>";
@@ -530,6 +535,7 @@
 				4290D7F6181333F900B8057A /* CJOPathCell.m in Sources */,
 				42405BCB1813555F00292674 /* CJOSpeciesTableViewController.m in Sources */,
 				42405B731812219800292674 /* CJOChoice.m in Sources */,
+				FAF1FC4918138DB5009ACEBD /* CJOBigImageCell.m in Sources */,
 				42405B801812301600292674 /* CJOModel.m in Sources */,
 				42405B761812298A00292674 /* CJOJSONParser.m in Sources */,
 				4252C3A0180F8888001F86F5 /* main.m in Sources */,

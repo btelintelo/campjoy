@@ -57,7 +57,7 @@
 -(void)layoutSubviews {
     /*self.textViewGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(textViewTapped:)];
     self.answerText.gestureRecognizers = @[self.textViewGestureRecognizer];*/
-    NSArray * glossaryTerms = [CJOModel termStrings];
+    NSArray * glossaryTerms = [CJOModel termStringsWithPlurals];
     self.answerText.attributedText = [self matchTerms:glossaryTerms inString:self.choice.text];
     self.image.image = self.choiceImage;
     CGFloat aspectRatio = self.choiceImage.size.width / self.choiceImage.size.height;
@@ -84,12 +84,20 @@
     NSMutableAttributedString * matchedString = [[NSMutableAttributedString alloc] initWithString:string];
     string = [string lowercaseString];
     [matchedString beginEditing];
+    
     for(NSString *term in terms) {
         NSString *lowerTerm = [term lowercaseString];
         NSArray * ranges = [self rangesOfString:lowerTerm inString:string];
         for(NSValue *value in ranges) {
             NSRange range = [value rangeValue];
-            [matchedString addAttribute:NSLinkAttributeName value:[NSString stringWithFormat:@"identitree://glossary?term=%@", [term stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] range:range];
+            
+#warning This is kind of a hack, but it should work... I look to make I don't have the same string w/o the s to deal with plural characters... if I do, I use the original string
+            NSString *termForURL = term;
+            NSString *termForURLWithOutLastCharacter = [termForURL substringToIndex:([termForURL length]-1)];
+            if([terms containsObject:termForURLWithOutLastCharacter]) {
+                termForURL = termForURLWithOutLastCharacter;
+            }
+            [matchedString addAttribute:NSLinkAttributeName value:[NSString stringWithFormat:@"identitree://glossary?term=%@", [termForURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] range:range];
         }
     }
     [matchedString endEditing];

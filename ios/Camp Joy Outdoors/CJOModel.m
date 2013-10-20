@@ -50,6 +50,16 @@ NSArray *termStrings;
     return termStrings;
 }
 
++(NSArray *)termStringsWithPlurals {
+    NSArray *terms = [CJOModel termStrings];
+    NSMutableArray *termsWithPlurals = [NSMutableArray array];
+    for(NSString *term in terms) {
+        [termsWithPlurals addObject:[NSString stringWithFormat:@"%@s",term]];
+        [termsWithPlurals addObject:term];
+    }
+    return termsWithPlurals;
+}
+
 +(CJOQuestion *) findQuestionById:(NSString *) questionId {
     NSArray * questions = [self questions];
     for(CJOQuestion * question in questions) {
