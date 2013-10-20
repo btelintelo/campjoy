@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CJOGlossaryViewController : UIViewController
+@interface CJOGlossaryViewController : UITableViewController
 
 @end

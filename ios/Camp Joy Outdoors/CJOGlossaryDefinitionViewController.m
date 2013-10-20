@@ -7,32 +7,38 @@
 //
 
 #import "CJOGlossaryDefinitionViewController.h"
+#import "CJOGlossaryTerm.h"
 
 @interface CJOGlossaryDefinitionViewController ()
+
+@property (weak, nonatomic) IBOutlet UIImageView *definitionImageView;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end
 
 @implementation CJOGlossaryDefinitionViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(void)viewDidLoad
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (_word) {
+        [self updateDisplay];
     }
-    return self;
 }
 
-- (void)viewDidLoad
+-(void)setWord:(NSString *)word
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    _word = word;
+    [self updateDisplay];
 }
 
-- (void)didReceiveMemoryWarning
+-(void)updateDisplay
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    CJOGlossaryTerm *term = [CJOModel findTermByName:_word];
+    self.title = term.name;
+    self.descriptionLabel.text = term.description;
+    NSString *fmt = @"glossary/%@";
+    NSString *imageName = [NSString stringWithFormat:fmt, term.image];
+    self.definitionImageView.image = [UIImage imageNamed:imageName];
 }
 
 @end

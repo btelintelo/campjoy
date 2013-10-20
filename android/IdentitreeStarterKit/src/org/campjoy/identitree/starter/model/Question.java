@@ -71,6 +71,10 @@ public class Question {
 		
 		return result.toString();
 	}
+	
+	public String getId() {
+		return id;
+	}
 
 	public Choice getChoice1() {
 		return choice1;

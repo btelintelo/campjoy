@@ -16,7 +16,7 @@ public class TreeModel extends BaseModel {
 	private static final String LOG_TAG = TreeModel.class.getSimpleName();
 
 	private static TreeModel instance;
-	private HashMap<String, Tree> trees = new HashMap<String, Tree>();
+	private HashMap<String, Tree> trees;
 
 	public TreeModel(Context applicationContext)
 	{
@@ -35,6 +35,11 @@ public class TreeModel extends BaseModel {
 	@Override
 	protected void parseJson(String json)
 	{
+		if(trees ==null)
+		{
+			trees = new HashMap<String, Tree>();
+		}
+		
 		try {
 			JSONObject readableJson = new JSONObject(json);
 			JSONArray trees = readableJson.getJSONArray("trees");
@@ -50,7 +55,7 @@ public class TreeModel extends BaseModel {
 		}
 	}
 	
-	public Tree getTreeById(int i)
+	public Tree getTreeById(String id)
 	{
 		Tree result = null;
 		
@@ -58,7 +63,7 @@ public class TreeModel extends BaseModel {
 	    while (it.hasNext()) {
 	    	
 	    	Map.Entry<String, Tree> treePair = (Map.Entry<String, Tree>)it.next();
-	    	if(treePair.getKey().equalsIgnoreCase(String.valueOf(i)))
+	    	if(treePair.getKey().equalsIgnoreCase(id))
 	    	{
 	    		return treePair.getValue();
 	    	}

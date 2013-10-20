@@ -1,17 +1,26 @@
 package org.campjoy.identitree.starter.activities;
 
+import org.campjoy.identitree.starter.FragmentActivityBase;
 import org.campjoy.identitree.starter.R;
+import org.campjoy.identitree.starter.fragments.QuestionFragment;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 
-public class QuestionActivity extends FragmentActivity {
+public class QuestionActivity extends FragmentActivityBase {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_question);
+
+		int id = 0;		
+		QuestionFragment questionFragment = new QuestionFragment();
+		
+		Bundle bundle = new Bundle();
+		bundle.putInt("ID", id);
+		
+		questionFragment.setArguments(bundle);
+		startFragment(questionFragment, String.valueOf(id));
 	}
 
 	@Override

@@ -4,40 +4,57 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/text_first_question"
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="133dp"
-        android:text="@string/text_first" />
+        android:layout_marginTop="38dp" >
 
-    <ImageView
-        android:id="@+id/image_first_question"
+        <ImageView
+            android:id="@+id/image_first_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/text_first_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/image_first_question"
+            android:layout_marginTop="29dp"
+            android:text="@string/text_first" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/relativeLayout1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="52dp"
-        android:src="@drawable/ic_launcher" android:contentDescription="@string/image"/>
+        android:layout_marginTop="60dp" >
 
-    <TextView
-        android:id="@+id/text_second_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/image_second_question"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:text="@string/text_second" />
+        <TextView
+            android:id="@+id/text_second_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/text_second" />
 
-    <ImageView
-        android:id="@+id/image_second_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/image_first_question"
-        android:layout_centerVertical="true"
-        android:contentDescription="@string/image"
-        android:src="@drawable/ic_launcher" />
+        <ImageView
+            android:id="@+id/image_second_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
 
 </RelativeLayout>

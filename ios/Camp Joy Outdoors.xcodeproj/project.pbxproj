@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09939F3D1812F73D0043AFCD /* glossary_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09939F3C1812F73D0043AFCD /* glossary_iPhone.storyboard */; };
 		09939F401812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09939F3F1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m */; };
+		09939F4218132B300043AFCD /* glossary in Resources */ = {isa = PBXBuildFile; fileRef = 09939F4118132B300043AFCD /* glossary */; };
 		42405B6A18121F7800292674 /* CJOQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B6918121F7800292674 /* CJOQuestion.m */; };
 		42405B6D18121F8500292674 /* CJOTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B6C18121F8500292674 /* CJOTree.m */; };
 		42405B7018121F9600292674 /* CJOGlossaryTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B6F18121F9600292674 /* CJOGlossaryTerm.m */; };
@@ -19,8 +20,9 @@
 		42405B7D18122F7200292674 /* trees.json in Resources */ = {isa = PBXBuildFile; fileRef = 42405B7A18122F7200292674 /* trees.json */; };
 		42405B801812301600292674 /* CJOModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B7F1812301600292674 /* CJOModel.m */; };
 		42405B821812F90700292674 /* campjoy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42405B811812F90700292674 /* campjoy.jpg */; };
+		42405BCB1813555F00292674 /* CJOSpeciesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405BCA1813555F00292674 /* CJOSpeciesTableViewController.m */; };
+		42405BCD1813558000292674 /* thumb in Resources */ = {isa = PBXBuildFile; fileRef = 42405BCC1813558000292674 /* thumb */; };
 		4250A8FF1812141D00F2F282 /* CJOGlossaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */; };
-		4250A9021812143F00F2F282 /* CJOAboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A9011812143E00F2F282 /* CJOAboutUsViewController.m */; };
 		4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250A9051812156700F2F282 /* Identify_iPhone.storyboard */; };
 		4250A9081812158000F2F282 /* Identify_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4250A9071812158000F2F282 /* Identify_iPad.storyboard */; };
 		4250A90D181216DE00F2F282 /* CJOQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4250A90C181216DE00F2F282 /* CJOQuestionViewController.m */; };
@@ -44,6 +46,10 @@
 		4252C3BB180F8888001F86F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4252C397180F8888001F86F5 /* UIKit.framework */; };
 		4252C3C3180F8888001F86F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4252C3C1180F8888001F86F5 /* InfoPlist.strings */; };
 		4252C3C5180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4252C3C4180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m */; };
+		4290D7F01813293E00B8057A /* dichotomy in Resources */ = {isa = PBXBuildFile; fileRef = 4290D7EF1813293E00B8057A /* dichotomy */; };
+		4290D7F31813307E00B8057A /* CJOPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4290D7F21813307E00B8057A /* CJOPathViewController.m */; };
+		4290D7F6181333F900B8057A /* CJOPathCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4290D7F5181333F900B8057A /* CJOPathCell.m */; };
+		4290D7F81813546500B8057A /* glossary_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4290D7F71813546500B8057A /* glossary_iPad.storyboard */; };
 		42EA2F521812C139007BB93B /* UIView+FrameSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA2F511812C139007BB93B /* UIView+FrameSize.m */; };
 		5506317E969D4A2890B04CD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D17A9345361743DFB82FFB8A /* libPods.a */; };
 		FA0B2BDF1812F22800FF21A7 /* trees in Resources */ = {isa = PBXBuildFile; fileRef = FA0B2BDE1812F22800FF21A7 /* trees */; };
@@ -66,6 +72,7 @@
 		09939F3C1812F73D0043AFCD /* glossary_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = glossary_iPhone.storyboard; sourceTree = "<group>"; };
 		09939F3E1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOGlossaryDefinitionViewController.h; sourceTree = "<group>"; };
 		09939F3F1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOGlossaryDefinitionViewController.m; sourceTree = "<group>"; };
+		09939F4118132B300043AFCD /* glossary */ = {isa = PBXFileReference; lastKnownFileType = folder; name = glossary; path = ../../data/images/glossary; sourceTree = "<group>"; };
 		42405B6818121F7800292674 /* CJOQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOQuestion.h; sourceTree = "<group>"; };
 		42405B6918121F7800292674 /* CJOQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOQuestion.m; sourceTree = "<group>"; };
 		42405B6B18121F8500292674 /* CJOTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOTree.h; sourceTree = "<group>"; };
@@ -82,10 +89,11 @@
 		42405B7E1812301600292674 /* CJOModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOModel.h; sourceTree = "<group>"; };
 		42405B7F1812301600292674 /* CJOModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOModel.m; sourceTree = "<group>"; };
 		42405B811812F90700292674 /* campjoy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = campjoy.jpg; path = ../../data/campjoy.jpg; sourceTree = "<group>"; };
+		42405BC91813555F00292674 /* CJOSpeciesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOSpeciesTableViewController.h; sourceTree = "<group>"; };
+		42405BCA1813555F00292674 /* CJOSpeciesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOSpeciesTableViewController.m; sourceTree = "<group>"; };
+		42405BCC1813558000292674 /* thumb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = thumb; path = ../../data/images/thumb; sourceTree = "<group>"; };
 		4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOGlossaryViewController.h; sourceTree = "<group>"; };
 		4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOGlossaryViewController.m; sourceTree = "<group>"; };
-		4250A9001812143E00F2F282 /* CJOAboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOAboutUsViewController.h; sourceTree = "<group>"; };
-		4250A9011812143E00F2F282 /* CJOAboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOAboutUsViewController.m; sourceTree = "<group>"; };
 		4250A9051812156700F2F282 /* Identify_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Identify_iPhone.storyboard; path = ../Identify_iPhone.storyboard; sourceTree = "<group>"; };
 		4250A9071812158000F2F282 /* Identify_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Identify_iPad.storyboard; path = ../Identify_iPad.storyboard; sourceTree = "<group>"; };
 		4250A90B181216DE00F2F282 /* CJOQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOQuestionViewController.h; sourceTree = "<group>"; };
@@ -121,6 +129,12 @@
 		4252C3C2180F8888001F86F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4252C3C4180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camp_Joy_OutdoorsTests.m; sourceTree = "<group>"; };
 		4290D7EA1812F5AC00B8057A /* CJOConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOConstants.h; sourceTree = "<group>"; };
+		4290D7EF1813293E00B8057A /* dichotomy */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dichotomy; path = ../../data/images/dichotomy; sourceTree = "<group>"; };
+		4290D7F11813307E00B8057A /* CJOPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOPathViewController.h; sourceTree = "<group>"; };
+		4290D7F21813307E00B8057A /* CJOPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOPathViewController.m; sourceTree = "<group>"; };
+		4290D7F4181333F900B8057A /* CJOPathCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOPathCell.h; sourceTree = "<group>"; };
+		4290D7F5181333F900B8057A /* CJOPathCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOPathCell.m; sourceTree = "<group>"; };
+		4290D7F71813546500B8057A /* glossary_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = glossary_iPad.storyboard; sourceTree = "<group>"; };
 		42EA2F501812C139007BB93B /* UIView+FrameSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameSize.h"; sourceTree = "<group>"; };
 		42EA2F511812C139007BB93B /* UIView+FrameSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameSize.m"; sourceTree = "<group>"; };
 		73C95832BE124778979EB613 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -162,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				09939F3C1812F73D0043AFCD /* glossary_iPhone.storyboard */,
+				4290D7F71813546500B8057A /* glossary_iPad.storyboard */,
 				4250A8FD1812141D00F2F282 /* CJOGlossaryViewController.h */,
 				4250A8FE1812141D00F2F282 /* CJOGlossaryViewController.m */,
 				09939F3E1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.h */,
@@ -199,6 +214,8 @@
 		4250A9091812159900F2F282 /* Identify */ = {
 			isa = PBXGroup;
 			children = (
+				42405BC91813555F00292674 /* CJOSpeciesTableViewController.h */,
+				42405BCA1813555F00292674 /* CJOSpeciesTableViewController.m */,
 				4252C3AE180F8888001F86F5 /* CJOIdentifyViewController.h */,
 				4252C3AF180F8888001F86F5 /* CJOIdentifyViewController.m */,
 				4250A9071812158000F2F282 /* Identify_iPad.storyboard */,
@@ -211,6 +228,10 @@
 				4250A918181228F600F2F282 /* CJOIdentifyNavigationViewController.m */,
 				4250A91A1812326700F2F282 /* CJOAnswerCell.h */,
 				4250A91B1812326700F2F282 /* CJOAnswerCell.m */,
+				4290D7F11813307E00B8057A /* CJOPathViewController.h */,
+				4290D7F21813307E00B8057A /* CJOPathViewController.m */,
+				4290D7F4181333F900B8057A /* CJOPathCell.h */,
+				4290D7F5181333F900B8057A /* CJOPathCell.m */,
 			);
 			name = Identify;
 			sourceTree = "<group>";
@@ -222,8 +243,6 @@
 				4252C3A8180F8888001F86F5 /* Main_iPad.storyboard */,
 				4252C3AB180F8888001F86F5 /* CJOHomeViewController.h */,
 				4252C3AC180F8888001F86F5 /* CJOHomeViewController.m */,
-				4250A9001812143E00F2F282 /* CJOAboutUsViewController.h */,
-				4250A9011812143E00F2F282 /* CJOAboutUsViewController.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -306,6 +325,9 @@
 		4252C39A180F8888001F86F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42405BCC1813558000292674 /* thumb */,
+				09939F4118132B300043AFCD /* glossary */,
+				4290D7EF1813293E00B8057A /* dichotomy */,
 				FA4638B418131C2A007F62DD /* maps */,
 				FA0B2BDE1812F22800FF21A7 /* trees */,
 				4252C39B180F8888001F86F5 /* Camp Joy Outdoors-Info.plist */,
@@ -430,18 +452,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4290D7F81813546500B8057A /* glossary_iPad.storyboard in Resources */,
 				4250A9081812158000F2F282 /* Identify_iPad.storyboard in Resources */,
 				42405B7C18122F7200292674 /* questions.json in Resources */,
 				FA0B2BDF1812F22800FF21A7 /* trees in Resources */,
 				42405B7B18122F7200292674 /* glossary.json in Resources */,
 				42405B7D18122F7200292674 /* trees.json in Resources */,
+				42405BCD1813558000292674 /* thumb in Resources */,
 				4250A9061812156700F2F282 /* Identify_iPhone.storyboard in Resources */,
 				4252C3AA180F8888001F86F5 /* Main_iPad.storyboard in Resources */,
 				4252C3B2180F8888001F86F5 /* Images.xcassets in Resources */,
 				09939F3D1812F73D0043AFCD /* glossary_iPhone.storyboard in Resources */,
 				FA4638B518131C2A007F62DD /* maps in Resources */,
 				4252C3A7180F8888001F86F5 /* Main_iPhone.storyboard in Resources */,
+				4290D7F01813293E00B8057A /* dichotomy in Resources */,
 				4252C39E180F8888001F86F5 /* InfoPlist.strings in Resources */,
+				09939F4218132B300043AFCD /* glossary in Resources */,
 				42405B821812F90700292674 /* campjoy.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,15 +521,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				42405B6A18121F7800292674 /* CJOQuestion.m in Sources */,
+				4290D7F6181333F900B8057A /* CJOPathCell.m in Sources */,
+				42405BCB1813555F00292674 /* CJOSpeciesTableViewController.m in Sources */,
 				42405B731812219800292674 /* CJOChoice.m in Sources */,
 				42405B801812301600292674 /* CJOModel.m in Sources */,
 				42405B761812298A00292674 /* CJOJSONParser.m in Sources */,
 				4252C3A0180F8888001F86F5 /* main.m in Sources */,
+				4290D7F31813307E00B8057A /* CJOPathViewController.m in Sources */,
 				4250A919181228F600F2F282 /* CJOIdentifyNavigationViewController.m in Sources */,
 				42405B6D18121F8500292674 /* CJOTree.m in Sources */,
 				FA0B2BE21812F60900FF21A7 /* CJOTreeImagesDataSource.m in Sources */,
 				42405B7018121F9600292674 /* CJOGlossaryTerm.m in Sources */,
-				4250A9021812143F00F2F282 /* CJOAboutUsViewController.m in Sources */,
 				4250A914181220A800F2F282 /* CJOUtilities.m in Sources */,
 				4250A90D181216DE00F2F282 /* CJOQuestionViewController.m in Sources */,
 				4252C3A4180F8888001F86F5 /* CJOAppDelegate.m in Sources */,
