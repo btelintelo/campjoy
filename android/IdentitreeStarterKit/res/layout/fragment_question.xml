@@ -42,8 +42,6 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/image_first_question"
             android:layout_marginTop="29dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
             android:text="@string/text_first"
             android:textSize="20sp" />
     </RelativeLayout>
@@ -74,8 +72,6 @@
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/image_second_question"
             android:layout_marginTop="29dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="10dp"
             android:text="@string/text_first"
             android:textSize="20sp" />
     </RelativeLayout>
