@@ -9,6 +9,7 @@
 #import "CJOTreeInfoViewController.h"
 #import "CJOModel.h"
 #import "CJOTreeImagesDataSource.h"
+#import "CJOBigImageCell.h"
 
 @interface CJOTreeInfoViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *descriptionHeightConstraint;
@@ -50,33 +51,73 @@
     [self configureCarousel];
 }
 
+- (IBAction)done:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 - (void) configureCarousel {
 
 }
 
 #pragma mark - UITableViewDataSource;
-- (int) numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+- (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
+    return 3;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Information";
-}
-
-- (int) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.tree.tableData.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TreeDataCell"];
+    if(section == 0) {
+        return @"Information";
+    } else if (section == 1) {
+        return @"Tree Silhouette";
+    } else {
+        return @"Where It Grows";
+    }
     
+}
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if(section == 0) {
+        return self.tree.tableData.count;
+    } else {
+        return 1;
+    }
+}
+
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.section == 0) {
+        return 48;
+    } else {
+        return 240;
+    }
+}
+
+- (void)configureDataCell:(UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *data = self.tree.tableData[indexPath.row];
     NSString *name = data.allKeys[0];
     NSString *value = data[name];
-    
     cell.textLabel.text = name;
     cell.detailTextLabel.text = value;
-    return cell;
+    cell.detailTextLabel.numberOfLines = 0;
+    cell.detailTextLabel.font = [UIFont systemFontOfSize:14];
+    cell.textLabel.font = [UIFont boldSystemFontOfSize:14.0];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if(indexPath.section == 0){
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TreeDataCell"];
+        [self configureDataCell:cell forIndexPath:indexPath];
+        return cell;
+    } else if (indexPath.section == 1) {
+        CJOBigImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BigImageCell"];
+        cell.bigImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"thumb/%@_thumb.jpg",self.tree.id]];
+        return cell;
+    } else if (indexPath.section == 2) {
+        CJOBigImageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BigImageCell"];
+ cell.bigImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"maps/%@_map.jpg",self.tree.id]];
+        return cell;
+    } else {
+        return [tableView dequeueReusableCellWithIdentifier:@"TreeDataCell"];
+    }
 }
 
 - (void)didReceiveMemoryWarning

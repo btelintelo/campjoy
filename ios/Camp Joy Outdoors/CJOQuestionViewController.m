@@ -14,9 +14,10 @@
 #import "CJOConstants.h"
 #import "CJOGlossaryDefinitionViewController.h"
 #import "CJOPathViewController.h"
+#import "CJOUtilities.h"
 
 @interface CJOQuestionViewController ()
-
+@property (nonatomic, strong) UIPopoverController * popover;
 @end
 
 @implementation CJOQuestionViewController
@@ -50,6 +51,7 @@
     ((CJOAnswerCell *) cell).choice = self.question.choices[indexPath.row];
     ((CJOAnswerCell *) cell).choiceImage = [self imageForIndexPath:indexPath];
     ((CJOAnswerCell *) cell).tableView = tableView;
+    ((CJOAnswerCell *) cell).delegate = self;
     return cell;
 }
 
@@ -141,6 +143,31 @@
 -(void)pathViewControllerDidSelectIndex:(NSInteger)index {
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.navigationController popToViewController:self.navigationController.viewControllers[index] animated:YES];
+}
+
+-(void)answerCell:(CJOAnswerCell *)cell didSelectGlossaryTerm:(CJOGlossaryTerm *)glossaryTerm boundByRect:(CGRect)rect {
+    if([CJOUtilities isIPad]) {
+        [self presentGlossaryTerm:glossaryTerm popoverFromRect:rect inView:cell];
+    }
+    else {
+        [self launchApplicationURLForGlossaryTerm:glossaryTerm];
+    }
+}
+
+-(void)launchApplicationURLForGlossaryTerm:(CJOGlossaryTerm *) glossaryTerm {
+    NSURL * url = [NSURL URLWithString:[NSString stringWithFormat:@"identitree://glossary?term=%@", glossaryTerm.name]];
+    [[UIApplication sharedApplication] openURL:url];
+}
+
+-(void)presentGlossaryTerm:(CJOGlossaryTerm *)glossaryTerm popoverFromRect:(CGRect)rect inView:(UIView *)view {
+    UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"glossary_iPhone" bundle:nil];
+    CJOGlossaryDefinitionViewController * viewController = [storyboard instantiateViewControllerWithIdentifier:@"definition"];
+    viewController.word = glossaryTerm.name;
+    viewController.edgesForExtendedLayout = UIRectEdgeNone;
+    viewController.extendedLayoutIncludesOpaqueBars = YES;
+    UINavigationController * rootController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.popover = [[UIPopoverController alloc] initWithContentViewController:rootController];
+    [self.popover presentPopoverFromRect:rect inView:view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
 

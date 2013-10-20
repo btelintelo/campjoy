@@ -20,7 +20,7 @@ public class CJApplication extends Application{
 		private static final String TAG = CJApplication.class.getSimpleName();
 
 		private PackageInfo packageInfo;
-
+		private int startingIndex;
 	
 		private static boolean activityVisible = true;
 		private FragmentActivity currentActivity;
@@ -31,6 +31,7 @@ public class CJApplication extends Application{
 
 			super.onCreate();
 
+			startingIndex=0;
 			getMyPackageInfo();
 		}
 
@@ -102,4 +103,12 @@ public class CJApplication extends Application{
 	        Bitmap bitmap = BitmapFactory.decodeStream(istr);
 	        return bitmap;
 	    }
+
+		public int getStartingIndex() {
+			return startingIndex;
+		}
+
+		public void setStartingIndex(int startingIndex) {
+			this.startingIndex = startingIndex;
+		}
 }

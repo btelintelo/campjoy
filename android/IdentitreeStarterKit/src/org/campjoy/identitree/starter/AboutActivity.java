@@ -1,9 +1,15 @@
 package org.campjoy.identitree.starter;
 
-import android.app.Activity;
+import android.os.Bundle;
 
-public class AboutActivity extends Activity {
+public class AboutActivity extends FragmentActivityBase {
 	
-	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		setContentView(R.layout.activity_about);
+	}
 
 }

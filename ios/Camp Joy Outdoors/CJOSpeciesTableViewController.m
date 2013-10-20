@@ -9,9 +9,9 @@
 #import "CJOSpeciesTableViewController.h"
 #import "CJOTree.h"
 #import "CJOTreeInfoViewController.h"
+#import "CJOImageLabelTableViewCell.h"
 
 @interface CJOSpeciesTableViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -33,28 +33,31 @@
     return [[CJOModel trees] count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tree" forIndexPath:indexPath];
-    
-    return cell;
-}
-
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(CJOImageLabelTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     CJOTree *tree = [[CJOModel trees] objectAtIndex:indexPath.row];
-    cell.textLabel.text = tree.name;
-    NSString * imageName = [NSString stringWithFormat:@"thumbs/%@_thumb.jpg", tree.id];
+    cell.nameLabel.text = tree.name;
+    NSString * imageName = [NSString stringWithFormat:@"thumb/%@_thumb.jpg", tree.id];
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFit;
     UIImage *img = [UIImage imageNamed:imageName];
     cell.imageView.image = img;
 }
 
-CJOTree *tree;
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CJOImageLabelTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tree" forIndexPath:indexPath];
+    
+    [self configureCell:cell atIndexPath:indexPath];
+
+    return cell;
+}
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    CJOTree *tree;
     tree = [[CJOModel trees] objectAtIndex:indexPath.row];
-    CJOTreeInfoViewController *treeInfo = [[CJOTreeInfoViewController alloc] init];
+    
+    CJOTreeInfoViewController *treeInfo = [[UIStoryboard storyboardWithName:@"Identify_iPhone" bundle:nil] instantiateViewControllerWithIdentifier:@"TreeInfoViewController"];
     treeInfo.tree = tree;
     [self.navigationController pushViewController:treeInfo animated:YES];
 }

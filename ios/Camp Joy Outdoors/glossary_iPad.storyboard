@@ -4,21 +4,37 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Glossary View Controller - Glossary-->
         <scene sceneID="Mhx-vV-0o8">
             <objects>
-                <tableViewController id="Tzg-tD-ENl" sceneMemberID="viewController">
+                <tableViewController title="Glossary" id="Tzg-tD-ENl" customClass="CJOGlossaryViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tPE-Hw-tuP">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="MbC-o6-d7l">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="definition" textLabel="zf9-DI-RDn" detailTextLabel="rHV-bN-yyE" style="IBUITableViewCellStyleSubtitle" id="MbC-o6-d7l">
                                 <rect key="frame" x="0.0" y="86" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MbC-o6-d7l" id="hZA-St-QRN">
                                     <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zf9-DI-RDn">
+                                            <rect key="frame" x="15" y="3" width="34" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rHV-bN-yyE">
+                                            <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -28,24 +44,56 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="QnM-be-keD"/>
+                    <connections>
+                        <segue destination="LS2-rN-HRQ" kind="push" identifier="definition" id="qDD-Lk-8OH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l9Q-gX-Zlc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="896" y="-281"/>
         </scene>
-        <!--View Controller-->
+        <!--Glossary Definition View Controller - Word-->
         <scene sceneID="msZ-pn-KWy">
             <objects>
-                <viewController id="LS2-rN-HRQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="definition" title="Word" id="LS2-rN-HRQ" customClass="CJOGlossaryDefinitionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ybg-cC-DoP"/>
                         <viewControllerLayoutGuide type="bottom" id="bLi-J9-7qL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="dZf-j3-ErI">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="P6H-w2-Fwc">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZOc-au-iTs">
+                                <rect key="frame" x="224" y="-1" width="320" height="175"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="RJ4-wu-NLU"/>
+                                    <constraint firstAttribute="height" constant="175" id="S19-LE-3Om"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Definition text that is long and should have word wrapping" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="728" translatesAutoresizingMaskIntoConstraints="NO" id="KfW-lB-Kim">
+                                <rect key="frame" x="20" y="182" width="728" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KfW-lB-Kim" firstAttribute="leading" secondItem="P6H-w2-Fwc" secondAttribute="leading" constant="20" id="1ka-Kl-u5I"/>
+                            <constraint firstItem="ZOc-au-iTs" firstAttribute="top" secondItem="Ybg-cC-DoP" secondAttribute="bottom" constant="-65" id="Fa1-hB-eMK"/>
+                            <constraint firstAttribute="centerX" secondItem="ZOc-au-iTs" secondAttribute="centerX" id="GML-7I-RIc"/>
+                            <constraint firstItem="KfW-lB-Kim" firstAttribute="top" secondItem="ZOc-au-iTs" secondAttribute="bottom" constant="8" id="NMu-LZ-W28"/>
+                            <constraint firstAttribute="trailing" secondItem="KfW-lB-Kim" secondAttribute="trailing" constant="20" id="z5O-By-EzY"/>
+                        </constraints>
+                    </scrollView>
+                    <navigationItem key="navigationItem" id="J1T-fE-VyG"/>
+                    <connections>
+                        <outlet property="definitionImageView" destination="ZOc-au-iTs" id="gfD-dj-kGQ"/>
+                        <outlet property="descriptionLabel" destination="KfW-lB-Kim" id="5Ig-86-Y3F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5F-E7-EbH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -135,7 +135,7 @@
         "choices":[{
             "text": "Leaf scars below bud; buds are yellowish in color.",
             "nextid": "",
-            "treeid": "butternut_hickory"
+            "treeid": "bitternut_hickory"
         },
         {
             "text": "Buds not yellowish in color.",
@@ -263,7 +263,7 @@
     {
         "id": "21",
         "choices":[{
-            "text": "Two bud scales, come together like a duck’s bill; shallow furrowed bark; trunk grows tall and straight.",
+            "text": "Two bud scales, come together like a duck's bill; shallow furrowed bark; trunk grows tall and straight.",
             "nextid": "",
             "treeid": "tuliptree"
         },

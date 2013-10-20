@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.campjoy.identitree.starter.CJApplication;
 import org.campjoy.identitree.starter.MainActivity;
+import org.campjoy.identitree.starter.MainTabActivity;
 import org.campjoy.identitree.starter.R;
 
 import android.app.Activity;
@@ -53,7 +54,7 @@ public class SplashActivity extends Activity implements AnimationListener {
 	@Override
 	public void onAnimationEnd(Animation animation) {
 		// TODO Auto-generated method stub
-		startActivity(new Intent(SplashActivity.this, MainActivity.class));
+		startActivity(new Intent(SplashActivity.this, MainTabActivity.class));
 	}
 
 	@Override

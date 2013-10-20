@@ -43,7 +43,7 @@ public abstract class FragmentActivityBase extends FragmentActivity {
 		CJApplication.activityPaused();
 	}
 
-	protected void startFragment(Fragment frag, String backStackTag) {
+	public void startFragment(Fragment frag, String backStackTag) {
 
 		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
 
@@ -53,7 +53,7 @@ public abstract class FragmentActivityBase extends FragmentActivity {
 		tx.commit();
 	}
 	
-	protected void loadFragment(Fragment frag)
+	public void loadFragment(Fragment frag)
 	{
 		FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
 

@@ -16,26 +16,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wi-B1-fbz">
-                                <rect key="frame" x="12" y="313" width="288" height="177"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="177" id="JMo-AF-Li2"/>
-                                    <constraint firstAttribute="width" constant="280" id="wr0-Nb-kBp"/>
-                                </constraints>
-                                <string key="text">Since 1938, we have been focused on making a difference in people's lives. That's why even today our mission is to "Help people grow and succeed through life-long, experience-based learning."   \n                               \n The IdentiTree was developed for Camp Joy by volunteer software engineers at the 2013 Southwest Ohio Give Camp.   Special thanks to Nate Hirt, Alex Argo, Jeremy Spitzig, Sam Corder, Brian Telintelo, Parag Joshi, Mark Mathis, Neil Giri</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campjoy.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NtI-sp-N70">
-                                <rect key="frame" x="72" y="120" width="160" height="160"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homebackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="LjX-QM-NiM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZU-bb-Y3N">
-                                <rect key="frame" x="81" y="46" width="159" height="30"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uDa-Jk-moX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start Tree Identification">
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="identitreelogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ggJ-CN-vsx">
+                                        <rect key="frame" x="35" y="44" width="250" height="375"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcD-Ym-eSm">
+                                <rect key="frame" x="272" y="20" width="28" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="infobutton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z5J-3g-pgJ" kind="modal" id="5oQ-Ch-wOh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZU-bb-Y3N">
+                                <rect key="frame" x="20" y="473" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="START YOUR QUEST!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -43,22 +53,81 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.48999999999999999" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="9Wi-B1-fbz" firstAttribute="centerX" secondItem="NtI-sp-N70" secondAttribute="centerX" id="7eb-Dj-4bt"/>
-                            <constraint firstItem="pZU-bb-Y3N" firstAttribute="top" secondItem="Cpf-5d-uRB" secondAttribute="bottom" constant="8" id="Fwp-bc-Um4"/>
-                            <constraint firstItem="NtI-sp-N70" firstAttribute="top" secondItem="pZU-bb-Y3N" secondAttribute="bottom" constant="62" id="Nfv-3L-DQU"/>
-                            <constraint firstItem="9Wi-B1-fbz" firstAttribute="top" secondItem="NtI-sp-N70" secondAttribute="bottom" constant="33" id="QWf-c7-udC"/>
-                            <constraint firstAttribute="centerX" secondItem="NtI-sp-N70" secondAttribute="centerX" constant="8" id="a0w-dW-nUy"/>
-                            <constraint firstAttribute="centerX" secondItem="pZU-bb-Y3N" secondAttribute="centerX" id="riL-Kv-JKx"/>
+                            <constraint firstItem="Ked-8b-9Xk" firstAttribute="top" secondItem="pZU-bb-Y3N" secondAttribute="bottom" constant="16" id="Zni-ml-b09"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="u1e-5L-l1D"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="startButton" destination="pZU-bb-Y3N" id="bQ2-7J-WSC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="zC8-RO-RMV">
+            <objects>
+                <viewController id="Z5J-3g-pgJ" customClass="CJOInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YnK-I5-jRo"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZZ4-8F-eda"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sAW-i4-lVT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltS-bt-lSP">
+                                <rect key="frame" x="20" y="109" width="280" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Since 1938, we have been focused on making a difference in people's lives. That's why even today our mission is to "Help people grow and succeed through life-long, experience-based learning." </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDA-9a-cjl">
+                                <rect key="frame" x="20" y="276" width="280" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">The IdentiTree was developed for Camp Joy by volunteer software engineers at the 2013 Southwest Ohio Give Camp.   Special thanks to Nate Hirt, Alex Argo, Jeremy Spitzig, Sam Corder, Brian Telintelo, Parag Joshi, Mark Mathis, Neil Giridharan</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Camp Joy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhf-1Z-PRV">
+                                <rect key="frame" x="20" y="80" width="180" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IdentiTree" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7T-U2-gZA">
+                                <rect key="frame" x="20" y="247" width="180" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="913-T0-YKD">
+                                <rect key="frame" x="131" y="508" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closePushed:" destination="Z5J-3g-pgJ" eventType="touchUpInside" id="jgU-Hc-zhD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sVt-Rb-Jqd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECQ-zD-eA8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="-138"/>
         </scene>
         <!--Identify View Controller - Identify-->
         <scene sceneID="ot8-2e-RuS">
@@ -99,56 +168,77 @@
             </objects>
             <point key="canvasLocation" x="651" y="1161"/>
         </scene>
-        <!--Species Table View Controller - Trees-->
-        <scene sceneID="T0E-FR-cXm">
+        <!--Species Table View Controller - Tree List-->
+        <scene sceneID="Twd-8r-xPp">
             <objects>
-                <viewController id="lv6-Uq-QR0" customClass="CJOSpeciesTableViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WKt-ny-TQx"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qlo-V5-fqe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OQu-ho-MQd">
+                <tableViewController id="yrb-iD-uP3" customClass="CJOSpeciesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZWq-Ud-piz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WFb-6b-aWJ">
-                                <rect key="frame" x="0.0" y="25" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Tree List" id="QvZ-0x-mYm"/>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="E7h-fz-kpH">
-                                <rect key="frame" x="0.0" y="69" width="320" height="450"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tree" id="7BS-qo-LOu">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="tree" tableViewCell="7BS-qo-LOu" id="f3U-Gh-iAV">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tree" rowHeight="48" id="dxu-ce-ic2" customClass="CJOImageLabelTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="48"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dxu-ce-ic2" id="dJq-Nc-BOW">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dx6-Cd-aCd">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="0bi-Qc-nac"/>
+                                                <constraint firstAttribute="height" constant="44" id="cTj-MY-xSd"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQl-zI-PgX">
+                                            <rect key="frame" x="52" y="11" width="248" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="DQl-zI-PgX" secondAttribute="trailing" constant="20" symbolic="YES" id="1Ad-kv-iM5"/>
+                                        <constraint firstItem="DQl-zI-PgX" firstAttribute="leading" secondItem="dx6-Cd-aCd" secondAttribute="trailing" constant="8" symbolic="YES" id="BgZ-zq-9sD"/>
+                                        <constraint firstItem="DQl-zI-PgX" firstAttribute="top" secondItem="dJq-Nc-BOW" secondAttribute="top" constant="11" id="GbV-wv-isr"/>
+                                        <constraint firstItem="dx6-Cd-aCd" firstAttribute="top" secondItem="dJq-Nc-BOW" secondAttribute="top" id="clc-B8-eOs"/>
+                                        <constraint firstItem="dx6-Cd-aCd" firstAttribute="leading" secondItem="dJq-Nc-BOW" secondAttribute="leading" id="pDE-XA-aaE"/>
+                                    </constraints>
+                                </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dataSource" destination="lv6-Uq-QR0" id="ehK-Z6-M9k"/>
-                                    <outlet property="delegate" destination="lv6-Uq-QR0" id="bEg-Ad-CFZ"/>
+                                    <outlet property="imageView" destination="dx6-Cd-aCd" id="CV1-gA-hsT"/>
+                                    <outlet property="nameLabel" destination="DQl-zI-PgX" id="5nh-s9-olS"/>
                                 </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Trees" image="about" id="g7P-Er-2LT"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <connections>
-                        <outlet property="tableView" destination="E7h-fz-kpH" id="Vdi-yF-d7e"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HuR-Go-za3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yrb-iD-uP3" id="vfQ-GI-b0V"/>
+                            <outlet property="delegate" destination="yrb-iD-uP3" id="fxf-03-8Nv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tree List" id="OUi-3z-g4P"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsI-c6-6Pk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="659" y="1847"/>
+            <point key="canvasLocation" x="653" y="1861"/>
+        </scene>
+        <!--Navigation Controller - Trees-->
+        <scene sceneID="hsy-Rv-wQN">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="PRb-Pc-UIJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trees" image="about" id="L0a-3n-hdM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jBX-dB-mWK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yrb-iD-uP3" kind="relationship" relationship="rootViewController" id="nHT-Fl-SJP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7U-B5-49Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="1853"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
@@ -164,7 +254,7 @@
                         <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
                         <segue destination="BAq-1X-UkF" kind="relationship" relationship="viewControllers" id="OX2-9h-xRE"/>
-                        <segue destination="lv6-Uq-QR0" kind="relationship" relationship="viewControllers" id="mvz-Qg-O2X"/>
+                        <segue destination="PRb-Pc-UIJ" kind="relationship" relationship="viewControllers" id="caB-Zh-iaF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -173,11 +263,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="about" width="26" height="26"/>
-        <image name="campjoy.jpg" width="160" height="160"/>
+        <image name="about" width="20" height="25"/>
         <image name="glossary" width="24" height="22"/>
         <image name="home" width="27" height="26"/>
+        <image name="homebackground.png" width="640" height="960"/>
         <image name="identify" width="24" height="24"/>
+        <image name="identitreelogo.png" width="500" height="700"/>
+        <image name="infobutton.png" width="50" height="50"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

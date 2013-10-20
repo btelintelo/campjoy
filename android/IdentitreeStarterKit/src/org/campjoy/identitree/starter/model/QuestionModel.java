@@ -11,22 +11,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.Context;
-import android.util.Log;
 
 public class QuestionModel {
 
 	private ArrayList<Question> questions = new ArrayList<Question>();
-	//private static QuestionModel instance; 
-	
-	public QuestionModel(final Context applicationContext) {
-		Thread loader = new Thread() {
-			@Override
-			public void run() {
-				loadQuestions(applicationContext);
-			}
-		};
 
-		loader.start();
+	public QuestionModel(final Context applicationContext) {
+		loadQuestions(applicationContext);
 	}
 
 	private void loadQuestions(Context applicationContext) {
@@ -53,7 +44,6 @@ public class QuestionModel {
 			info = builder.toString();
 		} catch (IOException e) {
 			e.printStackTrace();
-			Log.d("QuestionModel", "readJsonFromFile(Context applicationContext)");
 		} finally {
 			try {
 				if (is != null) {
@@ -61,7 +51,6 @@ public class QuestionModel {
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
-				Log.d("QuestionModel", "readJsonFromFile(Context applicationContext)");
 			}
 		}
 		return info;
@@ -79,7 +68,6 @@ public class QuestionModel {
 			}
 		} catch (JSONException e) {
 			e.printStackTrace();
-			Log.d("QuestionModel", "parseJson(String json)");
 		}
 	}
 
@@ -97,14 +85,4 @@ public class QuestionModel {
 	public ArrayList<Question> getQuestions() {
 		return questions;
 	}
-//
-//	public static QuestionModel getInstance() {
-//		return instance;
-//	}
-//	
-//	public void initInstance(Context context) {
-//		if(instance == null) {
-//			instance = new QuestionModel(context);			
-//		}
-//	}
 }

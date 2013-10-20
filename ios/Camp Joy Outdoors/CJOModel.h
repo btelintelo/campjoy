@@ -18,6 +18,7 @@
 +(NSArray *) terms;
 
 +(NSArray *) termStrings;
++(NSArray *) termStringsWithPlurals;
 
 +(CJOQuestion *) findQuestionById:(NSString *) questionId;
 
