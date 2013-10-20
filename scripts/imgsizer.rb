@@ -20,11 +20,13 @@ def prerender(dirname, filename)
         scales.each do|scale|
             width = (size * scale).to_i
             thumbname = "trees/#{slug}/#{basename}#{ext.downcase}"
+            androidthumbname = "trees/#{slug}_#{basename}#{ext.downcase}"
             if(File.exist?(thumbname) == false)
                 original = fullname
                 image = Magick::ImageList.new(original)
                 thumb = image.resize_to_fit(width)
                 thumb.write(thumbname)
+                thumb.write(androidthumbname)
                 thumb = nil
            end
         end
