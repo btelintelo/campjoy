@@ -50,7 +50,7 @@ public class GlossaryAdapter extends BaseAdapter {
 			convertView = inflater.inflate(R.layout.glossary_term, null);
 			
 			holder = new ViewHolder();
-			holder.image = (ImageView) convertView.findViewById(R.id.term_image);
+//			holder.image = (ImageView) convertView.findViewById(R.id.term_image);
 			holder.term = (TextView) convertView.findViewById(R.id.term_name);
 			holder.description = (TextView) convertView.findViewById(R.id.term_description);
 			
@@ -61,13 +61,14 @@ public class GlossaryAdapter extends BaseAdapter {
 		}
 		Term term = getItem(position);
 		
-		try {
-			InputStream is = inflater.getContext().getAssets().open(term.imageLocation);
-			Drawable image = Drawable.createFromStream(is, null);
-			holder.image.setImageDrawable(image);
-		} catch (IOException e) {
-			Log.w(LOG_TAG, "Failed to load image for glossary item " + term.getName());
-		}
+//		try {
+//			InputStream is = inflater.getContext().getAssets().open(term.imageLocation);
+//			Drawable image = Drawable.createFromStream(is, null);
+//			holder.image.setImageDrawable(image);
+//		} catch (IOException e) {
+//			Log.w(LOG_TAG, "Failed to load image for glossary item " + term.getName());
+//			holder.image.setVisibility(View.INVISIBLE);
+//		}
 		holder.term.setText(term.getName());
 		holder.description.setText(term.getDescription());
 		

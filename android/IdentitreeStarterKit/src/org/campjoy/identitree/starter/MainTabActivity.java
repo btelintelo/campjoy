@@ -23,12 +23,12 @@ public class MainTabActivity extends TabActivity {
 		initTabs();
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main_tab, menu);
-		return true;
-	}
+//	@Override
+//	public boolean onCreateOptionsMenu(Menu menu) {
+//		// Inflate the menu; this adds items to the action bar if it is present.
+//		getMenuInflater().inflate(R.menu.main_tab, menu);
+//		return true;
+//	}
 	
 	private void initTabs() {
 		TabHost host = getTabHost();
