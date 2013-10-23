@@ -1,0 +1,215 @@
+android.support.v4.app.BackStackState
+android.support.v4.app.BackStackState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.Fragment: Fragment()
+android.support.v4.app.Fragment$SavedState
+android.support.v4.app.Fragment$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentActivity: FragmentActivity()
+android.support.v4.app.FragmentManagerState
+android.support.v4.app.FragmentManagerState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentState
+android.support.v4.app.FragmentState: android.os.Parcelable$Creator CREATOR
+android.support.v4.app.FragmentTabHost: void setOnTabChangedListener(android.widget.TabHost$OnTabChangeListener)
+android.support.v4.app.FragmentTabHost$SavedState
+android.support.v4.app.FragmentTabHost$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status[] values()
+android.support.v4.content.ModernAsyncTask$Status: android.support.v4.content.ModernAsyncTask$Status valueOf(java.lang.String)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColor(int)
+android.support.v4.view.PagerTabStrip: void setTabIndicatorColorResource(int)
+android.support.v4.view.PagerTabStrip: int getTabIndicatorColor()
+android.support.v4.view.PagerTabStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.PagerTabStrip: void setBackgroundColor(int)
+android.support.v4.view.PagerTabStrip: void setBackgroundResource(int)
+android.support.v4.view.PagerTabStrip: void setDrawFullUnderline(boolean)
+android.support.v4.view.PagerTabStrip: boolean getDrawFullUnderline()
+android.support.v4.view.PagerTabStrip: int getMinHeight()
+android.support.v4.view.PagerTitleStrip: void setSingleLineAllCaps(android.widget.TextView)
+android.support.v4.view.PagerTitleStrip: void setTextSpacing(int)
+android.support.v4.view.PagerTitleStrip: int getTextSpacing()
+android.support.v4.view.PagerTitleStrip: void setNonPrimaryAlpha(float)
+android.support.v4.view.PagerTitleStrip: void setTextColor(int)
+android.support.v4.view.PagerTitleStrip: void setGravity(int)
+android.support.v4.view.PagerTitleStrip: int getMinHeight()
+android.support.v4.view.ViewPager: void setScrollState(int)
+android.support.v4.view.ViewPager: void setAdapter(android.support.v4.view.PagerAdapter)
+android.support.v4.view.ViewPager: android.support.v4.view.PagerAdapter getAdapter()
+android.support.v4.view.ViewPager: void setOnAdapterChangeListener(android.support.v4.view.ViewPager$OnAdapterChangeListener)
+android.support.v4.view.ViewPager: int getClientWidth()
+android.support.v4.view.ViewPager: void setCurrentItem(int)
+android.support.v4.view.ViewPager: int getCurrentItem()
+android.support.v4.view.ViewPager: void setOnPageChangeListener(android.support.v4.view.ViewPager$OnPageChangeListener)
+android.support.v4.view.ViewPager: void setChildrenDrawingOrderEnabledCompat(boolean)
+android.support.v4.view.ViewPager: int getOffscreenPageLimit()
+android.support.v4.view.ViewPager: void setOffscreenPageLimit(int)
+android.support.v4.view.ViewPager: void setPageMargin(int)
+android.support.v4.view.ViewPager: int getPageMargin()
+android.support.v4.view.ViewPager: void setPageMarginDrawable(android.graphics.drawable.Drawable)
+android.support.v4.view.ViewPager: void setPageMarginDrawable(int)
+android.support.v4.view.ViewPager: void setScrollingCacheEnabled(boolean)
+android.support.v4.view.ViewPager$SavedState
+android.support.v4.view.ViewPager$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.DrawerLayout: void setScrimColor(int)
+android.support.v4.widget.DrawerLayout: void setDrawerListener(android.support.v4.widget.DrawerLayout$DrawerListener)
+android.support.v4.widget.DrawerLayout: void setDrawerLockMode(int)
+android.support.v4.widget.DrawerLayout$SavedState
+android.support.v4.widget.DrawerLayout$SavedState: android.os.Parcelable$Creator CREATOR
+android.support.v4.widget.SlidingPaneLayout: void setParallaxDistance(int)
+android.support.v4.widget.SlidingPaneLayout: int getParallaxDistance()
+android.support.v4.widget.SlidingPaneLayout: void setSliderFadeColor(int)
+android.support.v4.widget.SlidingPaneLayout: int getSliderFadeColor()
+android.support.v4.widget.SlidingPaneLayout: void setCoveredFadeColor(int)
+android.support.v4.widget.SlidingPaneLayout: int getCoveredFadeColor()
+android.support.v4.widget.SlidingPaneLayout: void setPanelSlideListener(android.support.v4.widget.SlidingPaneLayout$PanelSlideListener)
+android.support.v4.widget.SlidingPaneLayout: void setShadowDrawable(android.graphics.drawable.Drawable)
+android.support.v4.widget.SlidingPaneLayout: void setShadowResource(int)
+android.support.v4.widget.SlidingPaneLayout$SavedState
+android.support.v4.widget.SlidingPaneLayout$SavedState: android.os.Parcelable$Creator CREATOR
+org.campjoy.identitree.starter.AboutActivity
+org.campjoy.identitree.starter.AboutActivity: AboutActivity()
+org.campjoy.identitree.starter.CJApplication
+org.campjoy.identitree.starter.CJApplication: CJApplication()
+org.campjoy.identitree.starter.FragmentActivityBase: FragmentActivityBase()
+org.campjoy.identitree.starter.FragmentBase: FragmentBase()
+org.campjoy.identitree.starter.MainActivity
+org.campjoy.identitree.starter.MainActivity: MainActivity()
+org.campjoy.identitree.starter.MainTabActivity
+org.campjoy.identitree.starter.MainTabActivity: MainTabActivity()
+org.campjoy.identitree.starter.R$anim: int grow_from_bottom
+org.campjoy.identitree.starter.R$anim: int grow_from_bottomleft_to_topright
+org.campjoy.identitree.starter.R$anim: int grow_from_bottomright_to_topleft
+org.campjoy.identitree.starter.R$anim: int grow_from_top
+org.campjoy.identitree.starter.R$anim: int grow_from_topleft_to_bottomright
+org.campjoy.identitree.starter.R$anim: int grow_from_topright_to_bottomleft
+org.campjoy.identitree.starter.R$anim: int rail
+org.campjoy.identitree.starter.R$anim: int shrink_from_bottom
+org.campjoy.identitree.starter.R$anim: int shrink_from_bottomleft_to_topright
+org.campjoy.identitree.starter.R$anim: int shrink_from_bottomright_to_topleft
+org.campjoy.identitree.starter.R$anim: int shrink_from_top
+org.campjoy.identitree.starter.R$anim: int shrink_from_topleft_to_bottomright
+org.campjoy.identitree.starter.R$anim: int shrink_from_topright_to_bottomleft
+org.campjoy.identitree.starter.R$anim: int splash
+org.campjoy.identitree.starter.R$color: int lightgray
+org.campjoy.identitree.starter.R$dimen: int activity_horizontal_margin
+org.campjoy.identitree.starter.R$dimen: int activity_vertical_margin
+org.campjoy.identitree.starter.R$drawable: int book
+org.campjoy.identitree.starter.R$drawable: int bubble
+org.campjoy.identitree.starter.R$drawable: int campjoy
+org.campjoy.identitree.starter.R$drawable: int home
+org.campjoy.identitree.starter.R$drawable: int homebackground
+org.campjoy.identitree.starter.R$drawable: int ic_launcher
+org.campjoy.identitree.starter.R$drawable: int identitreelogo
+org.campjoy.identitree.starter.R$drawable: int info
+org.campjoy.identitree.starter.R$drawable: int quickaction_arrow_down
+org.campjoy.identitree.starter.R$drawable: int quickaction_arrow_up
+org.campjoy.identitree.starter.R$drawable: int search
+org.campjoy.identitree.starter.R$drawable: int tree
+org.campjoy.identitree.starter.R$id: int about_text
+org.campjoy.identitree.starter.R$id: int action_settings
+org.campjoy.identitree.starter.R$id: int arrow_down
+org.campjoy.identitree.starter.R$id: int arrow_up
+org.campjoy.identitree.starter.R$id: int bubbledescription
+org.campjoy.identitree.starter.R$id: int bubbletitle
+org.campjoy.identitree.starter.R$id: int button_question
+org.campjoy.identitree.starter.R$id: int button_start1
+org.campjoy.identitree.starter.R$id: int button_start2
+org.campjoy.identitree.starter.R$id: int footer
+org.campjoy.identitree.starter.R$id: int fragment_question
+org.campjoy.identitree.starter.R$id: int glossary_list
+org.campjoy.identitree.starter.R$id: int glossary_row
+org.campjoy.identitree.starter.R$id: int growthRateText
+org.campjoy.identitree.starter.R$id: int growthRateValue
+org.campjoy.identitree.starter.R$id: int header2
+org.campjoy.identitree.starter.R$id: int heightText
+org.campjoy.identitree.starter.R$id: int heightValue
+org.campjoy.identitree.starter.R$id: int image_caption
+org.campjoy.identitree.starter.R$id: int image_first_question
+org.campjoy.identitree.starter.R$id: int image_second_question
+org.campjoy.identitree.starter.R$id: int layout_fragment_container
+org.campjoy.identitree.starter.R$id: int leafShapeText
+org.campjoy.identitree.starter.R$id: int leafShapeValue
+org.campjoy.identitree.starter.R$id: int lifeSpanText
+org.campjoy.identitree.starter.R$id: int lifeSpanValue
+org.campjoy.identitree.starter.R$id: int mygallery
+org.campjoy.identitree.starter.R$id: int popup_text
+org.campjoy.identitree.starter.R$id: int popuptext
+org.campjoy.identitree.starter.R$id: int relativeLayout1
+org.campjoy.identitree.starter.R$id: int relativeLayout2
+org.campjoy.identitree.starter.R$id: int shapeText
+org.campjoy.identitree.starter.R$id: int shapeValue
+org.campjoy.identitree.starter.R$id: int soilTypeText
+org.campjoy.identitree.starter.R$id: int soilTypeValue
+org.campjoy.identitree.starter.R$id: int splash_activity_image
+org.campjoy.identitree.starter.R$id: int splash_activity_relative_layout
+org.campjoy.identitree.starter.R$id: int sunText
+org.campjoy.identitree.starter.R$id: int sunValue
+org.campjoy.identitree.starter.R$id: int tab_name
+org.campjoy.identitree.starter.R$id: int term_description
+org.campjoy.identitree.starter.R$id: int term_image
+org.campjoy.identitree.starter.R$id: int term_name
+org.campjoy.identitree.starter.R$id: int textView1
+org.campjoy.identitree.starter.R$id: int textView2
+org.campjoy.identitree.starter.R$id: int text_first_question
+org.campjoy.identitree.starter.R$id: int text_path
+org.campjoy.identitree.starter.R$id: int text_second_question
+org.campjoy.identitree.starter.R$id: int treeInfoFrameLayout
+org.campjoy.identitree.starter.R$id: int treeInfoImageScrollView
+org.campjoy.identitree.starter.R$id: int tree_description
+org.campjoy.identitree.starter.R$id: int tree_details_layout
+org.campjoy.identitree.starter.R$id: int tree_details_scroll_layout
+org.campjoy.identitree.starter.R$id: int tree_map_image
+org.campjoy.identitree.starter.R$id: int tree_map_layout
+org.campjoy.identitree.starter.R$id: int widthText
+org.campjoy.identitree.starter.R$id: int widthValue
+org.campjoy.identitree.starter.R$layout: int activity_about
+org.campjoy.identitree.starter.R$layout: int activity_glossary
+org.campjoy.identitree.starter.R$layout: int activity_main
+org.campjoy.identitree.starter.R$layout: int activity_main_tab
+org.campjoy.identitree.starter.R$layout: int activity_question
+org.campjoy.identitree.starter.R$layout: int activity_splash
+org.campjoy.identitree.starter.R$layout: int fragment_container
+org.campjoy.identitree.starter.R$layout: int fragment_question
+org.campjoy.identitree.starter.R$layout: int fragment_tree_info
+org.campjoy.identitree.starter.R$layout: int glossary_popup
+org.campjoy.identitree.starter.R$layout: int glossary_term
+org.campjoy.identitree.starter.R$layout: int hot_tap_bubble
+org.campjoy.identitree.starter.R$layout: int tabs
+org.campjoy.identitree.starter.R$menu: int main
+org.campjoy.identitree.starter.R$menu: int main_tab
+org.campjoy.identitree.starter.R$menu: int question
+org.campjoy.identitree.starter.R$string: int action_settings
+org.campjoy.identitree.starter.R$string: int app_name
+org.campjoy.identitree.starter.R$string: int dummy_button
+org.campjoy.identitree.starter.R$string: int dummy_content
+org.campjoy.identitree.starter.R$string: int hello_world
+org.campjoy.identitree.starter.R$string: int image
+org.campjoy.identitree.starter.R$string: int text_first
+org.campjoy.identitree.starter.R$string: int text_question
+org.campjoy.identitree.starter.R$string: int text_second
+org.campjoy.identitree.starter.R$string: int title_activity_about
+org.campjoy.identitree.starter.R$string: int title_activity_main_tab
+org.campjoy.identitree.starter.R$string: int title_activity_question
+org.campjoy.identitree.starter.R$style: int Animations
+org.campjoy.identitree.starter.R$style: int Animations_PopDownMenu
+org.campjoy.identitree.starter.R$style: int Animations_PopDownMenu_Center
+org.campjoy.identitree.starter.R$style: int Animations_PopDownMenu_Left
+org.campjoy.identitree.starter.R$style: int Animations_PopDownMenu_Right
+org.campjoy.identitree.starter.R$style: int Animations_PopUpMenu
+org.campjoy.identitree.starter.R$style: int Animations_PopUpMenu_Center
+org.campjoy.identitree.starter.R$style: int Animations_PopUpMenu_Left
+org.campjoy.identitree.starter.R$style: int Animations_PopUpMenu_Right
+org.campjoy.identitree.starter.R$style: int AppBaseTheme
+org.campjoy.identitree.starter.R$style: int AppTheme
+org.campjoy.identitree.starter.R$style: int ButtonBar
+org.campjoy.identitree.starter.R$style: int ButtonBarButton
+org.campjoy.identitree.starter.R$style: int FullscreenActionBarStyle
+org.campjoy.identitree.starter.R$style: int FullscreenTheme
+org.campjoy.identitree.starter.activities.GlossaryActivity
+org.campjoy.identitree.starter.activities.GlossaryActivity: GlossaryActivity()
+org.campjoy.identitree.starter.activities.QuestionActivity
+org.campjoy.identitree.starter.activities.QuestionActivity: QuestionActivity()
+org.campjoy.identitree.starter.activities.SplashActivity
+org.campjoy.identitree.starter.activities.SplashActivity: SplashActivity()
+org.campjoy.identitree.starter.activities.TreeInfoActivity
+org.campjoy.identitree.starter.activities.TreeInfoActivity: TreeInfoActivity()
+org.campjoy.identitree.starter.fragments.QuestionFragment
+org.campjoy.identitree.starter.fragments.QuestionFragment: QuestionFragment()
