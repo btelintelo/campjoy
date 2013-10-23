@@ -119,14 +119,14 @@
 		4250A918181228F600F2F282 /* CJOIdentifyNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOIdentifyNavigationViewController.m; sourceTree = "<group>"; };
 		4250A91A1812326700F2F282 /* CJOAnswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOAnswerCell.h; sourceTree = "<group>"; };
 		4250A91B1812326700F2F282 /* CJOAnswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOAnswerCell.m; sourceTree = "<group>"; };
-		4252C390180F8888001F86F5 /* Camp Joy Outdoors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camp Joy Outdoors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4252C390180F8888001F86F5 /* Identitree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Identitree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4252C393180F8888001F86F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4252C395180F8888001F86F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		4252C397180F8888001F86F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		4252C39B180F8888001F86F5 /* Camp Joy Outdoors-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Camp Joy Outdoors-Info.plist"; sourceTree = "<group>"; };
+		4252C39B180F8888001F86F5 /* Identitree-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Identitree-Info.plist"; sourceTree = "<group>"; };
 		4252C39D180F8888001F86F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4252C39F180F8888001F86F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4252C3A1180F8888001F86F5 /* Camp Joy Outdoors-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Camp Joy Outdoors-Prefix.pch"; sourceTree = "<group>"; };
+		4252C3A1180F8888001F86F5 /* Identitree-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Identitree-Prefix.pch"; sourceTree = "<group>"; };
 		4252C3A2180F8888001F86F5 /* CJOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJOAppDelegate.h; sourceTree = "<group>"; };
 		4252C3A3180F8888001F86F5 /* CJOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJOAppDelegate.m; sourceTree = "<group>"; };
 		4252C3A6180F8888001F86F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -136,9 +136,9 @@
 		4252C3AE180F8888001F86F5 /* CJOIdentifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJOIdentifyViewController.h; sourceTree = "<group>"; };
 		4252C3AF180F8888001F86F5 /* CJOIdentifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CJOIdentifyViewController.m; sourceTree = "<group>"; };
 		4252C3B1180F8888001F86F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4252C3B7180F8888001F86F5 /* Camp Joy OutdoorsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Camp Joy OutdoorsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4252C3B7180F8888001F86F5 /* IdentitreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdentitreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4252C3B8180F8888001F86F5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4252C3C0180F8888001F86F5 /* Camp Joy OutdoorsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Camp Joy OutdoorsTests-Info.plist"; sourceTree = "<group>"; };
+		4252C3C0180F8888001F86F5 /* IdentitreeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IdentitreeTests-Info.plist"; sourceTree = "<group>"; };
 		4252C3C2180F8888001F86F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4252C3C4180F8888001F86F5 /* Camp_Joy_OutdoorsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Camp_Joy_OutdoorsTests.m; sourceTree = "<group>"; };
 		4290D7EA1812F5AC00B8057A /* CJOConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOConstants.h; sourceTree = "<group>"; };
@@ -309,8 +309,8 @@
 		4252C391180F8888001F86F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4252C390180F8888001F86F5 /* Camp Joy Outdoors.app */,
-				4252C3B7180F8888001F86F5 /* Camp Joy OutdoorsTests.xctest */,
+				4252C390180F8888001F86F5 /* Identitree.app */,
+				4252C3B7180F8888001F86F5 /* IdentitreeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,10 +357,10 @@
 				4290D7EF1813293E00B8057A /* dichotomy */,
 				FA4638B418131C2A007F62DD /* maps */,
 				FA0B2BDE1812F22800FF21A7 /* trees */,
-				4252C39B180F8888001F86F5 /* Camp Joy Outdoors-Info.plist */,
+				4252C39B180F8888001F86F5 /* Identitree-Info.plist */,
 				4252C39C180F8888001F86F5 /* InfoPlist.strings */,
 				4252C39F180F8888001F86F5 /* main.m */,
-				4252C3A1180F8888001F86F5 /* Camp Joy Outdoors-Prefix.pch */,
+				4252C3A1180F8888001F86F5 /* Identitree-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -377,7 +377,7 @@
 		4252C3BF180F8888001F86F5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4252C3C0180F8888001F86F5 /* Camp Joy OutdoorsTests-Info.plist */,
+				4252C3C0180F8888001F86F5 /* IdentitreeTests-Info.plist */,
 				4252C3C1180F8888001F86F5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -403,9 +403,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4252C38F180F8888001F86F5 /* Camp Joy Outdoors */ = {
+		4252C38F180F8888001F86F5 /* Identitree */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4252C3C8180F8888001F86F5 /* Build configuration list for PBXNativeTarget "Camp Joy Outdoors" */;
+			buildConfigurationList = 4252C3C8180F8888001F86F5 /* Build configuration list for PBXNativeTarget "Identitree" */;
 			buildPhases = (
 				E99242633352429F9B230284 /* Check Pods Manifest.lock */,
 				4252C38C180F8888001F86F5 /* Sources */,
@@ -417,14 +417,14 @@
 			);
 			dependencies = (
 			);
-			name = "Camp Joy Outdoors";
+			name = Identitree;
 			productName = "Camp Joy Outdoors";
-			productReference = 4252C390180F8888001F86F5 /* Camp Joy Outdoors.app */;
+			productReference = 4252C390180F8888001F86F5 /* Identitree.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4252C3B6180F8888001F86F5 /* Camp Joy OutdoorsTests */ = {
+		4252C3B6180F8888001F86F5 /* IdentitreeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4252C3CB180F8888001F86F5 /* Build configuration list for PBXNativeTarget "Camp Joy OutdoorsTests" */;
+			buildConfigurationList = 4252C3CB180F8888001F86F5 /* Build configuration list for PBXNativeTarget "IdentitreeTests" */;
 			buildPhases = (
 				4252C3B3180F8888001F86F5 /* Sources */,
 				4252C3B4180F8888001F86F5 /* Frameworks */,
@@ -435,9 +435,9 @@
 			dependencies = (
 				4252C3BD180F8888001F86F5 /* PBXTargetDependency */,
 			);
-			name = "Camp Joy OutdoorsTests";
+			name = IdentitreeTests;
 			productName = "Camp Joy OutdoorsTests";
-			productReference = 4252C3B7180F8888001F86F5 /* Camp Joy OutdoorsTests.xctest */;
+			productReference = 4252C3B7180F8888001F86F5 /* IdentitreeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -458,7 +458,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4252C38B180F8888001F86F5 /* Build configuration list for PBXProject "Camp Joy Outdoors" */;
+			buildConfigurationList = 4252C38B180F8888001F86F5 /* Build configuration list for PBXProject "Identitree" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -471,8 +471,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4252C38F180F8888001F86F5 /* Camp Joy Outdoors */,
-				4252C3B6180F8888001F86F5 /* Camp Joy OutdoorsTests */,
+				4252C38F180F8888001F86F5 /* Identitree */,
+				4252C3B6180F8888001F86F5 /* IdentitreeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -595,7 +595,7 @@
 /* Begin PBXTargetDependency section */
 		4252C3BD180F8888001F86F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 4252C38F180F8888001F86F5 /* Camp Joy Outdoors */;
+			target = 4252C38F180F8888001F86F5 /* Identitree */;
 			targetProxy = 4252C3BC180F8888001F86F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -717,11 +717,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Camp Joy Outdoors/Camp Joy Outdoors-Prefix.pch";
-				INFOPLIST_FILE = "Camp Joy Outdoors/Camp Joy Outdoors-Info.plist";
+				GCC_PREFIX_HEADER = "Camp Joy Outdoors/Identitree-Prefix.pch";
+				INFOPLIST_FILE = "Camp Joy Outdoors/Identitree-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Identitree;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -734,11 +735,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Camp Joy Outdoors/Camp Joy Outdoors-Prefix.pch";
-				INFOPLIST_FILE = "Camp Joy Outdoors/Camp Joy Outdoors-Info.plist";
+				GCC_PREFIX_HEADER = "Camp Joy Outdoors/Identitree-Prefix.pch";
+				INFOPLIST_FILE = "Camp Joy Outdoors/Identitree-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Identitree;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -760,8 +762,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Camp Joy OutdoorsTests/Camp Joy OutdoorsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Camp Joy OutdoorsTests/IdentitreeTests-Info.plist";
+				PRODUCT_NAME = IdentitreeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -779,8 +781,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Camp Joy Outdoors/Camp Joy Outdoors-Prefix.pch";
-				INFOPLIST_FILE = "Camp Joy OutdoorsTests/Camp Joy OutdoorsTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Camp Joy OutdoorsTests/IdentitreeTests-Info.plist";
+				PRODUCT_NAME = IdentitreeTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -789,7 +791,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4252C38B180F8888001F86F5 /* Build configuration list for PBXProject "Camp Joy Outdoors" */ = {
+		4252C38B180F8888001F86F5 /* Build configuration list for PBXProject "Identitree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4252C3C6180F8888001F86F5 /* Debug */,
@@ -798,7 +800,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4252C3C8180F8888001F86F5 /* Build configuration list for PBXNativeTarget "Camp Joy Outdoors" */ = {
+		4252C3C8180F8888001F86F5 /* Build configuration list for PBXNativeTarget "Identitree" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4252C3C9180F8888001F86F5 /* Debug */,
@@ -807,7 +809,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4252C3CB180F8888001F86F5 /* Build configuration list for PBXNativeTarget "Camp Joy OutdoorsTests" */ = {
+		4252C3CB180F8888001F86F5 /* Build configuration list for PBXNativeTarget "IdentitreeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4252C3CC180F8888001F86F5 /* Debug */,
