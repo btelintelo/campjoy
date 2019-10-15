@@ -10,6 +10,7 @@
 		09939F3D1812F73D0043AFCD /* glossary_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09939F3C1812F73D0043AFCD /* glossary_iPhone.storyboard */; };
 		09939F401812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09939F3F1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m */; };
 		09939F4218132B300043AFCD /* glossary in Resources */ = {isa = PBXBuildFile; fileRef = 09939F4118132B300043AFCD /* glossary */; };
+		0B3F5F1927256B2F753AE695 /* libPods-Identitree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D903542D2024F2CB726452F3 /* libPods-Identitree.a */; };
 		42405B6A18121F7800292674 /* CJOQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B6918121F7800292674 /* CJOQuestion.m */; };
 		42405B6D18121F8500292674 /* CJOTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B6C18121F8500292674 /* CJOTree.m */; };
 		42405B7018121F9600292674 /* CJOGlossaryTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 42405B6F18121F9600292674 /* CJOGlossaryTerm.m */; };
@@ -56,10 +57,10 @@
 		4290D7F6181333F900B8057A /* CJOPathCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4290D7F5181333F900B8057A /* CJOPathCell.m */; };
 		4290D7F81813546500B8057A /* glossary_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4290D7F71813546500B8057A /* glossary_iPad.storyboard */; };
 		42EA2F521812C139007BB93B /* UIView+FrameSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EA2F511812C139007BB93B /* UIView+FrameSize.m */; };
-		5506317E969D4A2890B04CD5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D17A9345361743DFB82FFB8A /* libPods.a */; };
 		FA0B2BDF1812F22800FF21A7 /* trees in Resources */ = {isa = PBXBuildFile; fileRef = FA0B2BDE1812F22800FF21A7 /* trees */; };
 		FA0B2BE21812F60900FF21A7 /* CJOTreeImagesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B2BE11812F60900FF21A7 /* CJOTreeImagesDataSource.m */; };
 		FA0B2BE41812FFCF00FF21A7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0B2BE31812FFCF00FF21A7 /* QuartzCore.framework */; };
+		FA1B4D142356413500E3BD9A /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1B4D132356413500E3BD9A /* Launch Screen.storyboard */; };
 		FA4638B518131C2A007F62DD /* maps in Resources */ = {isa = PBXBuildFile; fileRef = FA4638B418131C2A007F62DD /* maps */; };
 		FA4638B818138652007F62DD /* CJOImageLabelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4638B718138652007F62DD /* CJOImageLabelTableViewCell.m */; };
 		FAF1FC4918138DB5009ACEBD /* CJOBigImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF1FC4818138DB5009ACEBD /* CJOBigImageCell.m */; };
@@ -76,6 +77,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B8D1FD757C305775429642 /* Pods-Identitree.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Identitree.release.xcconfig"; path = "Target Support Files/Pods-Identitree/Pods-Identitree.release.xcconfig"; sourceTree = "<group>"; };
 		09939F3C1812F73D0043AFCD /* glossary_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = glossary_iPhone.storyboard; sourceTree = "<group>"; };
 		09939F3E1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOGlossaryDefinitionViewController.h; sourceTree = "<group>"; };
 		09939F3F1812F7F80043AFCD /* CJOGlossaryDefinitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOGlossaryDefinitionViewController.m; sourceTree = "<group>"; };
@@ -150,12 +152,13 @@
 		4290D7F71813546500B8057A /* glossary_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = glossary_iPad.storyboard; sourceTree = "<group>"; };
 		42EA2F501812C139007BB93B /* UIView+FrameSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameSize.h"; sourceTree = "<group>"; };
 		42EA2F511812C139007BB93B /* UIView+FrameSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameSize.m"; sourceTree = "<group>"; };
-		73C95832BE124778979EB613 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
-		D17A9345361743DFB82FFB8A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D903542D2024F2CB726452F3 /* libPods-Identitree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Identitree.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E36F390B31269110AF2997B7 /* Pods-Identitree.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Identitree.debug.xcconfig"; path = "Target Support Files/Pods-Identitree/Pods-Identitree.debug.xcconfig"; sourceTree = "<group>"; };
 		FA0B2BDE1812F22800FF21A7 /* trees */ = {isa = PBXFileReference; lastKnownFileType = folder; name = trees; path = ../../data/images/trees; sourceTree = "<group>"; };
 		FA0B2BE01812F60900FF21A7 /* CJOTreeImagesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOTreeImagesDataSource.h; sourceTree = "<group>"; };
 		FA0B2BE11812F60900FF21A7 /* CJOTreeImagesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOTreeImagesDataSource.m; sourceTree = "<group>"; };
 		FA0B2BE31812FFCF00FF21A7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FA1B4D132356413500E3BD9A /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		FA4638B418131C2A007F62DD /* maps */ = {isa = PBXFileReference; lastKnownFileType = folder; name = maps; path = ../../data/images/maps; sourceTree = "<group>"; };
 		FA4638B618138652007F62DD /* CJOImageLabelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJOImageLabelTableViewCell.h; sourceTree = "<group>"; };
 		FA4638B718138652007F62DD /* CJOImageLabelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJOImageLabelTableViewCell.m; sourceTree = "<group>"; };
@@ -172,7 +175,7 @@
 				4252C396180F8888001F86F5 /* CoreGraphics.framework in Frameworks */,
 				4252C398180F8888001F86F5 /* UIKit.framework in Frameworks */,
 				4252C394180F8888001F86F5 /* Foundation.framework in Frameworks */,
-				5506317E969D4A2890B04CD5 /* libPods.a in Frameworks */,
+				0B3F5F1927256B2F753AE695 /* libPods-Identitree.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +305,7 @@
 				4252C3BE180F8888001F86F5 /* Camp Joy OutdoorsTests */,
 				4252C392180F8888001F86F5 /* Frameworks */,
 				4252C391180F8888001F86F5 /* Products */,
-				73C95832BE124778979EB613 /* Pods.xcconfig */,
+				A35229460849585C8FD05962 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -323,7 +326,7 @@
 				4252C395180F8888001F86F5 /* CoreGraphics.framework */,
 				4252C397180F8888001F86F5 /* UIKit.framework */,
 				4252C3B8180F8888001F86F5 /* XCTest.framework */,
-				D17A9345361743DFB82FFB8A /* libPods.a */,
+				D903542D2024F2CB726452F3 /* libPods-Identitree.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				42405BD31814336E00292674 /* indentitree_home.png */,
 				42405B811812F90700292674 /* campjoy.jpg */,
 				4252C39A180F8888001F86F5 /* Supporting Files */,
+				FA1B4D132356413500E3BD9A /* Launch Screen.storyboard */,
 			);
 			path = "Camp Joy Outdoors";
 			sourceTree = "<group>";
@@ -400,6 +404,15 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		A35229460849585C8FD05962 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E36F390B31269110AF2997B7 /* Pods-Identitree.debug.xcconfig */,
+				00B8D1FD757C305775429642 /* Pods-Identitree.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -407,11 +420,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4252C3C8180F8888001F86F5 /* Build configuration list for PBXNativeTarget "Identitree" */;
 			buildPhases = (
-				E99242633352429F9B230284 /* Check Pods Manifest.lock */,
+				C96A78CC5114972095BEF506 /* [CP] Check Pods Manifest.lock */,
 				4252C38C180F8888001F86F5 /* Sources */,
 				4252C38D180F8888001F86F5 /* Frameworks */,
 				4252C38E180F8888001F86F5 /* Resources */,
-				BDC0A13E51154EDABF094E85 /* Copy Pods Resources */,
+				700CA8665ECD269ED23B5451 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -463,6 +476,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -488,6 +502,7 @@
 				42405B7C18122F7200292674 /* questions.json in Resources */,
 				FA0B2BDF1812F22800FF21A7 /* trees in Resources */,
 				42405BD81814384D00292674 /* identitreelogo.png in Resources */,
+				FA1B4D142356413500E3BD9A /* Launch Screen.storyboard in Resources */,
 				42405B7B18122F7200292674 /* glossary.json in Resources */,
 				42405B7D18122F7200292674 /* trees.json in Resources */,
 				42405BCD1813558000292674 /* thumb in Resources */,
@@ -517,34 +532,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BDC0A13E51154EDABF094E85 /* Copy Pods Resources */ = {
+		700CA8665ECD269ED23B5451 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Identitree/Pods-Identitree-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser/MWPhotoBrowser.bundle",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MWPhotoBrowser.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Identitree/Pods-Identitree-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E99242633352429F9B230284 /* Check Pods Manifest.lock */ = {
+		C96A78CC5114972095BEF506 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Identitree-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -712,7 +737,7 @@
 		};
 		4252C3C9180F8888001F86F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73C95832BE124778979EB613 /* Pods.xcconfig */;
+			baseConfigurationReference = E36F390B31269110AF2997B7 /* Pods-Identitree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -721,7 +746,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Camp Joy Outdoors/Identitree-Prefix.pch";
 				INFOPLIST_FILE = "Camp Joy Outdoors/Identitree-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = Identitree;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -730,7 +755,7 @@
 		};
 		4252C3CA180F8888001F86F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 73C95832BE124778979EB613 /* Pods.xcconfig */;
+			baseConfigurationReference = 00B8D1FD757C305775429642 /* Pods-Identitree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -739,7 +764,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Camp Joy Outdoors/Identitree-Prefix.pch";
 				INFOPLIST_FILE = "Camp Joy Outdoors/Identitree-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				PRODUCT_NAME = Identitree;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

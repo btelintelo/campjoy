@@ -8,6 +8,12 @@
 
 #import "CJOTree.h"
 
+
+
+
+
 @implementation CJOTree
+
+@synthesize description;
 
 @end
