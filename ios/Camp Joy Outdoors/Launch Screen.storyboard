@@ -1,66 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bch-pW-fsx">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="EHf-IW-A2E">
+        <!--Home-->
+        <scene sceneID="DBP-Iw-sur">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                <viewController id="Bch-pW-fsx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q03-1S-IEr"/>
+                        <viewControllerLayoutGuide type="bottom" id="TOf-Xg-wbv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2N6-4T-yee">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2019 Camp Joy. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
-                                <rect key="frame" x="0.0" y="855.5" width="414" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identitree" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="GJd-Yh-RWb">
-                                <rect key="frame" x="0.0" y="278" width="414" height="43"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="homebackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="nK8-Ni-Io8">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homebackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="wUs-HM-MuO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="960"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hE-lW-Bcf">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70368685787671237" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfu-wv-ohe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="960"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8w-bV-0N1" userLabel="LogoWrapper">
+                                        <rect key="frame" x="0.0" y="55" width="414" height="663"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indentitree_home.png" translatesAutoresizingMaskIntoConstraints="NO" id="COw-oB-Vnj">
+                                                <rect key="frame" x="-29.666666666666657" y="0.0" width="473.33333333333326" height="663"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="COw-oB-Vnj" secondAttribute="height" multiplier="5:7" id="FbL-Ee-nsh"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="COw-oB-Vnj" firstAttribute="height" secondItem="T8w-bV-0N1" secondAttribute="height" id="2VS-N6-Gj0"/>
+                                            <constraint firstItem="COw-oB-Vnj" firstAttribute="centerY" secondItem="T8w-bV-0N1" secondAttribute="centerY" id="CTZ-Lc-MIX"/>
+                                            <constraint firstItem="COw-oB-Vnj" firstAttribute="width" relation="greaterThanOrEqual" secondItem="T8w-bV-0N1" secondAttribute="width" multiplier="0.7" priority="998" id="Uix-ZU-DGY"/>
+                                            <constraint firstItem="COw-oB-Vnj" firstAttribute="centerX" secondItem="T8w-bV-0N1" secondAttribute="centerX" id="y1J-Ry-3rt"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeX-fF-bpA">
+                                        <rect key="frame" x="97" y="758" width="220" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="5Qm-iu-pau"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="5qH-Rs-mSK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title=" ">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startButtonPressed:" destination="Bch-pW-fsx" eventType="touchUpInside" id="qAC-ao-qlr"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2020 Camp Joy. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
+                                        <rect key="frame" x="31.333333333333343" y="960.66666666666663" width="351.66666666666663" height="19.333333333333371"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="T8w-bV-0N1" firstAttribute="leading" secondItem="Cfu-wv-ohe" secondAttribute="leading" id="8b1-hF-AIg"/>
+                                    <constraint firstItem="YeX-fF-bpA" firstAttribute="top" secondItem="T8w-bV-0N1" secondAttribute="bottom" constant="40" id="IMp-x5-bks"/>
+                                    <constraint firstItem="YeX-fF-bpA" firstAttribute="centerX" secondItem="Cfu-wv-ohe" secondAttribute="centerX" id="QYS-8J-XrK"/>
+                                    <constraint firstItem="T8w-bV-0N1" firstAttribute="width" secondItem="Cfu-wv-ohe" secondAttribute="width" id="TQw-fZ-Imn"/>
+                                    <constraint firstItem="obG-Y5-kRd" firstAttribute="bottom" secondItem="Cfu-wv-ohe" secondAttribute="bottom" constant="20" id="ZWl-Fw-W5o"/>
+                                    <constraint firstItem="T8w-bV-0N1" firstAttribute="top" secondItem="Cfu-wv-ohe" secondAttribute="top" constant="55" id="Zh9-bI-CSl"/>
+                                </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="identitreelogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="qEs-U9-8c1">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="hNg-yc-pDQ"/>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.48999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="GJd-Yh-RWb" secondAttribute="centerX" id="Q3B-4B-g5h"/>
-                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
-                            <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="bottom" multiplier="1/3" constant="1" id="moa-c2-u7t"/>
-                            <constraint firstItem="GJd-Yh-RWb" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="20" symbolic="YES" id="x7j-FC-K8j"/>
+                            <constraint firstItem="Cfu-wv-ohe" firstAttribute="leading" secondItem="2N6-4T-yee" secondAttribute="leading" id="0vM-JS-tkn"/>
+                            <constraint firstItem="Cfu-wv-ohe" firstAttribute="top" secondItem="2N6-4T-yee" secondAttribute="top" id="2qL-Qp-kBr"/>
+                            <constraint firstItem="Cfu-wv-ohe" firstAttribute="trailing" secondItem="wUs-HM-MuO" secondAttribute="trailing" id="9Xa-Rp-yB6"/>
+                            <constraint firstItem="TOf-Xg-wbv" firstAttribute="top" secondItem="YeX-fF-bpA" secondAttribute="bottom" constant="52" id="S49-md-Hzx"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="centerX" secondItem="hNg-yc-pDQ" secondAttribute="centerX" id="YlV-7c-8l0"/>
+                            <constraint firstItem="wUs-HM-MuO" firstAttribute="width" secondItem="2N6-4T-yee" secondAttribute="width" id="k1D-I8-9PS"/>
+                            <constraint firstItem="Cfu-wv-ohe" firstAttribute="leading" secondItem="wUs-HM-MuO" secondAttribute="leading" id="sEP-er-Ja8"/>
+                            <constraint firstItem="Cfu-wv-ohe" firstAttribute="bottom" secondItem="wUs-HM-MuO" secondAttribute="bottom" id="t1b-Lp-U7T"/>
+                            <constraint firstItem="Cfu-wv-ohe" firstAttribute="top" secondItem="wUs-HM-MuO" secondAttribute="top" id="xHw-2o-fCe"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="aAf-H4-WEd"/>
+                    <connections>
+                        <outlet property="startButton" destination="YeX-fF-bpA" id="tuI-k1-mPA"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1U-Px-RCj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="930" y="-181"/>
         </scene>
     </scenes>
     <resources>
+        <image name="home" width="27" height="26"/>
         <image name="homebackground.png" width="640" height="960"/>
-        <image name="identitreelogo.png" width="500" height="700"/>
+        <image name="indentitree_home.png" width="500" height="700"/>
     </resources>
 </document>

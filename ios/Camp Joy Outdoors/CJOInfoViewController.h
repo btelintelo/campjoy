@@ -14,3 +14,7 @@
 
 
 @end
+
+@interface CJOInfoViewTableController : UITableViewController
+
+@end

@@ -45,3 +45,14 @@
 
 
 @end
+
+
+@implementation CJOInfoViewTableController
+
+- (IBAction)closePushed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+@end
+
+

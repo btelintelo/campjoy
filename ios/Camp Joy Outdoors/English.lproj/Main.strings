@@ -1,0 +1,36 @@
+
+/* Class = "UITabBarItem"; title = "Glossary"; ObjectID = "2Kh-Qb-xm3"; */
+"2Kh-Qb-xm3.title" = "Glossary";
+
+/* Class = "UITableViewSection"; headerTitle = "IdentiTree"; ObjectID = "3Az-av-GzZ"; */
+"3Az-av-GzZ.headerTitle" = "IdentiTree";
+
+/* Class = "UILabel"; text = "The IdentiTree was developed for Camp Joy by volunteer software engineers at the 2013 Southwest Ohio Give Camp.   Special thanks to Nate Hirt, Alex Argo, Jeremy Spitzig, Sam Corder, Brian Telintelo, Parag Joshi, Mark Mathis, Neil Giridharan, Jill Griffin, Jenny Beruscha"; ObjectID = "4d0-m2-kwN"; */
+"4d0-m2-kwN.text" = "The IdentiTree was developed for Camp Joy by volunteer software engineers at the 2013 Southwest Ohio Give Camp.   Special thanks to Nate Hirt, Alex Argo, Jeremy Spitzig, Sam Corder, Brian Telintelo, Parag Joshi, Mark Mathis, Neil Giridharan, Jill Griffin, Jenny Beruscha";
+
+/* Class = "UITableViewSection"; headerTitle = "Camp Joy"; ObjectID = "Czw-CV-uxB"; */
+"Czw-CV-uxB.headerTitle" = "Camp Joy";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "DQl-zI-PgX"; */
+"DQl-zI-PgX.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Trees"; ObjectID = "L0a-3n-hdM"; */
+"L0a-3n-hdM.title" = "Trees";
+
+/* Class = "UILabel"; text = "Since 1938, we have been focused on making a difference in people's lives. That's why even today our mission is to \"Help people grow and succeed through life-long, experience-based learning.\" "; ObjectID = "Mca-hK-w8t"; */
+"Mca-hK-w8t.text" = "Since 1938, we have been focused on making a difference in people's lives. That's why even today our mission is to \"Help people grow and succeed through life-long, experience-based learning.\" ";
+
+/* Class = "UINavigationItem"; title = "Tree List"; ObjectID = "OUi-3z-g4P"; */
+"OUi-3z-g4P.title" = "Tree List";
+
+/* Class = "UITabBarItem"; title = "Identify"; ObjectID = "Z7h-1E-pvt"; */
+"Z7h-1E-pvt.title" = "Identify";
+
+/* Class = "UINavigationItem"; title = "About"; ObjectID = "cWT-CC-A71"; */
+"cWT-CC-A71.title" = "About";
+
+/* Class = "UIButton"; normalTitle = "START YOUR QUEST!"; ObjectID = "pZU-bb-Y3N"; */
+"pZU-bb-Y3N.normalTitle" = "START YOUR QUEST!";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "u1e-5L-l1D"; */
+"u1e-5L-l1D.title" = "Home";

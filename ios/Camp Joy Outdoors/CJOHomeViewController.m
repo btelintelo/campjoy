@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Camp Joy. All rights reserved.
 //
 
+#import <CoreGraphics/CoreGraphics.h>
+
 #import "CJOHomeViewController.h"
 
 #import "CJOInfoViewController.h"
@@ -20,7 +22,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	[self.startButton setBackgroundColor:[self colorWithHexString:@"#808285"]];
+//	[self.startButton setBackgroundColor:[self colorWithHexString:@"#808285"]];
+    self.startButton.layer.cornerRadius = 5;
 }
 
 - (void)didReceiveMemoryWarning

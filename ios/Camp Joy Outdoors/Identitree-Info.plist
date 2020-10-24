@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.campjoy.outdoors.tree.Camp-Joy-Outdoors</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -38,13 +38,13 @@
 	<key>UILaunchStoryboardName</key>
 	<string>Launch Screen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main_iPhone</string>
-	<key>UIMainStoryboardFile~ipad</key>
-	<string>Main_iPad</string>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDarkContent</string>
 	<key>UIStatusBarTintParameters</key>
 	<dict>
 		<key>UINavigationBar</key>
