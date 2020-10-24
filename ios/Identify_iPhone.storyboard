@@ -56,7 +56,7 @@
                                     </connections>
                                 </view>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fagus grandiofolia - Beech Family (Fagaecaeae)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="hpv-1h-PYf">
-                                    <rect key="frame" x="20" y="1" width="374" height="41"/>
+                                    <rect key="frame" x="0.0" y="1" width="414" height="41"/>
                                     <color key="backgroundColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="0.48999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="61" id="z8l-5w-JgX"/>
@@ -74,7 +74,7 @@
                                 <constraint firstItem="fM5-Md-4Jn" firstAttribute="leading" secondItem="sRK-JY-oBv" secondAttribute="leading" id="fXN-0r-ulX"/>
                                 <constraint firstItem="fM5-Md-4Jn" firstAttribute="leading" secondItem="sRK-JY-oBv" secondAttribute="leading" id="ggU-xu-Di7"/>
                                 <constraint firstItem="fM5-Md-4Jn" firstAttribute="width" secondItem="3bR-lD-Z4X" secondAttribute="width" id="ked-Nh-MXo"/>
-                                <constraint firstItem="fM5-Md-4Jn" firstAttribute="width" secondItem="hpv-1h-PYf" secondAttribute="width" constant="40" id="oJC-zz-jge"/>
+                                <constraint firstItem="fM5-Md-4Jn" firstAttribute="width" secondItem="hpv-1h-PYf" secondAttribute="width" id="oJC-zz-jge"/>
                                 <constraint firstItem="fM5-Md-4Jn" firstAttribute="top" secondItem="hpv-1h-PYf" secondAttribute="top" id="x0g-TA-hSS"/>
                                 <constraint firstAttribute="trailing" secondItem="fM5-Md-4Jn" secondAttribute="trailing" id="xOK-Et-d57"/>
                             </constraints>

@@ -166,7 +166,7 @@
                                     </connections>
                                 </view>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fagus grandiofolia - Beech Family (Fagaecaeae)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="728" translatesAutoresizingMaskIntoConstraints="NO" id="0iT-9z-MoP">
-                                    <rect key="frame" x="20" y="0.0" width="780" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="820" height="44"/>
                                     <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.48999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="44" id="HE4-Ir-FZc"/>
@@ -180,7 +180,7 @@
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="0iT-9z-MoP" firstAttribute="centerX" secondItem="UyL-Uj-7l1" secondAttribute="centerX" id="2Gy-zJ-mDI"/>
-                                <constraint firstItem="0iT-9z-MoP" firstAttribute="width" secondItem="UyL-Uj-7l1" secondAttribute="width" constant="-40" id="CPr-Xr-pEH"/>
+                                <constraint firstItem="0iT-9z-MoP" firstAttribute="width" secondItem="UyL-Uj-7l1" secondAttribute="width" id="CPr-Xr-pEH"/>
                                 <constraint firstItem="UyL-Uj-7l1" firstAttribute="leading" secondItem="BM9-fB-Lo0" secondAttribute="leading" id="DF9-eI-xQV"/>
                                 <constraint firstItem="Jl9-Tp-J1e" firstAttribute="width" secondItem="UyL-Uj-7l1" secondAttribute="width" id="H44-NL-CSn"/>
                                 <constraint firstItem="UyL-Uj-7l1" firstAttribute="top" secondItem="BM9-fB-Lo0" secondAttribute="top" constant="1" id="KrE-Z6-D3u"/>
