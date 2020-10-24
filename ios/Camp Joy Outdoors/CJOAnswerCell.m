@@ -133,22 +133,24 @@
     self.answerText.gestureRecognizers = @[self.textViewGestureRecognizer];
     NSArray * glossaryTerms = [CJOModel termStringsWithPlurals];
     self.answerText.attributedText = [self matchTerms:glossaryTerms inString:self.choice.text];
+    self.answerText.textColor = [UIColor labelColor];
+    self.answerText.font = [UIFont systemFontOfSize:18];
     self.image.image = self.choiceImage;
-    CGFloat aspectRatio = self.choiceImage.size.width / self.choiceImage.size.height;
-    if(aspectRatio != INFINITY && aspectRatio != 0 && !isnan(aspectRatio)) {
-        CGFloat imageHeight = 75;
-        CGFloat imageWidth = imageHeight * aspectRatio;
-        if(imageWidth > 267) {
-            imageWidth = 267;
-            imageHeight = imageWidth / aspectRatio;
-        }
-            
-        self.imageWidthConstraint.constant = imageWidth;
-    }
+//    CGFloat aspectRatio = self.choiceImage.size.width / self.choiceImage.size.height;
+//    if(aspectRatio != INFINITY && aspectRatio != 0 && !isnan(aspectRatio)) {
+//        CGFloat imageHeight = 75;
+//        CGFloat imageWidth = imageHeight * aspectRatio;
+//        if(imageWidth > 267) {
+//            imageWidth = 267;
+//            imageHeight = imageWidth / aspectRatio;
+//        }
+//
+//        self.imageWidthConstraint.constant = imageWidth;
+//    }
     self.answerText.delegate = self;
     dispatch_async(dispatch_get_main_queue(), ^{
         self.textHeightConstraint.constant = self.answerText.contentSize.height;
-        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//        self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     });
     
 }

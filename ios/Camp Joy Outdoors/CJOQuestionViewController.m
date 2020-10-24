@@ -98,28 +98,28 @@
 -(CJOTree *) identifiedTree: (CJOChoice *) choice {
     return [CJOModel findTreeById:choice.treeid];
 }
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    CJOChoice * choice = self.question.choices[indexPath.row];
-    UIImage * choiceImage = [self imageForIndexPath:indexPath];
-    
-    // Include room for spacing
-    int height = 48;
-    if(choiceImage) {
-        height += 75;
-    }
-    
-    CGRect textSize = [self measureText:choice.text withFont:[UIFont systemFontOfSize:17] andWidth:280];
-    height += textSize.size.height;
-    
-    return height;
-}
+//-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    CJOChoice * choice = self.question.choices[indexPath.row];
+//    UIImage * choiceImage = [self imageForIndexPath:indexPath];
+//    
+//    // Include room for spacing
+//    int height = 48;
+//    if(choiceImage) {
+//        height += 75;
+//    }
+//    
+//    CGRect textSize = [self measureText:choice.text withFont:[UIFont systemFontOfSize:17] andWidth:280];
+//    height += textSize.size.height;
+//    
+//    return height;
+//}
 
--(CGRect) measureText:(NSString *) text withFont:(UIFont *) font andWidth:(CGFloat)width{
-    NSDictionary * attributes = @{ NSFontAttributeName: font };
-    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:text attributes:attributes];
-    return [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
-}
+//-(CGRect) measureText:(NSString *) text withFont:(UIFont *) font andWidth:(CGFloat)width{
+//    NSDictionary * attributes = @{ NSFontAttributeName: font };
+//    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:text attributes:attributes];
+//    return [attributedText boundingRectWithSize:(CGSize){width, CGFLOAT_MAX} options:NSStringDrawingUsesLineFragmentOrigin context:nil];
+//}
 
 - (IBAction)restartQuestions:(id)sender {
     [self.navigationController popToRootViewControllerAnimated:YES];

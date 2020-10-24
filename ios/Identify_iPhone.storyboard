@@ -207,36 +207,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="156" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="WhB-o2-did">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="256" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="WhB-o2-did">
                                 <rect key="frame" x="0.0" y="2" width="414" height="892"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                                 <color key="separatorColor" systemColor="separatorColor"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AnswerImageCell" id="tbV-uT-gCD" customClass="CJOAnswerCell">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="156"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AnswerImageCell" rowHeight="256" id="tbV-uT-gCD" customClass="CJOAnswerCell">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="256"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tbV-uT-gCD" id="VIO-IK-3fM">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="156"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="256"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cKS-Ik-cFb">
-                                                    <rect key="frame" x="67" y="49" width="267" height="75"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="75" id="Mab-1e-cd9"/>
-                                                        <constraint firstAttribute="width" constant="267" id="NQ7-ky-Wkw"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYy-q5-091">
-                                                    <rect key="frame" x="20" y="20" width="361" height="21"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <rect key="frame" x="8" y="8" width="398" height="160"/>
                                                     <gestureRecognizers/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="wYL-Dw-Gwl"/>
+                                                        <constraint firstAttribute="height" constant="160" id="wYL-Dw-Gwl"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <string key="text">Twigs have one side that’s flat with the other side sometimes purplish; leaf buds are 2 scaled and paintbrush shape, flower buds have a white onion shape with 4 scales; twigs are largest where the buds come out and get skinnier; as the tree gets older the bark gets a more scale like pattern. Often has a red fruit.</string>
+                                                    <color key="textColor" systemColor="labelColor"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cKS-Ik-cFb">
+                                                    <rect key="frame" x="73.5" y="176" width="267" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="267" id="NQ7-ky-Wkw"/>
+                                                        <constraint firstAttribute="width" secondItem="cKS-Ik-cFb" secondAttribute="height" multiplier="89:25" id="tOF-cF-M71"/>
+                                                    </constraints>
+                                                </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAy-ut-0g1">
                                                     <rect key="frame" x="295" y="0.0" width="25" height="155"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -249,11 +250,13 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xYy-q5-091" firstAttribute="top" secondItem="VIO-IK-3fM" secondAttribute="top" constant="20" id="PfP-c7-gg7"/>
-                                                <constraint firstItem="xYy-q5-091" firstAttribute="leading" secondItem="VIO-IK-3fM" secondAttribute="leading" constant="20" id="Z96-jP-983"/>
-                                                <constraint firstAttribute="centerX" secondItem="cKS-Ik-cFb" secondAttribute="centerX" constant="6.5" id="gQG-Wm-g0S"/>
+                                                <constraint firstItem="cKS-Ik-cFb" firstAttribute="width" secondItem="VIO-IK-3fM" secondAttribute="width" multiplier="0.644928" id="Ec6-Ai-gcs"/>
+                                                <constraint firstItem="xYy-q5-091" firstAttribute="top" secondItem="VIO-IK-3fM" secondAttribute="top" constant="8" id="PfP-c7-gg7"/>
+                                                <constraint firstItem="xYy-q5-091" firstAttribute="leading" secondItem="VIO-IK-3fM" secondAttribute="leading" constant="8" id="Z96-jP-983"/>
+                                                <constraint firstAttribute="bottom" secondItem="cKS-Ik-cFb" secondAttribute="bottom" constant="10" id="a9Q-r9-BTh"/>
+                                                <constraint firstAttribute="centerX" secondItem="cKS-Ik-cFb" secondAttribute="centerX" id="gQG-Wm-g0S"/>
                                                 <constraint firstItem="cKS-Ik-cFb" firstAttribute="top" secondItem="xYy-q5-091" secondAttribute="bottom" constant="8" id="gY8-th-hqn"/>
-                                                <constraint firstAttribute="trailing" secondItem="xYy-q5-091" secondAttribute="trailing" constant="33" id="xa5-Yj-nya"/>
+                                                <constraint firstAttribute="trailing" secondItem="xYy-q5-091" secondAttribute="trailing" constant="8" id="xa5-Yj-nya"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -314,7 +317,7 @@
                     </connections>
                 </button>
             </objects>
-            <point key="canvasLocation" x="715.94202898550725" y="-62.276785714285708"/>
+            <point key="canvasLocation" x="714.49275362318849" y="-62.276785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fbg-NQ-uoQ">
@@ -341,6 +344,9 @@
         </systemColor>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="separatorColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
