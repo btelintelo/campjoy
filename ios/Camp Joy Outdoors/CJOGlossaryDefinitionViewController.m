@@ -35,7 +35,7 @@
 {
     CJOGlossaryTerm *term = [CJOModel findTermByName:_word];
     self.title = term.name;
-    self.descriptionLabel.text = term.description;
+    self.descriptionLabel.text = term.description2;
     NSString *fmt = @"glossary/%@";
     NSString *imageName = [NSString stringWithFormat:fmt, term.image];
     self.definitionImageView.image = [UIImage imageNamed:imageName];
