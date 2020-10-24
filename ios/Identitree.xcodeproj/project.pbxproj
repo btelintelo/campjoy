@@ -749,9 +749,8 @@
 			baseConfigurationReference = E36F390B31269110AF2997B7 /* Pods-Identitree.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X3S2AQ5YSK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Camp Joy Outdoors/Identitree-Prefix.pch";
 				INFOPLIST_FILE = "Camp Joy Outdoors/Identitree-Info.plist";
@@ -769,9 +768,8 @@
 			baseConfigurationReference = 00B8D1FD757C305775429642 /* Pods-Identitree.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X3S2AQ5YSK;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Camp Joy Outdoors/Identitree-Prefix.pch";
 				INFOPLIST_FILE = "Camp Joy Outdoors/Identitree-Info.plist";
