@@ -12,7 +12,7 @@
 
 @property (nonatomic, retain) NSString *id;
 @property (nonatomic, retain) NSString *name;
-@property (nonatomic, retain) NSString *description;
+@property (nonatomic, retain) NSString *description2;
 @property (nonatomic, retain) NSString *sciname;
 @property (nonatomic, retain) NSString *family;
 @property (nonatomic, retain) NSArray *tableData;

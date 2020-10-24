@@ -10,6 +10,4 @@
 
 @implementation CJOGlossaryTerm
 
-@synthesize description;
-
 @end

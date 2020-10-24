@@ -45,7 +45,7 @@
     self.carousel.dataSource = self.imagesDataSource;
     self.navigationItem.title = self.tree.name;
     self.scientificNameLabel.text = [NSString stringWithFormat:@"%@ - %@",self.tree.sciname,self.tree.family];
-    self.descriptionTextView.text = self.tree.description;
+    self.descriptionTextView.text = self.tree.description2;
 
     [self resizeHeaderViewsForDescriptionText];
     [self configureCarousel];

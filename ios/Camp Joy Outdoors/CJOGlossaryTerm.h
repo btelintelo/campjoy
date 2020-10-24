@@ -10,6 +10,6 @@
 
 @interface CJOGlossaryTerm : NSObject
 @property (nonatomic, strong) NSString * name;
-@property (nonatomic, strong) NSString * description;
+@property (nonatomic, strong) NSString * description2;
 @property (nonatomic, strong) NSString * image;
 @end

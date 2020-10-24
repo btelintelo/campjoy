@@ -44,7 +44,7 @@
 {
     CJOGlossaryTerm *term = [self.terms objectAtIndex:indexPath.row];
     cell.textLabel.text = term.name;
-    cell.detailTextLabel.text = term.description;
+    cell.detailTextLabel.text = term.description2;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
