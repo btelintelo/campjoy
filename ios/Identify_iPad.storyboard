@@ -47,14 +47,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="820" height="336"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="This is one sentence long of text that is very simple" translatesAutoresizingMaskIntoConstraints="NO" id="fvm-yw-MMH">
-                                                    <rect key="frame" x="20" y="20" width="780" height="67.5"/>
-                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvm-yw-MMH">
+                                                    <rect key="frame" x="20" y="20" width="780" height="107.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="107.5" id="s7i-Fo-Iga"/>
+                                                    </constraints>
+                                                    <string key="text">Twigs have one side that’s flat with the other side sometimes purplish; leaf buds are 2 scaled and paintbrush shape, flower buds have a white onion shape with 4 scales; twigs are largest where the buds come out and get skinnier; as the tree gets older the bark gets a more scale like pattern. Often has a red fruit.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fX7-gX-syD">
-                                                    <rect key="frame" x="93.5" y="110.5" width="633" height="177.5"/>
+                                                    <rect key="frame" x="93.5" y="137.5" width="633" height="177.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="fX7-gX-syD" secondAttribute="height" multiplier="25:7" id="0f1-ha-eln"/>
                                                     </constraints>
@@ -63,11 +66,10 @@
                                             <constraints>
                                                 <constraint firstItem="fX7-gX-syD" firstAttribute="centerX" secondItem="LDa-QS-FHP" secondAttribute="centerX" id="0qZ-vN-eEd"/>
                                                 <constraint firstItem="fvm-yw-MMH" firstAttribute="leading" secondItem="LDa-QS-FHP" secondAttribute="leading" constant="20" symbolic="YES" id="ADh-W0-rEJ"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="fX7-gX-syD" secondAttribute="bottom" constant="37" id="Big-XG-qiy"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fX7-gX-syD" secondAttribute="bottom" constant="10" id="Big-XG-qiy"/>
                                                 <constraint firstAttribute="trailing" secondItem="fvm-yw-MMH" secondAttribute="trailing" constant="20" symbolic="YES" id="GGc-u2-Ewh"/>
-                                                <constraint firstItem="fvm-yw-MMH" firstAttribute="top" secondItem="LDa-QS-FHP" secondAttribute="topMargin" constant="9" id="Nir-IL-we4"/>
                                                 <constraint firstItem="fvm-yw-MMH" firstAttribute="centerX" secondItem="fX7-gX-syD" secondAttribute="centerX" id="RdR-16-vCX"/>
-                                                <constraint firstItem="fX7-gX-syD" firstAttribute="top" secondItem="fvm-yw-MMH" secondAttribute="bottom" constant="23" id="hGq-Yj-dyx"/>
+                                                <constraint firstItem="fX7-gX-syD" firstAttribute="top" secondItem="fvm-yw-MMH" secondAttribute="bottom" constant="10" id="hGq-Yj-dyx"/>
                                                 <constraint firstItem="fX7-gX-syD" firstAttribute="height" secondItem="LDa-QS-FHP" secondAttribute="height" multiplier="0.527638" id="mLf-Dy-AQG"/>
                                                 <constraint firstItem="fvm-yw-MMH" firstAttribute="top" secondItem="LDa-QS-FHP" secondAttribute="top" constant="20" symbolic="YES" id="s1I-Km-00M"/>
                                             </constraints>
@@ -75,6 +77,7 @@
                                         <connections>
                                             <outlet property="answerText" destination="fvm-yw-MMH" id="556-VF-t4b"/>
                                             <outlet property="image" destination="fX7-gX-syD" id="xGN-t0-Xyi"/>
+                                            <outlet property="textHeightConstraint" destination="s7i-Fo-Iga" id="BCn-tP-FaD"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
