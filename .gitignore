@@ -10,3 +10,6 @@ ios/Podfile.lock
 ios/Pods
 .DS_Store
 
+android/IdentitreeStarterKit/.idea
+ios/Identitree.xcworkspace/xcuserdata
+ios/Identitree.xcodeproj/xcuserdata
