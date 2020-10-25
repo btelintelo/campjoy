@@ -17,17 +17,17 @@
                         <viewControllerLayoutGuide type="bottom" id="Ked-8b-9Xk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1200" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homebackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="LjX-QM-NiM">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="960"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1200" height="1417"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDa-Jk-moX">
-                                <rect key="frame" x="0.0" y="0.0" width="428" height="960"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDa-Jk-moX" userLabel="ControlsContainerView">
+                                <rect key="frame" x="0.0" y="0.0" width="1200" height="1417"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcD-Ym-eSm" userLabel="AboutButton">
-                                        <rect key="frame" x="385" y="59" width="18" height="18"/>
+                                        <rect key="frame" x="1157" y="59" width="18" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="El1-lF-X7N"/>
                                             <constraint firstAttribute="width" secondItem="YcD-Ym-eSm" secondAttribute="height" multiplier="1:1" id="H54-rz-iqV"/>
@@ -40,10 +40,10 @@
                                         </connections>
                                     </button>
                                     <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qBx-5y-667" userLabel="LogoWrapper">
-                                        <rect key="frame" x="0.0" y="55" width="428" height="644"/>
+                                        <rect key="frame" x="0.0" y="55" width="1200" height="1218"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indentitree_home.png" translatesAutoresizingMaskIntoConstraints="NO" id="ggJ-CN-vsx">
-                                                <rect key="frame" x="-16" y="0.0" width="460" height="644"/>
+                                                <rect key="frame" x="165" y="0.0" width="870" height="1218"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="ggJ-CN-vsx" secondAttribute="height" multiplier="5:7" id="fif-CW-JTk"/>
                                                 </constraints>
@@ -57,7 +57,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZU-bb-Y3N">
-                                        <rect key="frame" x="104" y="739" width="220" height="52"/>
+                                        <rect key="frame" x="490" y="1313" width="220" height="52"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="52" id="85X-fv-AxJ"/>
@@ -86,18 +86,21 @@
                         </subviews>
                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.48999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Ked-8b-9Xk" firstAttribute="top" secondItem="uDa-Jk-moX" secondAttribute="bottom" id="21E-ib-sjf"/>
+                            <constraint firstAttribute="trailing" secondItem="LjX-QM-NiM" secondAttribute="trailing" id="6jY-VH-7BR"/>
                             <constraint firstItem="LjX-QM-NiM" firstAttribute="width" secondItem="2VE-Yg-loa" secondAttribute="width" id="A0h-Li-27i"/>
                             <constraint firstItem="uDa-Jk-moX" firstAttribute="top" secondItem="2VE-Yg-loa" secondAttribute="top" id="Doe-3p-Lup"/>
+                            <constraint firstItem="Ked-8b-9Xk" firstAttribute="top" secondItem="LjX-QM-NiM" secondAttribute="bottom" id="GqN-7b-Xvq"/>
                             <constraint firstItem="Ked-8b-9Xk" firstAttribute="top" secondItem="pZU-bb-Y3N" secondAttribute="bottom" constant="52" id="WnF-R4-bWv"/>
                             <constraint firstItem="YcD-Ym-eSm" firstAttribute="top" secondItem="Cpf-5d-uRB" secondAttribute="bottom" constant="15" id="XaH-kB-uQe"/>
-                            <constraint firstItem="uDa-Jk-moX" firstAttribute="top" secondItem="LjX-QM-NiM" secondAttribute="top" id="Yux-v4-StK"/>
-                            <constraint firstItem="uDa-Jk-moX" firstAttribute="bottom" secondItem="LjX-QM-NiM" secondAttribute="bottom" id="ibj-80-p8R"/>
                             <constraint firstItem="uDa-Jk-moX" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" id="kG5-zi-oXM"/>
+                            <constraint firstItem="LjX-QM-NiM" firstAttribute="top" secondItem="Cpf-5d-uRB" secondAttribute="bottom" constant="-44" id="n2I-Aw-13D"/>
                             <constraint firstItem="uDa-Jk-moX" firstAttribute="trailing" secondItem="LjX-QM-NiM" secondAttribute="trailing" id="syM-43-KMK"/>
                             <constraint firstItem="uDa-Jk-moX" firstAttribute="leading" secondItem="LjX-QM-NiM" secondAttribute="leading" id="vmv-Yf-IcV"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="u1e-5L-l1D"/>
+                    <size key="freeformSize" width="1200" height="1500"/>
                     <connections>
                         <outlet property="startButton" destination="pZU-bb-Y3N" id="bQ2-7J-WSC"/>
                     </connections>
