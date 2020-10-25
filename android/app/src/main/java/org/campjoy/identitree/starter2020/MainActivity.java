@@ -1,4 +1,4 @@
-package org.campjoy.identitree.starter;
+package org.campjoy.identitree.starter2020;
 
 import android.app.LocalActivityManager;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ImageView;
 
-import org.campjoy.identitree.starter.activities.QuestionActivity;
+import org.campjoy.identitree.starter2020.activities.QuestionActivity;
 
 public class MainActivity extends FragmentActivityBase {
 

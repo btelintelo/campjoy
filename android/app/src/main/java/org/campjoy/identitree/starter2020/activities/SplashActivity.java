@@ -1,27 +1,23 @@
-package org.campjoy.identitree.starter.activities;
+package org.campjoy.identitree.starter2020.activities;
 
 import java.io.IOException;
 
-import org.campjoy.identitree.starter.CJApplication;
-import org.campjoy.identitree.starter.MainActivity;
-import org.campjoy.identitree.starter.MainTabActivity;
-import org.campjoy.identitree.starter.R;
-import org.campjoy.identitree.starter.model.GlossaryModel;
-import org.campjoy.identitree.starter.model.TreeModel;
+import org.campjoy.identitree.starter2020.CJApplication;
+import org.campjoy.identitree.starter2020.MainTabActivity;
+import org.campjoy.identitree.starter2020.R;
+import org.campjoy.identitree.starter2020.model.GlossaryModel;
+import org.campjoy.identitree.starter2020.model.TreeModel;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.opengl.Visibility;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 
 public class SplashActivity extends Activity implements AnimationListener {
 	private ImageView splashLayoutImg;

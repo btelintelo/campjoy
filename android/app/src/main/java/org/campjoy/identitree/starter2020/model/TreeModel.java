@@ -1,9 +1,6 @@
-package org.campjoy.identitree.starter.model;
+package org.campjoy.identitree.starter2020.model;
 
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
 
 import org.json.JSONArray;
 import org.json.JSONException;

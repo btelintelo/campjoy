@@ -1,7 +1,7 @@
-package org.campjoy.identitree.starter.activities;
+package org.campjoy.identitree.starter2020.activities;
 
-import org.campjoy.identitree.starter.FragmentActivityBase;
-import org.campjoy.identitree.starter.fragments.TreeInfoFragment;
+import org.campjoy.identitree.starter2020.FragmentActivityBase;
+import org.campjoy.identitree.starter2020.fragments.TreeInfoFragment;
 
 import android.os.Bundle;
 

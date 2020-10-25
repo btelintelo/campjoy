@@ -1,4 +1,4 @@
-package org.campjoy.identitree.starter.model;
+package org.campjoy.identitree.starter2020.model;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,7 +11,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.content.Context;
-import android.util.Pair;
 
 public class GlossaryModel extends BaseModel {
 

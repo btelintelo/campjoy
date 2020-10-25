@@ -1,10 +1,10 @@
-package org.campjoy.identitree.starter.popup;
+package org.campjoy.identitree.starter2020.popup;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 
-import org.campjoy.identitree.starter.model.GlossaryModel;
-import org.campjoy.identitree.starter.model.Term;
+import org.campjoy.identitree.starter2020.model.GlossaryModel;
+import org.campjoy.identitree.starter2020.model.Term;
 
 import android.content.Context;
 import android.graphics.Color;

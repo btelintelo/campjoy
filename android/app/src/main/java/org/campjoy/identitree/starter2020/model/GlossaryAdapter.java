@@ -1,13 +1,8 @@
-package org.campjoy.identitree.starter.model;
+package org.campjoy.identitree.starter2020.model;
 
-import java.io.IOException;
-import java.io.InputStream;
-
-import org.campjoy.identitree.starter.R;
+import org.campjoy.identitree.starter2020.R;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

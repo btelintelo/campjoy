@@ -1,4 +1,4 @@
-package org.campjoy.identitree.starter.fragments
+package org.campjoy.identitree.starter2020.fragments
 
 import android.content.res.AssetManager
 import android.graphics.Bitmap
@@ -16,10 +16,10 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import org.campjoy.identitree.starter.FragmentActivityBase
-import org.campjoy.identitree.starter.R
-import org.campjoy.identitree.starter.model.Tree
-import org.campjoy.identitree.starter.model.TreeModel
+import org.campjoy.identitree.starter2020.FragmentActivityBase
+import org.campjoy.identitree.starter2020.R
+import org.campjoy.identitree.starter2020.model.Tree
+import org.campjoy.identitree.starter2020.model.TreeModel
 import java.io.IOException
 
 

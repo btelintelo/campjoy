@@ -1,9 +1,9 @@
-package org.campjoy.identitree.starter.activities;
+package org.campjoy.identitree.starter2020.activities;
 
-import org.campjoy.identitree.starter.CJApplication;
-import org.campjoy.identitree.starter.FragmentActivityBase;
-import org.campjoy.identitree.starter.R;
-import org.campjoy.identitree.starter.fragments.QuestionFragment;
+import org.campjoy.identitree.starter2020.CJApplication;
+import org.campjoy.identitree.starter2020.FragmentActivityBase;
+import org.campjoy.identitree.starter2020.R;
+import org.campjoy.identitree.starter2020.fragments.QuestionFragment;
 
 import android.os.Bundle;
 import android.view.Menu;

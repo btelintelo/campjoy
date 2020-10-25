@@ -1,4 +1,4 @@
-package org.campjoy.identitree.starter.fragments
+package org.campjoy.identitree.starter2020.fragments
 
 import android.content.res.AssetManager
 import android.graphics.drawable.Drawable
@@ -9,10 +9,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import org.campjoy.identitree.starter.FragmentActivityBase
-import org.campjoy.identitree.starter.R
-import org.campjoy.identitree.starter.model.QuestionModel
-import org.campjoy.identitree.starter.popup.HotTap
+import org.campjoy.identitree.starter2020.FragmentActivityBase
+import org.campjoy.identitree.starter2020.R
+import org.campjoy.identitree.starter2020.model.QuestionModel
+import org.campjoy.identitree.starter2020.popup.HotTap
 import java.io.IOException
 import java.io.InputStream
 import java.util.*

@@ -1,4 +1,4 @@
-package org.campjoy.identitree.starter.model;
+package org.campjoy.identitree.starter2020.model;
 
 import java.io.BufferedReader;
 import java.io.IOException;

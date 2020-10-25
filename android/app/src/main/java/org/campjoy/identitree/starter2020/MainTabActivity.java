@@ -1,14 +1,12 @@
-package org.campjoy.identitree.starter;
+package org.campjoy.identitree.starter2020;
 
-import org.campjoy.identitree.starter.activities.GlossaryActivity;
-import org.campjoy.identitree.starter.activities.QuestionActivity;
+import org.campjoy.identitree.starter2020.activities.GlossaryActivity;
+import org.campjoy.identitree.starter2020.activities.QuestionActivity;
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
-import android.view.Menu;
 import android.view.View;
 import android.widget.TabHost;
 import android.widget.TextView;

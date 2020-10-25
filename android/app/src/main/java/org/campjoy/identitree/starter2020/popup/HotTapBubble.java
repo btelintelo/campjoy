@@ -1,6 +1,6 @@
-package org.campjoy.identitree.starter.popup;
+package org.campjoy.identitree.starter2020.popup;
 
-import org.campjoy.identitree.starter.R;
+import org.campjoy.identitree.starter2020.R;
 
 import android.content.Context;
 

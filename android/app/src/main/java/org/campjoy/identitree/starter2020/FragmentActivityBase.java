@@ -1,10 +1,6 @@
-package org.campjoy.identitree.starter;
+package org.campjoy.identitree.starter2020;
 
 import android.os.Bundle;
-
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;

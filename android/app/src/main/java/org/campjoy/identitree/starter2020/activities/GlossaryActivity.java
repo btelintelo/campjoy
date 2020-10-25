@@ -1,11 +1,10 @@
-package org.campjoy.identitree.starter.activities;
+package org.campjoy.identitree.starter2020.activities;
 
-import org.campjoy.identitree.starter.FragmentActivityBase;
-import org.campjoy.identitree.starter.R;
-import org.campjoy.identitree.starter.model.GlossaryAdapter;
-import org.campjoy.identitree.starter.model.GlossaryModel;
+import org.campjoy.identitree.starter2020.FragmentActivityBase;
+import org.campjoy.identitree.starter2020.R;
+import org.campjoy.identitree.starter2020.model.GlossaryAdapter;
+import org.campjoy.identitree.starter2020.model.GlossaryModel;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ListView;
 

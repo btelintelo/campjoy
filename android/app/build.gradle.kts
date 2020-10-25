@@ -10,7 +10,7 @@ android {
         applicationId = "org.campjoy.identitree.starter2020"
         minSdkVersion(19)
         targetSdkVersion(30)
-        versionCode = 1
+        versionCode = 2
         versionName = "1.0"
     }
 

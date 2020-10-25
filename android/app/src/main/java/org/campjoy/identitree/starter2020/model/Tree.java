@@ -1,4 +1,4 @@
-package org.campjoy.identitree.starter.model;
+package org.campjoy.identitree.starter2020.model;
 
 import java.util.HashMap;
 import org.json.JSONArray;

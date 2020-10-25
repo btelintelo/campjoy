@@ -1,17 +1,14 @@
-package org.campjoy.identitree.starter;
+package org.campjoy.identitree.starter2020;
 
 import java.io.IOException;
 import java.io.InputStream;
 
 import android.app.Application;
-import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.util.Log;
 
 import androidx.fragment.app.FragmentActivity;
