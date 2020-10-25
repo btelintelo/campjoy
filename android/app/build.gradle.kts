@@ -1,12 +1,13 @@
 plugins {
     id("com.android.application")
+    id("kotlin-android")
 }
 
 android {
     compileSdkVersion(30)
 
     defaultConfig {
-        applicationId = "org.campjoy.identitree.starter"
+        applicationId = "org.campjoy.identitree.starter2020"
         minSdkVersion(19)
         targetSdkVersion(30)
         versionCode = 1
@@ -29,7 +30,12 @@ android {
 }
 
 dependencies {
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10")
     implementation("androidx.appcompat:appcompat:1.2.0")
     implementation("com.google.android.material:material:1.2.1")
     implementation("androidx.constraintlayout:constraintlayout:2.0.2")
+    implementation("androidx.core:core-ktx:+")
+}
+repositories {
+    mavenCentral()
 }

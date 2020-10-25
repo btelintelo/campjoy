@@ -1,298 +1,349 @@
-  <ScrollView  android:id="@+id/tree_details_scroll_layout"
-      xmlns:android="http://schemas.android.com/apk/res/android"
-          android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"  android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-       xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MainActivity">
-        
-        
-<RelativeLayout
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tree_details_scroll_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-   >
-   
-    <Button
-        android:id="@+id/button_start1"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-		android:layout_marginLeft="20dp"
-		android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:text="Start Over" />
-    
-	<FrameLayout 
-	    android:id="@+id/treeInfoFrameLayout"
-	    android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/button_start1">
-   <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" 
-        android:id="@+id/treeInfoImageScrollView"
-        android:layout_alignParentTop="true">
-        <LinearLayout
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <Button
+            android:id="@+id/button_start1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="Start Over"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/image_caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_start1"
+            tools:text="This is the tree scientific name" />
+
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/mygallery"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="256dp"
+            app:layout_constraintHeight_min="128dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_caption" />
+
+
+
+        <TextView
+            android:id="@+id/tree_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mygallery" />
+
+        <TextView
+            android:id="@+id/tree_info_information"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#BCBCBC"
+            android:paddingStart="16dp"
+            android:text="Information"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tree_description" />
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            />
-    </HorizontalScrollView>
-     <TextView
-                android:id="@+id/image_caption"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:alpha="0.5"
-                android:background="@android:color/darker_gray"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-               />
-    </FrameLayout>
-  
-   <TextView
-                android:id="@+id/tree_description"
-                android:layout_width="match_parent"
-                android:layout_below="@+id/treeInfoFrameLayout"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-               />
-   		<LinearLayout   android:id="@+id/tree_details_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/tree_description"
-            android:orientation="vertical">
-        <LinearLayout  
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:orientation="horizontal">
-             <TextView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tree_info_information">
+
+            <TextView
                 android:id="@+id/widthText"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="5dp"
-                android:text="Width(spread)"
-                android:layout_marginBottom="5dp"
-               />
-              <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:text="Width(spread)" />
+
+            <TextView
                 android:id="@+id/widthValue"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-               />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1" />
         </LinearLayout>
-         <LinearLayout  
-            android:layout_width="match_parent"
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:orientation="horizontal">
-             <TextView
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+
+            <TextView
                 android:id="@+id/heightText"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Height"
-                android:layout_marginLeft="5dp"
-                android:layout_marginBottom="5dp"
-               />
-              <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:text="Height" />
+
+            <TextView
                 android:id="@+id/heightValue"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-               />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1" />
         </LinearLayout>
-         <LinearLayout  
-           android:layout_width="match_parent"
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:orientation="horizontal">
-             <TextView
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+            <TextView
                 android:id="@+id/growthRateText"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="5dp"
-                 android:text="Growth Rate"
-                android:layout_marginBottom="5dp"
-               />
-              <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:text="Growth Rate" />
+
+            <TextView
                 android:id="@+id/growthRateValue"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-               />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1" />
         </LinearLayout>
-         <LinearLayout  
-            android:layout_width="match_parent"
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:orientation="horizontal">
-             <TextView
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout4">
+
+            <TextView
                 android:id="@+id/sunText"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="5dp"
-                android:text="Sun"
-                android:layout_marginBottom="5dp"
-               />
-              <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:text="Sun" />
+
+            <TextView
                 android:id="@+id/sunValue"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-               />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1" />
         </LinearLayout>
-         <LinearLayout  
-            android:layout_width="match_parent"
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:orientation="horizontal">
-             <TextView
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout5">
+
+            <TextView
                 android:id="@+id/shapeText"
-                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                 android:text="Shape"
-                android:layout_marginLeft="5dp"
-                android:layout_marginBottom="5dp"
-               />
-              <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:text="Shape" />
+
+            <TextView
                 android:id="@+id/shapeValue"
-                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-               />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1" />
         </LinearLayout>
-         <LinearLayout  
-             android:layout_width="match_parent"
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:orientation="horizontal">
-             <TextView
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout6">
+
+            <TextView
                 android:id="@+id/soilTypeText"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="5dp"
-                 android:text="Soil Type"
-                android:layout_marginBottom="5dp"
-               />
-              <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:text="Soil Type" />
+
+            <TextView
                 android:id="@+id/soilTypeValue"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-               />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1" />
         </LinearLayout>
-         <LinearLayout  
-            android:layout_width="match_parent"
+
+        <LinearLayout
+            android:id="@+id/linearLayout8"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:orientation="horizontal">
-             <TextView
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout7">
+
+            <TextView
                 android:id="@+id/leafShapeText"
-                 android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="5dp"
-                android:text="Leaf Shape"
-                android:layout_marginBottom="5dp"
-               />
-              <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:text="Leaf Shape" />
+
+            <TextView
                 android:id="@+id/leafShapeValue"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="5dp"
-               />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1" />
         </LinearLayout>
-         <LinearLayout  
-             android:layout_width="match_parent"
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
-            android:orientation="horizontal">
-             <TextView
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout8">
+
+            <TextView
                 android:id="@+id/lifeSpanText"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Life Span"
-                android:layout_marginLeft="5dp"
-                android:layout_marginBottom="5dp"
-               />
-              <TextView
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:text="Life Span" />
+
+            <TextView
                 android:id="@+id/lifeSpanValue"
-                  android:layout_width="0dp"
-                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="10dp"
-               />
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1" />
         </LinearLayout>
-   </LinearLayout>
-   <LinearLayout   android:id="@+id/tree_map_layout"
-            android:layout_width="match_parent"
+
+
+        <TextView
+            android:id="@+id/tree_info_where_it_grows"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_below="@+id/tree_details_layout"
-            android:orientation="vertical">
-  <ImageView 
-      android:id="@+id/tree_map_image"
-      android:layout_below="@+id/tree_details_layout"
-      android:layout_alignParentBottom="true"
-      android:layout_width="200dp"
-      android:layout_height="wrap_content"
-      android:scaleType="center"/>
-  </LinearLayout>
-    <Button
-        android:id="@+id/button_start2"
-        android:layout_width="match_parent"
-		android:layout_marginLeft="20dp"
-		android:layout_marginRight="20dp"
-        android:layout_height="wrap_content"
-         android:layout_below="@+id/tree_map_layout"
-        android:text="Start Over" />
-</RelativeLayout>
- </ScrollView>
+            android:layout_marginTop="16dp"
+            android:background="#BCBCBC"
+            android:paddingStart="16dp"
+            android:text="@string/where_it_grows"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout9" />
+
+        <ImageView
+            android:id="@+id/tree_map_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_max="240dp"
+            app:layout_constraintHeight_min="290dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tree_info_where_it_grows" />
+
+        <Button
+            android:id="@+id/button_start2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="START OVER"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tree_map_image" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
